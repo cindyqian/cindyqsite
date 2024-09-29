@@ -3,25 +3,50 @@ import './App.css';
 import { ColorfulLink } from './ColorfulLink.js';
 import React from 'react';
 import {View, Image, StyleSheet} from 'react-native';
-import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
+
+import { useRef, useEffect, useState } from 'react';
+// import { AreImagesVisible } from './ImageStatus.js';
+// import Measure from 'react-measure'
+
+
+
+
+
+
 
 function App() {
 
 
-  // const handleScrollTo = () => {
-  //   console.log("scrolled");
-  // };
 
-  // React.useEffect(() => {
-  //   if (props.offset) {
-  //     window.addEventListener("scroll", handleScrollTo);
-  //   }
-  //   return function cleanup() {
-  //     if (props.offset) {
-  //       window.removeEventListener("scroll", handleScrollTo);
-  //     }
-  //   };
-  // });
+  
+  
+
+  
+
+
+  window.onscroll = function() {
+    checkImageVisibility()
+  };
+  
+  // const [imagesOnScreen, updateImagesOnScreen] = useState(new Set([]));    
+  const imagesOnScreen = new Set([]);
+
+  const checkImageVisibility = () => {
+    const images = ["firstImage", "secondImage"];
+    for (let i = 0; i < images.length; i++) {
+      const currImage = document.getElementById(images[i]);
+      const topBorderOfImage = currImage.getBoundingClientRect().top;
+      if (topBorderOfImage < window.innerHeight) {
+        imagesOnScreen.add(currImage);
+      }
+      
+    }
+    console.log(imagesOnScreen)
+  }
+
+  const [textOnScreen, updateTextOnScreen] = useState(new Set([])); 
+
 
   return (
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -29,13 +54,12 @@ function App() {
 
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
-          <div className="grid grid-cols-1 m-auto justify-center fixed z-20">
+          <div className="w-1/3 fixed top-0 self-center my-40">
             <h1 className="text-xl text-center m-7 font-[family-name:var(--font-geist-mono)]">
                 Cindy Qian
             </h1>
 
-            <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] mx-56 px-96 lowercase">
-
+            <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase" >
               Hello, I'm Cindy! I’m passionate about building products and experiences that empower people
               to express themselves in creative and meaningful ways. My creativity thrives
               when I’m helping others bring their ideas to life!
@@ -80,77 +104,53 @@ function App() {
             </p>
           </div>
 
-          {/* <div className="grid grid-cols-1 gap-4">
-            <ParallaxBanner
-              layers={[
-                { image: '../images/shoreline.png', speed: -20 },
-                { image: '../images/shoreline.png', speed: -10 },
-              ]}
-              className="aspect-[2/1]"
-            >
-                <h1 className="text-8xl text-white font-thin">Hello World!</h1>
-            </ParallaxBanner>
-          </div> */}
-
-          {/* <Parallax speed={50} className="top-0 left-0">
-            <div className="table w-full table-fixed">
-              <div className="table-row">
-                <div className="table-cell">
-                  <img className="w-40"
-                  src={require("../images/selfiecindy.png")}
+          <Parallax speed={50} className="mx-16 mt-[20%] mt-98 pt-48">
+            <div className="table w-full table-fixed border-spacing-5" >
+              {/* ref={ref}> */}
+              <div className="table-row" id="firstImage">
+                <div className="table-cell w-2/12">
+                </div>
+                <div className="table-cell w-1/12">
+                  <img
+                  src={require("../images/gradcindy.png")}
                   alt="Picture of Cindy Qian" />
                 </div>
-                <div className="table-cell">
-                  <img className="w-40 m-10"
-                  src={require("../images/squatwaterfallcindy.png")}
-                  alt="Picture of Cindy Qian" />
+                <div className="table-cell w-2/12">
                 </div>
                 <div className="table-cell">
                 </div>
-                <div className="table-cell">
-                  <img className="w-40 m-10"
-                  src={require("../images/8b.png")}
-                  alt="Picture of Cindy Qian" />
+                <div className="table-cell w-1/12">
                 </div>
-                <div className="table-cell">
-                  <img className="w-40 m-10"
-                  src={require("../images/pogo.png")}
-                  alt="Picture of Cindy Qian" />
+                <div className="table-cell w-1/12">
+                </div>
+                <div className="table-cell w-1/12">
                 </div>
               </div>
 
 
-              <div className="table-row">
-                <div className="table-cell">
-                  <img className="w-1/2 m-10"
-                  src={require("../images/tt3.png")}
-                  alt="Picture of Cindy Qian" />
+              <div className="table-row" id="secondImage">
+                <div className="table-cell w-2/12">
                 </div>
-                <div className="table-cell">
-                  <img className="w-40 m-10"
-                  src={require("../images/dhlogs2.png")}
-                  alt="Picture of Cindy Qian" />
-                </div>
-                <div className="table-cell">
-                  <img className="w-40 m-10"
+                <div className="table-cell w-1/12">
+                  <img
                   src={require("../images/gradcindy.png")}
                   alt="Picture of Cindy Qian" />
                 </div>
-                <div className="table-cell">
-                  <img className="w-40 m-10"
-                  src={require("../images/lassenselfie.png")}
-                  alt="Picture of Cindy Qian" />
+                <div className="table-cell w-2/12">
                 </div>
                 <div className="table-cell">
-                  <img className="w-40 m-10"
-                  src={require("../images/pogo.png")}
-                  alt="Picture of Cindy Qian" />
+                </div>
+                <div className="table-cell w-1/12">
+                </div>
+                <div className="table-cell w-1/12">
+                </div>
+                <div className="table-cell w-1/12">
                 </div>
               </div>
 
 
             </div>
-          </Parallax> */}
+          </Parallax>
 
 
 
