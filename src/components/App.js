@@ -34,15 +34,32 @@ function App() {
   const imagesOnScreen = new Map();
   // const textOnScreen = Intro;
 
+  const imageTextRelationship = new Map();
+
+    imageTextRelationship.set("gradphoto", "uw");
+    imageTextRelationship.set("secondImage", "breadware");
+    imageTextRelationship.set("thirdImage", "genie");
+
+
   const checkImageVisibility = () => {
     // checking which images are on screen out of all the possible images
-    const images = ["gradphoto", "secondImage"];
-    for (let i = 0; i < images.length; i++) {
-      const currImage = document.getElementById(images[i]);
+    // const images = ["gradphoto", "secondImage"];
+    
+    // for (let i = 0; i < images.length; i++) {
+    for ( let [image, text] of imageTextRelationship) {
+      // const currImage = document.getElementById(images[i]);
+      // const topBorderOfImage = currImage.getBoundingClientRect().top;
+      // if (topBorderOfImage < window.innerHeight) {
+      //   if (!imagesOnScreen.has(currImage.id)) {
+      //     imagesOnScreen.set(currImage.id, 0);
+      //   }
+      // }
+      const currImage = document.getElementById(image);
       const topBorderOfImage = currImage.getBoundingClientRect().top;
       if (topBorderOfImage < window.innerHeight) {
         if (!imagesOnScreen.has(currImage.id)) {
-          imagesOnScreen.set(currImage.id, 0);
+          // imagesOnScreen.set(currImage.id, 0);
+          imagesOnScreen.set(currImage.id, "no");
         }
       }
       
@@ -61,18 +78,31 @@ function App() {
 
     // }
     // textOnScreen = Intro;
-    
-    if (imagesOnScreen.has("gradphoto") && imagesOnScreen.get("gradphoto") == 0) {
-      document.getElementById("uw").classList.remove("invisible");
-      document.getElementById("uw").classList.add('visible');
-      imagesOnScreen.set("gradphoto", 1);
+    for ( let [image, isTextVisible] of imagesOnScreen) {
+      if (isTextVisible == "no") {
+        let currid = imageTextRelationship.get(image);
+        document.getElementById(currid).classList.remove("invisible");
+        document.getElementById(currid).classList.add('visible');
+        imagesOnScreen.set(image, "yes");
+      }
     }
+    // if (imagesOnScreen.has("gradphoto") && imagesOnScreen.get("gradphoto") == 0) {
+    //   document.getElementById("uw").classList.remove("invisible");
+    //   document.getElementById("uw").classList.add('visible');
+    //   imagesOnScreen.set("gradphoto", 1);
+    // }
 
-    if (imagesOnScreen.has("secondImage") && imagesOnScreen.get("secondImage") == 0) {
-      document.getElementById("breadware").classList.remove("invisible");
-      document.getElementById("breadware").classList.add('visible');
-      imagesOnScreen.set("secondImage", 1);
-    }
+    // if (imagesOnScreen.has("secondImage") && imagesOnScreen.get("secondImage") == 0) {
+    //   document.getElementById("breadware").classList.remove("invisible");
+    //   document.getElementById("breadware").classList.add('visible');
+    //   imagesOnScreen.set("secondImage", 1);
+    // }
+
+    // if (imagesOnScreen.has("secondImage") && imagesOnScreen.get("secondImage") == 0) {
+    //   document.getElementById("breadware").classList.remove("invisible");
+    //   document.getElementById("breadware").classList.add('visible');
+    //   imagesOnScreen.set("secondImage", 1);
+    // }
     
 
     // while (div.children.length > 0) {
@@ -185,6 +215,26 @@ function App() {
 
 
               <div className="table-row" id="secondImage">
+                <div className="table-cell w-2/12">
+                </div>
+                <div className="table-cell w-1/12">
+                  <img
+                  src={require("../images/gradcindy.png")}
+                  alt="Picture of Cindy Qian" />
+                </div>
+                <div className="table-cell w-2/12">
+                </div>
+                <div className="table-cell">
+                </div>
+                <div className="table-cell w-1/12">
+                </div>
+                <div className="table-cell w-1/12">
+                </div>
+                <div className="table-cell w-1/12">
+                </div>
+              </div>
+
+              <div className="table-row" id="thirdImage">
                 <div className="table-cell w-2/12">
                 </div>
                 <div className="table-cell w-1/12">
