@@ -8,7 +8,6 @@ import { Parallax } from 'react-scroll-parallax';
 import { useRef, useEffect, useState } from 'react';
 // import { AreImagesVisible } from './ImageStatus.js';
 // import Measure from 'react-measure'
-import { Intro } from './Intro.js';
 
 
 
@@ -24,95 +23,85 @@ function App() {
   
 
   
+  // indicates whether image is visible on the screne    
+  // const imagesOnScreen = new Set();
+  const currImageFocus = new Set(["cindyqian", "intro"]);
+  const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "hackathon", "rest"]);
+  // const textOnScreen = Intro;
 
+  // indicates what text should appear for each image
+  const imageTextRelationship = new Map();
+
+    imageTextRelationship.set("graduationImages", "graduation");
+    imageTextRelationship.set("internshipsImages", "internships");
+    imageTextRelationship.set("hackathonImages", "hackathon");
+
+  const textImageRelationship = new Map();
+
+    textImageRelationship.set("graduation", "graduationImages");
+    textImageRelationship.set("internships", "internshipsImages");
+    // imageTextRelationship.set("thirdImage", "genie");
 
   window.onscroll = function() {
     checkImageVisibility()
   };
   
-  // const [imagesOnScreen, updateImagesOnScreen] = useState(new Set([]));    
-  const imagesOnScreen = new Map();
-  // const textOnScreen = Intro;
 
-  const imageTextRelationship = new Map();
-
-    imageTextRelationship.set("gradphoto", "uw");
-    imageTextRelationship.set("secondImage", "breadware");
-    imageTextRelationship.set("thirdImage", "genie");
-
-
+  // this updates imagesOnScreen to track which images are on screen out of all the possible images
   const checkImageVisibility = () => {
-    // checking which images are on screen out of all the possible images
-    // const images = ["gradphoto", "secondImage"];
-    
-    // for (let i = 0; i < images.length; i++) {
     for ( let [image, text] of imageTextRelationship) {
-      // const currImage = document.getElementById(images[i]);
-      // const topBorderOfImage = currImage.getBoundingClientRect().top;
-      // if (topBorderOfImage < window.innerHeight) {
-      //   if (!imagesOnScreen.has(currImage.id)) {
-      //     imagesOnScreen.set(currImage.id, 0);
-      //   }
-      // }
       const currImage = document.getElementById(image);
       const topBorderOfImage = currImage.getBoundingClientRect().top;
-      if (topBorderOfImage < window.innerHeight) {
-        if (!imagesOnScreen.has(currImage.id)) {
-          // imagesOnScreen.set(currImage.id, 0);
-          imagesOnScreen.set(currImage.id, "no");
+      const bottomBorderOfImage = currImage.getBoundingClientRect().bottom;
+      if (topBorderOfImage < window.innerHeight && bottomBorderOfImage > 0) {
+        // if (!imagesOnScreen.has(currImage.id)) {
+        //   imagesOnScreen.add(currImage.id);
+        if (!currImageFocus.has(currImage.id)) {
+          currImageFocus.clear();
+          currImageFocus.add(currImage.id);
         }
+      // if image has gone over the top
       }
+      // else if (bottomBorderOfImage < 0) {
+      //   imagesOnScreen.delete(currImage.id);
+      // }
       
     }
-    console.log(imagesOnScreen)
-    console.log(imagesOnScreen.get("gradphoto"))
-    updateText(imagesOnScreen);
-    
+    // updates text accordingly
+    // console.log(imagesOnScreen)
+    updateText();
   }
 
   // based on what is on screen, append respective text
   const updateText = () => {
-    // for (let j = 0; j < imagesOnScreen.length; j++) {
-    //   textOnScreen = Intro;
-    //   if (imagesOnScreen[j])
-
-    // }
-    // textOnScreen = Intro;
-    for ( let [image, isTextVisible] of imagesOnScreen) {
-      if (isTextVisible == "no") {
-        let currid = imageTextRelationship.get(image);
-        document.getElementById(currid).classList.remove("invisible");
-        document.getElementById(currid).classList.add('visible');
-        imagesOnScreen.set(image, "yes");
-      }
+    // add text if image is on screen but text isn't
+    for (let image of currImageFocus) {// imagesOnScreen) {
+      // console.log("image: " + image)
+      // if (!textOnScreen.has(imageTextRelationship.get(image))) {
+        // currId = the text we want to grab
+        // let currId = imageTextRelationship.get(image);
+        let currTextFocus = imageTextRelationship.get(image)
+        // document.getElementById(currId).classList.remove("invisible");
+        // document.getElementById(currId).classList.add('visible');
+        // textOnScreen.add(imageTextRelationship.get(image));
+        console.log("here")
+        for (let text of textOnScreen) {
+          // console.log("curr test text: " + text + ", " + currId)
+          if (text != currTextFocus) {
+            console.log("not the curr text: " + text)
+            document.getElementById(text).style.opacity = "0.3";
+          } else {
+            document.getElementById(text).style.opacity = "1";
+          }
+        }
+      // }
     }
-    // if (imagesOnScreen.has("gradphoto") && imagesOnScreen.get("gradphoto") == 0) {
-    //   document.getElementById("uw").classList.remove("invisible");
-    //   document.getElementById("uw").classList.add('visible');
-    //   imagesOnScreen.set("gradphoto", 1);
-    // }
 
-    // if (imagesOnScreen.has("secondImage") && imagesOnScreen.get("secondImage") == 0) {
-    //   document.getElementById("breadware").classList.remove("invisible");
-    //   document.getElementById("breadware").classList.add('visible');
-    //   imagesOnScreen.set("secondImage", 1);
-    // }
+    // for (let text of textOnScreen) {
+    //   // if the image is no longer on the screen, but text is
+    //   if (!imagesOnScreen.has(textImageRelationship.get(text))) {
 
-    // if (imagesOnScreen.has("secondImage") && imagesOnScreen.get("secondImage") == 0) {
-    //   document.getElementById("breadware").classList.remove("invisible");
-    //   document.getElementById("breadware").classList.add('visible');
-    //   imagesOnScreen.set("secondImage", 1);
-    // }
-    
-
-    // while (div.children.length > 0) {
-    //   el.appendChild(div.children[0]);
-    // }
-  
-
-
-    // if (imagesOnScreen.has("firstImage")) {
-      
+    //   }
     // }
   }
 
@@ -125,10 +114,6 @@ function App() {
 
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
-          {/* <div className="w-1/3 fixed top-0 self-center my-40"> */}
-            {/* {textOnScreen} */}
-            {/* <Intro id="intro" />
-             */}
             <div className="w-1/3 fixed top-0 self-center my-40 my-24">
               <h1 className="text-xl text-center mb-7 font-[family-name:var(--font-geist-mono)]" id="cindyqian">
                   Cindy Qian
@@ -140,37 +125,38 @@ function App() {
                 when I’m helping others bring their ideas to life!
 
                 <br></br><br></br>
-              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline invisible" id="uw">
+              </p>
+              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="graduation">
                 I recently graduated from the University of Washington with a degree in
                 <ColorfulLink link="https://ischool.uw.edu/programs/informatics" text=" Informatics"></ColorfulLink>
                 .&nbsp;
-              </p> 
-              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline invisible" id="breadware">
+              </p>
+
+              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="internships">
                 I’ve had the chance to work on a range of exciting projects---from developing an IoT mobile app for
                 tracking construction machinery data at 
                 <ColorfulLink link="https://breadware.com" text=" Breadware "></ColorfulLink>
-              </p>
-              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline invisible" id="genie">
                 to implementing new information systems for the ecommerce operations team at
                 <ColorfulLink link="https://www.genielift.com" text=" Genie "></ColorfulLink>
-              </p>
-              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline invisible" id="tgpt">
                 to identifying a high-level product vision and roadmap for
                 <ColorfulLink link="https://www.thoughtfulgpt.com" text=" ThoughtfulGPT "></ColorfulLink>
-              </p>
-              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline invisible" id="grandpere">
                 to designing a custom point of sale system for
                 <ColorfulLink link="https://ischool.uw.edu/capstone/projects/2024/grand-pere-wholesale-bakery-order-management-system" text=" Grand Père Bakery"></ColorfulLink>
                 .
               </p>
 
+              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="hackathon">
                 I used to organize 
                 <ColorfulLink link="https://dubhacks.co" text=" DubHacks "></ColorfulLink>
                 at the University of Washington and work as a
                 <ColorfulLink link="https://mlh.io/coaches" text=" hackathon coach "></ColorfulLink>
                 at
                 <ColorfulLink link="https://mlh.io" text=" Major League Hacking"></ColorfulLink>
-                ! On the side, I run my own 
+                !&nbsp;
+              </p>
+              
+              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="rest">
+                On the side, I run my own 
                 <ColorfulLink link="https://www.instagram.com/bycindyq/" text=" small photography business"></ColorfulLink>
                 ,
                 avidly play pokemon go (I started in 2023 & am at lv. 41, add me 5772 7964 6941), 
@@ -191,64 +177,65 @@ function App() {
           {/* </div> */}
 
           <Parallax speed={50} className="mx-16 mt-[20%] mt-98 pt-48">
-            <div className="table w-full table-fixed border-spacing-5" >
-              {/* ref={ref}> */}
-              <div className="table-row" id="gradphoto">
-                <div className="table-cell w-2/12">
-                </div>
+            <div className="table w-full table-fixed border-spacing-10 border-spacing-y-96" >
+              <div className="table-row " id="graduationImages">
                 <div className="table-cell w-1/12">
+                </div>
+                <div className="table-cell w-4/12">
                   <img
-                  src={require("../images/gradcindy.png")}
+                  src={require("../images/gradjump.png")}
                   alt="Picture of Cindy Qian" />
                 </div>
-                <div className="table-cell w-2/12">
+                <div className="table-cell w-6/12">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell w-6/12">
                 </div>
-                <div className="table-cell w-1/12">
-                </div>
-                <div className="table-cell w-1/12">
+                <div className="table-cell w-4/12">
+                  <img
+                    src={require("../images/triograd.png")}
+                    alt="Picture of Cindy Qian and 2 friends" />
                 </div>
                 <div className="table-cell w-1/12">
                 </div>
               </div>
 
-
-              <div className="table-row" id="secondImage">
-                <div className="table-cell w-2/12">
-                </div>
+              <div className="table-row " id="internshipsImages">
                 <div className="table-cell w-1/12">
+                </div>
+                <div className="table-cell w-4/12">
                   <img
-                  src={require("../images/gradcindy.png")}
+                  src={require("../images/genienametag.png")}
                   alt="Picture of Cindy Qian" />
                 </div>
-                <div className="table-cell w-2/12">
+                <div className="table-cell w-6/12">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell w-6/12">
                 </div>
-                <div className="table-cell w-1/12">
-                </div>
-                <div className="table-cell w-1/12">
+                <div className="table-cell w-4/12">
+                  <img
+                    src={require("../images/geniedrilling.png")}
+                    alt="Picture of Cindy Qian and 2 friends" />
                 </div>
                 <div className="table-cell w-1/12">
                 </div>
               </div>
 
-              <div className="table-row" id="thirdImage">
-                <div className="table-cell w-2/12">
-                </div>
+              <div className="table-row " id="hackathonImages">
                 <div className="table-cell w-1/12">
+                </div>
+                <div className="table-cell w-4/12">
                   <img
-                  src={require("../images/gradcindy.png")}
+                  src={require("../images/genienametag.png")}
                   alt="Picture of Cindy Qian" />
                 </div>
-                <div className="table-cell w-2/12">
+                <div className="table-cell w-6/12">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell w-6/12">
                 </div>
-                <div className="table-cell w-1/12">
-                </div>
-                <div className="table-cell w-1/12">
+                <div className="table-cell w-4/12">
+                  <img
+                    src={require("../images/geniedrilling.png")}
+                    alt="Picture of Cindy Qian and 2 friends" />
                 </div>
                 <div className="table-cell w-1/12">
                 </div>
