@@ -25,19 +25,17 @@ function App() {
   
   // indicates whether image is visible on the screne    
   // const imagesOnScreen = new Set();
-  const currImageFocus = new Set(["cindyqian", "intro"]);
+  const currImageFocus = new Set();//["cindyqian", "intro"]);
   const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "hackathon", "rest"]);
   // const textOnScreen = Intro;
 
   // indicates what text should appear for each image
   const imageTextRelationship = new Map();
-
     imageTextRelationship.set("graduationImages", "graduation");
     imageTextRelationship.set("internshipsImages", "internships");
     imageTextRelationship.set("hackathonImages", "hackathon");
 
   const textImageRelationship = new Map();
-
     textImageRelationship.set("graduation", "graduationImages");
     textImageRelationship.set("internships", "internshipsImages");
     // imageTextRelationship.set("thirdImage", "genie");
@@ -53,7 +51,9 @@ function App() {
       const currImage = document.getElementById(image);
       const topBorderOfImage = currImage.getBoundingClientRect().top;
       const bottomBorderOfImage = currImage.getBoundingClientRect().bottom;
+      // if image is in the viewport
       if (topBorderOfImage < window.innerHeight && bottomBorderOfImage > 0) {
+        console.log("image in view: " + currImage.id)
         // if (!imagesOnScreen.has(currImage.id)) {
         //   imagesOnScreen.add(currImage.id);
         if (!currImageFocus.has(currImage.id)) {
@@ -84,11 +84,11 @@ function App() {
         // document.getElementById(currId).classList.remove("invisible");
         // document.getElementById(currId).classList.add('visible');
         // textOnScreen.add(imageTextRelationship.get(image));
-        console.log("here")
+        // console.log("here")
         for (let text of textOnScreen) {
           // console.log("curr test text: " + text + ", " + currId)
           if (text != currTextFocus) {
-            console.log("not the curr text: " + text)
+            // console.log("not the curr text: " + text)
             document.getElementById(text).style.opacity = "0.3";
           } else {
             document.getElementById(text).style.opacity = "1";
