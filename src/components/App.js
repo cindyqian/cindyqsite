@@ -2,12 +2,9 @@
 import './App.css';
 import { ColorfulLink } from './ColorfulLink.js';
 import React from 'react';
-import {View, Image, StyleSheet} from 'react-native';
 import { Parallax } from 'react-scroll-parallax';
 
-import { useRef, useEffect, useState } from 'react';
-// import { AreImagesVisible } from './ImageStatus.js';
-// import Measure from 'react-measure'
+// import { useRef, useEffect, useState } from 'react';
 
 
 
@@ -26,7 +23,7 @@ function App() {
   // indicates whether image is visible on the screne    
   // const imagesOnScreen = new Set();
   
-  const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "rest", "resume", "email", "linkedin", "instagram"]);
+  const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "rest", "resume", "email", "linkedin"]);
   // const imagesAboveTop = new Set();
   // const textOnScreen = Intro;
 
@@ -39,7 +36,6 @@ function App() {
     imageTextRelationship.set("photographyImages", ["photography"]);
     imageTextRelationship.set("pokemonImages", ["pokemon"]);
     imageTextRelationship.set("boulderImages", ["boulder"]);
-    imageTextRelationship.set("contentImages", ["content", "instagram"]);
 
   // do i need this????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
   const textImageRelationship = new Map();
@@ -50,7 +46,6 @@ function App() {
     textImageRelationship.set("pokemon", "pokemonImages");
     textImageRelationship.set("boulder", "boulderImages");
     textImageRelationship.set("content", "contentImages");
-    textImageRelationship.set("instagram", "contentImages");
     // imageTextRelationship.set("thirdImage", "genie");
 
   window.onscroll = function() {
@@ -153,7 +148,7 @@ function App() {
               </p>
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="dubhacks">
-                I used to organize the largest hackathon in the PNW,
+                I used to coordinate logistics and marketing for the largest hackathon in the PNW,
                 <ColorfulLink link="https://dubhacks.co" text=" DubHacks"></ColorfulLink>
                 , at the University of Washington&nbsp;
               </p>
@@ -173,7 +168,7 @@ function App() {
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="pokemon">
                 ,
-                avidly play pokemon go (I started in 2023 & am at lv. 41, add me 5772 7964 6941)
+                avidly play pokemon go (I started in 2023 & am at lv. 41, please add me 5772 7964 6941 hehe)
               </p>
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="boulder">
@@ -183,7 +178,7 @@ function App() {
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="content">
                 , and
-                <ColorfulLink link="https://www.instagram.com/wafflehour_/" text=" create content :)"></ColorfulLink>
+                <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" create content :)"></ColorfulLink>
                 <br></br><br></br>
               </p>
 
@@ -203,49 +198,46 @@ function App() {
               <div className="table-row " id="graduationImages">
 
                 <div className="table-cell w-4/12"></div> */}
-              <div className="table w-full table-fixed border-spacing-10" >
+              <div className="table w-full table-fixed border-spacing-10 " >
                 <div className="table-row">
-                  <div className="table-cell" id="resume">
+
+                  <div className="table-cell px-10" id="resume">
                     {/* Resume */}
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                    </svg>
-                  </div>
-
-                  <div className="table-cell" id="email">
-                    {/* Email */}
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                    </svg>
-                  </div>
-
-                  <div className="table-cell" id="linkedin">
-                    {/* LinkedIn */}
-                    <span class="[&>svg]:h-5 [&>svg]:w-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="black"
-                        viewBox="0 0 448 512">
-                        {/* Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
-                        <path
-                          d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    <a href={require("../assets/CindyQianResume.pdf")} target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                       </svg>
-                    </span>
+                    </a>
                   </div>
 
-                  <div className="table-cell" id="instagram">
-                    {/* Instagram */}
-                    <span class="[&>svg]:h-5 [&>svg]:w-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="black"
-                        viewBox="0 0 448 512">
-                        {/* Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
-                        <path
-                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                      </svg>
-                    </span>
-                  </div>
+                  
+                    <div className="table-cell px-10" id="email">
+                      {/* Email */}
+                      <a href="mailto:cindyqian.yushi@gmail.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                      </a>
+                    </div>
+                  
+
+                  
+                    <div className="table-cell px-10" id="linkedin">
+                      {/* LinkedIn */}
+                      <a href="https://www.linkedin.com/in/cindyqiann/" target="_blank">
+                        <span class="[&>svg]:h-5 [&>svg]:w-5">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="black"
+                            viewBox="0 0 448 512">
+                            {/* Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
+                            <path
+                              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  
                 </div>
               </div>
             </div>
@@ -262,14 +254,14 @@ function App() {
                 <div className="table-cell w-4/12">
                   <img
                   src={require("../images/gradjump.png")}
-                  alt="Picture of Cindy Qian" />
+                  alt="jumping with her graduation cap in one hand and a bouquet of flowers in another" />
                 </div>
                 <div className="table-cell w-6/12">
                 </div>
                 <div className="table-cell w-4/12">
                   <img
                     src={require("../images/triograd.png")}
-                    alt="Picture of Cindy Qian and 2 friends" />
+                    alt="Cindy Qian with two friends at graduation" />
                 </div>
               </div>
 
@@ -278,14 +270,14 @@ function App() {
                 <div className="table-cell">
                   <img
                   src={require("../images/genienametag.png")}
-                  alt="Picture of Cindy Qian" />
+                  alt="Cindy Qian's name tag at the Genie office" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
                     src={require("../images/geniedrilling.png")}
-                    alt="Picture of Cindy Qian and 2 friends" />
+                    alt="Cindy Qian drilling a vehicle wheel in PPE" />
                 </div>
                 
               </div>
@@ -294,14 +286,14 @@ function App() {
                 <div className="table-cell">
                   <img
                   src={require("../images/dhselfie.png")}
-                  alt="Picture of Cindy Qian" />
+                  alt="Selfie of Cindy Qian and 2 other DubHacks hackathon organizers" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
                     src={require("../images/iorganizedsticker.png")}
-                    alt="Picture of Cindy Qian and 2 friends" />
+                    alt="Cindy Qian holding an I Organized sticker from Major League Hacking, is given to hackathon organizers" />
                 </div>
               </div>
 
@@ -309,14 +301,14 @@ function App() {
                 <div className="table-cell">
                   <img
                   src={require("../images/tt1.png")}
-                  alt="Picture of Cindy Qian" />
+                  alt="Cindy Qian presenting on stage for Major League Hacking" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
                     src={require("../images/tt7.png")}
-                    alt="Picture of Cindy Qian and 2 friends" />
+                    alt="Cindy Qian handing out prizes to a hackathon participant" />
                 </div>
               </div>
 
@@ -325,14 +317,14 @@ function App() {
                 <div className="table-cell">
                   <img
                   src={require("../images/pillars.png")}
-                  alt="Picture of Cindy Qian" />
+                  alt="Cindy Qian taking graduation photos for 2 girls at the University of Washington value pillars" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
                     src={require("../images/canon100.png")}
-                    alt="Picture of Cindy Qian and 2 friends" />
+                    alt="Cindy Qian holding a Canon Powershot 100" />
                 </div>
               </div>
 
@@ -340,14 +332,14 @@ function App() {
                 <div className="table-cell">
                   <img
                   src={require("../images/pogo1.png")}
-                  alt="Picture of Cindy Qian" />
+                  alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
                     src={require("../images/pogo2.png")}
-                    alt="Picture of Cindy Qian and 2 friends" />
+                    alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
               </div>
 
@@ -355,14 +347,14 @@ function App() {
                 <div className="table-cell">
                   <img
                   src={require("../images/pinkclimb.png")}
-                  alt="Picture of Cindy Qian" />
+                  alt="Cindy Qian bouldering up a wall" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
                     src={require("../images/magikarp.png")}
-                    alt="Picture of Cindy Qian and 2 friends" />
+                    alt="Cindy Qian kissing her Magikarp shaped bouldering chalk bag" />
                 </div>
               </div>
 
@@ -370,14 +362,14 @@ function App() {
                 <div className="table-cell">
                   <img
                   src={require("../images/selfiecindy.png")}
-                  alt="Picture of Cindy Qian" />
+                  alt="Cindy Qian taking a selfie" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
                     src={require("../images/squatwaterfallcindy.png")}
-                    alt="Picture of Cindy Qian and 2 friends" />
+                    alt="Cindy Qian squatting" />
                 </div>
               </div>
 
