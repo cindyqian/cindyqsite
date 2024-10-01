@@ -26,7 +26,7 @@ function App() {
   // indicates whether image is visible on the screne    
   // const imagesOnScreen = new Set();
   
-  const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "hackathon", "rest"]);
+  const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "dubhacks", "mlh", "rest"]);
   // const imagesAboveTop = new Set();
   // const textOnScreen = Intro;
 
@@ -34,11 +34,12 @@ function App() {
   const imageTextRelationship = new Map();
     imageTextRelationship.set("graduationImages", "graduation");
     imageTextRelationship.set("internshipsImages", "internships");
-    imageTextRelationship.set("hackathonImages", "hackathon");
+    imageTextRelationship.set("dubhacksImages", "dubhacks");
+    imageTextRelationship.set("mlhImages", "mlh");
 
   const textImageRelationship = new Map();
     textImageRelationship.set("graduation", "graduationImages");
-    textImageRelationship.set("internships", "internshipsImages");
+    textImageRelationship.set("mlh", "mlhImages");
     // imageTextRelationship.set("thirdImage", "genie");
 
   window.onscroll = function() {
@@ -132,10 +133,14 @@ function App() {
                 .
               </p>
 
-              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="hackathon">
+              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="dubhacks">
                 I used to organize 
                 <ColorfulLink link="https://dubhacks.co" text=" DubHacks "></ColorfulLink>
-                at the University of Washington and work as a
+                at the University of Washington&nbsp;
+              </p>
+
+              <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="mlh">
+                and work as a
                 <ColorfulLink link="https://mlh.io/coaches" text=" hackathon coach "></ColorfulLink>
                 at
                 <ColorfulLink link="https://mlh.io" text=" Major League Hacking"></ColorfulLink>
@@ -166,14 +171,11 @@ function App() {
           <Parallax speed={50} className="mx-16 mt-[20%] mt-98 pt-48">
             <div className="table w-full table-fixed border-spacing-10 border-spacing-y-96" >
               <div className="table-row " id="graduationImages">
-                <div className="table-cell w-1/12">
-                </div>
+
                 <div className="table-cell w-4/12">
                   <img
                   src={require("../images/gradjump.png")}
                   alt="Picture of Cindy Qian" />
-                </div>
-                <div className="table-cell w-6/12">
                 </div>
                 <div className="table-cell w-6/12">
                 </div>
@@ -182,49 +184,52 @@ function App() {
                     src={require("../images/triograd.png")}
                     alt="Picture of Cindy Qian and 2 friends" />
                 </div>
-                <div className="table-cell w-1/12">
-                </div>
               </div>
 
               <div className="table-row " id="internshipsImages">
-                <div className="table-cell w-1/12">
-                </div>
-                <div className="table-cell w-4/12">
+
+                <div className="table-cell">
                   <img
                   src={require("../images/genienametag.png")}
                   alt="Picture of Cindy Qian" />
                 </div>
-                <div className="table-cell w-6/12">
+                <div className="table-cell">
                 </div>
-                <div className="table-cell w-6/12">
-                </div>
-                <div className="table-cell w-4/12">
+                <div className="table-cell">
                   <img
                     src={require("../images/geniedrilling.png")}
                     alt="Picture of Cindy Qian and 2 friends" />
                 </div>
-                <div className="table-cell w-1/12">
+                
+              </div>
+
+              <div className="table-row " id="dubhacksImages">
+                <div className="table-cell">
+                  <img
+                  src={require("../images/dhselfie.png")}
+                  alt="Picture of Cindy Qian" />
+                </div>
+                <div className="table-cell">
+                </div>
+                <div className="table-cell">
+                  <img
+                    src={require("../images/iorganizedsticker.png")}
+                    alt="Picture of Cindy Qian and 2 friends" />
                 </div>
               </div>
 
-              <div className="table-row " id="hackathonImages">
-                <div className="table-cell w-1/12">
-                </div>
-                <div className="table-cell w-4/12">
+              <div className="table-row " id="mlhImages">
+                <div className="table-cell">
                   <img
-                  src={require("../images/genienametag.png")}
+                  src={require("../images/tt1.png")}
                   alt="Picture of Cindy Qian" />
                 </div>
-                <div className="table-cell w-6/12">
+                <div className="table-cell">
                 </div>
-                <div className="table-cell w-6/12">
-                </div>
-                <div className="table-cell w-4/12">
+                <div className="table-cell">
                   <img
-                    src={require("../images/geniedrilling.png")}
+                    src={require("../images/tt7.png")}
                     alt="Picture of Cindy Qian and 2 friends" />
-                </div>
-                <div className="table-cell w-1/12">
                 </div>
               </div>
 
