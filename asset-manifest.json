@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/cindyqsite/static/css/main.8414b720.css",
+    "main.js": "/cindyqsite/static/js/main.6e9bcf62.js",
+    "static/js/453.ed3810f9.chunk.js": "/cindyqsite/static/js/453.ed3810f9.chunk.js",
+    "static/media/magikarp.png": "/cindyqsite/static/media/magikarp.437e4b6fb58df11882fc.png",
+    "static/media/dhselfie.png": "/cindyqsite/static/media/dhselfie.7b3efb1a94a55de12c11.png",
+    "static/media/triograd.png": "/cindyqsite/static/media/triograd.a8c8a36d21f3fb655adf.png",
+    "static/media/iorganizedsticker.png": "/cindyqsite/static/media/iorganizedsticker.ac55152242e30d0f4a22.png",
+    "static/media/genienametag.png": "/cindyqsite/static/media/genienametag.09a54020f7a0dc157853.png",
+    "static/media/squatwaterfallcindy.png": "/cindyqsite/static/media/squatwaterfallcindy.c1a321c81a0ed09f8665.png",
+    "static/media/tt1.png": "/cindyqsite/static/media/tt1.dc22879a58fbcc23ffbb.png",
+    "static/media/geniedrilling.png": "/cindyqsite/static/media/geniedrilling.ec891c8bbd1f517eff84.png",
+    "static/media/pinkclimb.png": "/cindyqsite/static/media/pinkclimb.0c621dff5c2b9468f1ae.png",
+    "static/media/gradjump.png": "/cindyqsite/static/media/gradjump.2427cf1eb62a4c99309a.png",
+    "static/media/canon100.png": "/cindyqsite/static/media/canon100.3c6f64b187af747d39c4.png",
+    "static/media/tt7.png": "/cindyqsite/static/media/tt7.1d4feb24b8be00b362f6.png",
+    "static/media/selfiecindy.png": "/cindyqsite/static/media/selfiecindy.78a51f61a830c656eb42.png",
+    "static/media/pogo2.png": "/cindyqsite/static/media/pogo2.ea80ad8f82426357445b.png",
+    "static/media/pogo1.png": "/cindyqsite/static/media/pogo1.a829216aa33c601fb5c7.png",
+    "static/media/pillars.png": "/cindyqsite/static/media/pillars.f40326eed0bb4a7c56ab.png",
+    "static/media/GeistMonoVF.woff": "/cindyqsite/static/media/GeistMonoVF.2b49028de50fff5c0296.woff",
+    "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
+    "index.html": "/cindyqsite/index.html",
+    "main.8414b720.css.map": "/cindyqsite/static/css/main.8414b720.css.map",
+    "main.6e9bcf62.js.map": "/cindyqsite/static/js/main.6e9bcf62.js.map",
+    "453.ed3810f9.chunk.js.map": "/cindyqsite/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8414b720.css",
+    "static/js/main.6e9bcf62.js"
+  ]
+}
