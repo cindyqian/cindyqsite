@@ -27,6 +27,7 @@ function App() {
   // const imagesOnScreen = new Set();
   const currImageFocus = new Set();//["cindyqian", "intro"]);
   const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "hackathon", "rest"]);
+  // const imagesAboveTop = new Set();
   // const textOnScreen = Intro;
 
   // indicates what text should appear for each image
@@ -53,7 +54,6 @@ function App() {
       const bottomBorderOfImage = currImage.getBoundingClientRect().bottom;
       // if image is in the viewport
       if (topBorderOfImage < window.innerHeight && bottomBorderOfImage > 0) {
-        console.log("image in view: " + currImage.id)
         // if (!imagesOnScreen.has(currImage.id)) {
         //   imagesOnScreen.add(currImage.id);
         if (!currImageFocus.has(currImage.id)) {
@@ -62,9 +62,10 @@ function App() {
         }
       // if image has gone over the top
       }
-      // else if (bottomBorderOfImage < 0) {
-      //   imagesOnScreen.delete(currImage.id);
-      // }
+      else if (bottomBorderOfImage < 0) {
+        currImageFocus.delete(currImage.id);
+        // imagesAboveTop.add(currImage.id)
+      }
       
     }
     // updates text accordingly
@@ -74,28 +75,67 @@ function App() {
 
   // based on what is on screen, append respective text
   const updateText = () => {
+    // if (currImageFocus.length == 0) {
+
+    // }
     // add text if image is on screen but text isn't
-    for (let image of currImageFocus) {// imagesOnScreen) {
+    
+    // for (let image of currImageFocus) {// imagesOnScreen) {
       // console.log("image: " + image)
       // if (!textOnScreen.has(imageTextRelationship.get(image))) {
         // currId = the text we want to grab
         // let currId = imageTextRelationship.get(image);
-        let currTextFocus = imageTextRelationship.get(image)
+        // let currTextFocus = imageTextRelationship.get(image)
         // document.getElementById(currId).classList.remove("invisible");
         // document.getElementById(currId).classList.add('visible');
         // textOnScreen.add(imageTextRelationship.get(image));
         // console.log("here")
+        // first make all transparent
         for (let text of textOnScreen) {
           // console.log("curr test text: " + text + ", " + currId)
-          if (text != currTextFocus) {
+          // if (text != currTextFocus) {
             // console.log("not the curr text: " + text)
             document.getElementById(text).style.opacity = "0.3";
-          } else {
-            document.getElementById(text).style.opacity = "1";
-          }
+          // }
+        // }
         }
+
+
+      // }
+    
+    let currTextFocus = new Set();
+    if (currImageFocus.size == 0) {
+      textOnScreen.forEach(item => currTextFocus.add(item))
+    } else {
+      for (let image of currImageFocus) {
+        currTextFocus.add(imageTextRelationship.get(image));
+      }
+      
+    }
+    console.log("curr text to show: " + currTextFocus.size)
+    // for (let image of currImageFocus) {// imagesOnScreen) {
+    // for (let text of currTextFocus) {
+      // console.log("image: " + image)
+      // if (!textOnScreen.has(imageTextRelationship.get(image))) {
+        // currId = the text we want to grab
+        // let currId = imageTextRelationship.get(image);
+        //////// currTextFocus = imageTextRelationship.get(image)
+        // document.getElementById(currId).classList.remove("invisible");
+        // document.getElementById(currId).classList.add('visible');
+        // textOnScreen.add(imageTextRelationship.get(image));
+        // console.log("here")
+
+        for (let text of currTextFocus) {
+
+          // console.log("curr test text: " + text + ", " + currId)
+          // if (text == text) {
+            // console.log("highlighting this imahe's text: " + image)
+            document.getElementById(text).style.opacity = "1";
+          // }
+        // }
       // }
     }
+    
 
     // for (let text of textOnScreen) {
     //   // if the image is no longer on the screen, but text is
