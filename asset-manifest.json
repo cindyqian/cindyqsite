@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cindyqsite/static/css/main.8414b720.css",
-    "main.js": "/cindyqsite/static/js/main.6e9bcf62.js",
+    "main.js": "/cindyqsite/static/js/main.935a3512.js",
     "static/js/453.ed3810f9.chunk.js": "/cindyqsite/static/js/453.ed3810f9.chunk.js",
     "static/media/magikarp.png": "/cindyqsite/static/media/magikarp.437e4b6fb58df11882fc.png",
     "static/media/dhselfie.png": "/cindyqsite/static/media/dhselfie.7b3efb1a94a55de12c11.png",
@@ -19,15 +19,16 @@
     "static/media/pogo2.png": "/cindyqsite/static/media/pogo2.ea80ad8f82426357445b.png",
     "static/media/pogo1.png": "/cindyqsite/static/media/pogo1.a829216aa33c601fb5c7.png",
     "static/media/pillars.png": "/cindyqsite/static/media/pillars.f40326eed0bb4a7c56ab.png",
+    "static/media/CindyQianResume.pdf": "/cindyqsite/static/media/CindyQianResume.852a8b8334236a1e764b.pdf",
     "static/media/GeistMonoVF.woff": "/cindyqsite/static/media/GeistMonoVF.2b49028de50fff5c0296.woff",
     "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
     "index.html": "/cindyqsite/index.html",
     "main.8414b720.css.map": "/cindyqsite/static/css/main.8414b720.css.map",
-    "main.6e9bcf62.js.map": "/cindyqsite/static/js/main.6e9bcf62.js.map",
+    "main.935a3512.js.map": "/cindyqsite/static/js/main.935a3512.js.map",
     "453.ed3810f9.chunk.js.map": "/cindyqsite/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8414b720.css",
-    "static/js/main.6e9bcf62.js"
+    "static/js/main.935a3512.js"
   ]
 }
