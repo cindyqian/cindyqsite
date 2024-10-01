@@ -182,7 +182,7 @@ function App() {
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="content">
                 , and
-                <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" documenting my life online :)"></ColorfulLink>
+                <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" document my life online :)"></ColorfulLink>
                 <br></br><br></br>
               </p>
 
