@@ -118,19 +118,15 @@ function App() {
 
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
-            <div id="mainText" className="w-1/3 fixed top-0 self-center my-28 z-50">
-              <h1 className="text-xl text-center mb-7 font-[family-name:var(--font-geist-mono)]" id="cindyqian" onClick={sayHi}>
+            <div id="mainText" className="w-1/3 fixed top-0 self-center my-32 z-50">
+              <h1 className="text-xl text-center mb-10 font-[family-name:var(--font-geist-mono)]" id="cindyqian" onClick={sayHi}>
                   Cindy Qian
               </h1>
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline" id="intro">
                 Hello, I'm Cindy! I’m passionate about building products and experiences that empower people
                 to express themselves in creative and meaningful ways. My creativity thrives
-                when I’m helping others bring their ideas to life.
-
-                <br></br><br></br>
-
-                Welcome! Scroll to take a look around :)
+                when I’m helping others bring their ideas to life. Scroll to take a look around :)
 
                 <br></br><br></br>
 
@@ -176,7 +172,7 @@ function App() {
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="pokemon">
                 ,
-                avidly play pokemon go (I started in 2023 & am at lv. 41, please add me 5772 7964 6941 hehe)
+                avidly play pokemon go
               </p>
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="boulder">
@@ -192,12 +188,12 @@ function App() {
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="rest">
                 While I’m still figuring out the path that fits me best, I’m seeking opportunities
-                that will let me hone my product/product marketing management skills, collaborate with inspiring teams, and keep
+                that will let me hone my product management, marketing, and project management skills; collaborate with inspiring teams; and keep
                 learning along the way.
 
                 <br></br><br></br>
 
-                Welcome! Take a look around :)
+                {/* Welcome! Take a look around :) */}
               </p>
 
 
