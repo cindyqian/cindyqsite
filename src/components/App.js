@@ -36,6 +36,7 @@ function App() {
     imageTextRelationship.set("photographyImages", ["photography"]);
     imageTextRelationship.set("pokemonImages", ["pokemon"]);
     imageTextRelationship.set("boulderImages", ["boulder"]);
+    imageTextRelationship.set("contentImages", ["content"]);
 
   // do i need this????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
   const textImageRelationship = new Map();
@@ -43,6 +44,7 @@ function App() {
     textImageRelationship.set("internships", "internshipsImages");
     textImageRelationship.set("dubhacks", "dubhacksImages");
     textImageRelationship.set("mlh", "mlhImages");
+    textImageRelationship.set("photography", "photographyImages");
     textImageRelationship.set("pokemon", "pokemonImages");
     textImageRelationship.set("boulder", "boulderImages");
     textImageRelationship.set("content", "contentImages");
@@ -116,7 +118,7 @@ function App() {
 
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
-            <div id="mainText" className="w-1/3 fixed top-0 self-center my-40 my-24 z-50">
+            <div id="mainText" className="w-1/3 fixed top-0 self-center my-28 z-50">
               <h1 className="text-xl text-center mb-7 font-[family-name:var(--font-geist-mono)]" id="cindyqian" onClick={sayHi}>
                   Cindy Qian
               </h1>
@@ -124,9 +126,15 @@ function App() {
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline" id="intro">
                 Hello, I'm Cindy! I’m passionate about building products and experiences that empower people
                 to express themselves in creative and meaningful ways. My creativity thrives
-                when I’m helping others bring their ideas to life!
+                when I’m helping others bring their ideas to life.
 
                 <br></br><br></br>
+
+                Welcome! Scroll to take a look around :)
+
+                <br></br><br></br>
+
+
               </p>
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="graduation">
                 I recently graduated from the University of Washington with a degree in
@@ -178,7 +186,7 @@ function App() {
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="content">
                 , and
-                <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" create content :)"></ColorfulLink>
+                <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" documenting my life online :)"></ColorfulLink>
                 <br></br><br></br>
               </p>
 
@@ -247,7 +255,7 @@ function App() {
 
 
 
-          <Parallax speed={50} className="mx-16 mt-[20%] mt-98 pt-48">
+          <Parallax speed={50} className="mx-16 mt-[20%] mt-64 pt-48">
             <div className="table w-full table-fixed border-spacing-10 border-spacing-y-96" >
               <div className="table-row " id="graduationImages">
 
@@ -361,14 +369,14 @@ function App() {
               <div className="table-row " id="contentImages">
                 <div className="table-cell">
                   <img
-                  src={require("../images/selfiecindy.png")}
+                  src={require("../images/mtstawamus.jpeg")}
                   alt="Cindy Qian taking a selfie" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/squatwaterfallcindy.png")}
+                    src={require("../images/lassensquat.png")}
                     alt="Cindy Qian squatting" />
                 </div>
               </div>
