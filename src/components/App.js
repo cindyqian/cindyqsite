@@ -4,7 +4,7 @@ import { ColorfulLink } from './ColorfulLink.js';
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 
-// import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 
 
@@ -54,6 +54,10 @@ function App() {
     checkImageVisibility()
   };
   
+  // window.onbeforeunload = function (event) {
+  //   window.scrollTo(0, 0);
+  // }
+
 
   // this updates imagesOnScreen to track which images are on screen out of all the possible images
   const checkImageVisibility = () => {
@@ -182,8 +186,11 @@ function App() {
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="content">
                 , and
-                <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" document my life online :)"></ColorfulLink>
+                <ColorfulLink link="https://www.goodreads.com/user/show/175062130-cindy-qian" text=" read"></ColorfulLink>
+                .
                 <br></br><br></br>
+                {/* <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" document my life online :)"></ColorfulLink>
+                <br></br><br></br> */}
               </p>
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="rest">
@@ -365,14 +372,14 @@ function App() {
               <div className="table-row " id="contentImages">
                 <div className="table-cell">
                   <img
-                  src={require("../images/mtstawamus.jpeg")}
+                  src={require("../images/gasbill.png")}
                   alt="Cindy Qian taking a selfie" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/lassensquat.png")}
+                    src={require("../images/teacomic.png")}
                     alt="Cindy Qian squatting" />
                 </div>
               </div>
