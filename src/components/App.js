@@ -189,8 +189,8 @@ function App() {
                 <ColorfulLink link="https://www.goodreads.com/user/show/175062130-cindy-qian" text=" read"></ColorfulLink>
                 .
                 <br></br><br></br>
-                {/* <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" document my life online :)"></ColorfulLink>
-                <br></br><br></br> */}
+                <ColorfulLink link="https://www.instagram.com/cindyqiann/" text=" document my life online :)"></ColorfulLink>
+                <br></br><br></br>
               </p>
 
               <p className="text-sm text-left font-[family-name:var(--font-geist-mono)] lowercase inline " id="rest">
