@@ -249,7 +249,7 @@ function App() {
                       </a>
                     </div>
 
-                    <div className="table-cell px-10" id="instagram">
+                    {/* <div className="table-cell px-10" id="instagram">
                     {/* Instagram */}
                       <a href="https://www.instagram.com/cindyqiann/" target="_blank">
                         <span class="[&>svg]:h-5 [&>svg]:w-5">
@@ -263,7 +263,7 @@ function App() {
                           </svg>
                         </span>
                         </a>
-                  </div>
+                  </div> */}
                   
                 </div>
               </div>
