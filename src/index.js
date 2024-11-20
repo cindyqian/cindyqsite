@@ -4,12 +4,20 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// import { GeistSans } from './fonts/geist/font/sans';
+// import { GeistMono } from './fonts/geist/font/mono';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
 
   <React.StrictMode>
-    <ParallaxProvider><App /></ParallaxProvider>
+    {/* <BrowserRouter>  */}
+      <App />
+    {/* </BrowserRouter> */}
   </React.StrictMode>
 );
 
