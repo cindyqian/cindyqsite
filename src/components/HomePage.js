@@ -34,7 +34,7 @@ function HomePage() {
 
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
-        <div id="mainText" className="w-1/3 fixed top-0 self-center my-32 z-50">
+        <div id="mainText" className="w-1/3 top-0 self-center my-32 z-50">
           <h1 className="text-xl text-center mb-10 geist-mono" id="cindyqian">
             Cindy Qian
                 </h1>
@@ -64,14 +64,6 @@ function HomePage() {
 
             </div>
           </div>
-
-          
-          
-
-
-
-          
-
 
           <div className="table w-full table-fixed border-spacing-10 " >
             <div className="table-row">

@@ -128,9 +128,7 @@ function TechnicalPortfolio() {
               </h1>
 
           <p className="text-sm text-left geist-mono inline" id="intro">
-            Hello, I'm Cindy! I’m passionate about building products and experiences that empower people
-            to express themselves in creative and meaningful ways. My creativity thrives
-            when I’m helping others bring their ideas to life. Scroll to take a look around :)
+            Scroll to take a look around :)
 
                 <br></br><br></br>
 
@@ -176,7 +174,7 @@ function TechnicalPortfolio() {
 
           <p className="text-sm text-left geist-mono inline " id="pokemon">
             ,
-            avidly play pokemon go
+            avidly play pokemon go and pokemon pocket
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="boulder">
@@ -195,8 +193,7 @@ function TechnicalPortfolio() {
 
           <p className="text-sm text-left geist-mono inline " id="rest">
             While I’m still figuring out the path that fits me best, I’m seeking opportunities
-            that will let me hone my product management, marketing, and project management skills; collaborate with inspiring teams; and keep
-            learning along the way.
+            that will let me hone my product management, marketing, project management skills and collaborate with inspiring teams :)
 
                 <br></br><br></br>
 
@@ -209,7 +206,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="graduationImages">
 
                 <div className="table-cell w-4/12"></div> */}
-          <div className="table w-full table-fixed border-spacing-10 " >
+          <div className="w-full table-fixed border-spacing-10" >
             <div className="table-row">
 
               <div className="table-cell px-10" id="resume">
@@ -275,17 +272,17 @@ function TechnicalPortfolio() {
 
         <ParallaxProvider>
           <Parallax speed={50} className="mx-16 mt-[20%] mt-64 pt-48">
-            <div className="table w-full table-fixed border-spacing-10 border-spacing-y-96" >
-              <div className="table-row " id="graduationImages">
+            <div className="w-full table-fixed border-spacing-y-96">
+              <div className="table-row" id="graduationImages">
 
-                <div className="table-cell w-4/12">
+                <div className="table-cell w-3/12" style={{borderBottomWidth: "0 !important"}}>
                   <img
                     src={require("../images/gradjump.png")}
                     alt="jumping with her graduation cap in one hand and a bouquet of flowers in another" />
                 </div>
                 <div className="table-cell w-6/12">
                 </div>
-                <div className="table-cell w-4/12">
+                <div className="table-cell w-3/12">
                   <img
                     src={require("../images/triograd.png")}
                     alt="Cindy Qian with two friends at graduation" />
@@ -365,7 +362,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/pogo2.png")}
+                    src={require("../images/pocket.jpeg")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
               </div>
