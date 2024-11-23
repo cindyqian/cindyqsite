@@ -255,6 +255,7 @@ function TechnicalPortfolio() {
 
                 <div className="table-cell w-3/12" style={{ borderBottomWidth: "0 !important" }}>
                   <img
+                    loading="eager"
                     src={require("../images/technical/gradjump.png")}
                     alt="jumping with her graduation cap in one hand and a bouquet of flowers in another" />
                 </div>
@@ -262,6 +263,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell w-3/12">
                   <img
+                    loading="eager"
                     src={require("../images/technical/triograd.png")}
                     alt="Cindy Qian with two friends at graduation" />
                 </div>
@@ -271,6 +273,7 @@ function TechnicalPortfolio() {
 
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/genienametag.png")}
                     alt="Cindy Qian's name tag at the Genie office" />
                 </div>
@@ -278,6 +281,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/geniedrilling.png")}
                     alt="Cindy Qian drilling a vehicle wheel in PPE" />
                 </div>
@@ -287,6 +291,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="dubhacksImages">
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/dhselfie.png")}
                     alt="Selfie of Cindy Qian and 2 other DubHacks hackathon organizers" />
                 </div>
@@ -294,6 +299,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/iorganizedsticker.png")}
                     alt="Cindy Qian holding an I Organized sticker from Major League Hacking, is given to hackathon organizers" />
                 </div>
@@ -302,6 +308,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="mlhImages">
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/tt1.png")}
                     alt="Cindy Qian presenting on stage for Major League Hacking" />
                 </div>
@@ -309,6 +316,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/tt7.png")}
                     alt="Cindy Qian handing out prizes to a hackathon participant" />
                 </div>
@@ -318,6 +326,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="photographyImages">
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/pillars.png")}
                     alt="Cindy Qian taking graduation photos for 2 girls at the University of Washington value pillars" />
                 </div>
@@ -325,6 +334,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/canon100.png")}
                     alt="Cindy Qian holding a Canon Powershot 100" />
                 </div>
@@ -333,6 +343,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="pokemonImages">
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/pogo1.png")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
@@ -340,6 +351,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/pocket.jpeg")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
@@ -348,6 +360,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="boulderImages">
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/pinkclimb.png")}
                     alt="Cindy Qian bouldering up a wall" />
                 </div>
@@ -355,6 +368,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/magikarp.png")}
                     alt="Cindy Qian kissing her Magikarp shaped bouldering chalk bag" />
                 </div>
@@ -363,6 +377,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="contentImages">
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/gasbill.png")}
                     alt="Cindy Qian taking a selfie" />
                 </div>
@@ -370,6 +385,7 @@ function TechnicalPortfolio() {
                 </div>
                 <div className="table-cell">
                   <img
+                    loading="eager"
                     src={require("../images/technical/teacomic.png")}
                     alt="Cindy Qian squatting" />
                 </div>

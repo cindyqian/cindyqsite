@@ -179,80 +179,80 @@ function CreativePortfolio() {
 
         <div className="grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowerearring1.JPG")} alt="" id="flowerearring" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowerearring1.JPG")} alt="" id="flowerearring" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/sittingoncourt.jpg")} alt="" id="sittingoncourt" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/sittingoncourt.jpg")} alt="" id="sittingoncourt" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/kellylaraspin.jpg")} alt="" id="kellylaraspin" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/kellylaraspin.jpg")} alt="" id="kellylaraspin" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/estherallierun1.jpg")} alt="" id="estherallierun" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/estherallierun1.jpg")} alt="" id="estherallierun" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/quadtree2.jpg")} alt="" id="quadtree" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/quadtree2.jpg")} alt="" id="quadtree" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/chelseabacklitsuzz.jpg")} alt="" id="chelseabacklitsuzz" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/chelseabacklitsuzz.jpg")} alt="" id="chelseabacklitsuzz" />
           </div>
 
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amandacrewwhispering.jpg")} alt="" id="amandacrewwhispering" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amandacrewwhispering.jpg")} alt="" id="amandacrewwhispering" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/laracloseupcap.jpg")} alt="" id="laracloseupcap" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/laracloseupcap.jpg")} alt="" id="laracloseupcap" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/peterlassen.JPG")} alt="" id="peterlassen" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/peterlassen.JPG")} alt="" id="peterlassen" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/climbing.JPG")} alt="" id="climbing" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/climbing.JPG")} alt="" id="climbing" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/laranick1.jpg")} alt="" id="laranickbw" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/laranick1.jpg")} alt="" id="laranickbw" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/cynthiakevinsteps.jpg")} alt="" id="cynthiakevinsteps" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/cynthiakevinsteps.jpg")} alt="" id="cynthiakevinsteps" />
           </div>
         </div>
 
         <div className="grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowercommuntiybuilding.JPG")} alt="" id="flowercommuntiybuilding" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowercommuntiybuilding.JPG")} alt="" id="flowercommuntiybuilding" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowerhand.JPG")} alt="" id="flowerearringcloseup" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowerhand.JPG")} alt="" id="flowerearringcloseup" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/pastagrouppic.JPG")} alt="" id="pastagrouppic" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/pastagrouppic.JPG")} alt="" id="pastagrouppic" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/bathtubcindy.jpg")} alt="" id="bathtubcindy" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/bathtubcindy.jpg")} alt="" id="bathtubcindy" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/walkingrainbowfoster.jpg")} alt="" id="walkingrainbowfoster" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/walkingrainbowfoster.jpg")} alt="" id="walkingrainbowfoster" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/cynthiakevinbacklit.jpg")} alt="" id="cynthiakevinbacklit" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/cynthiakevinbacklit.jpg")} alt="" id="cynthiakevinbacklit" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amypurple.jpg")} alt="" id="amypurple" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amypurple.jpg")} alt="" id="amypurple" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/blueflowers.JPG")} alt="" id="blueflowers" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/blueflowers.JPG")} alt="" id="blueflowers" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/birdsinwater.JPG")} alt="" id="birdsinwater" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/birdsinwater.JPG")} alt="" id="birdsinwater" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/lassen4hikers.jpg")} alt="" id="lassen4hikers" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/lassen4hikers.jpg")} alt="" id="lassen4hikers" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/kevinsitting.jpg")} alt="" id="kevinsitting" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/kevinsitting.jpg")} alt="" id="kevinsitting" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amandagradrunning.jpg")} alt="" id="amandagradrunning" />
+            <img loading="eager" className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amandagradrunning.jpg")} alt="" id="amandagradrunning" />
           </div>
         </div>
 
