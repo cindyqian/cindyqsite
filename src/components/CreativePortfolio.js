@@ -5,7 +5,7 @@ import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 
 import { useRef, useEffect, useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -39,8 +39,13 @@ function CreativePortfolio() {
       <div className="w-full pl-52 fixed mt-80 z-50" >
         <div className="w-full border-spacing-10" >
           <h1 className="text-6xl text-left mb-10 geist-mono left-4" id="cindyqian">
-            Cindy Qian
-              </h1>
+
+            {/* <Link style={{ textDecoration: "none" }} className="text-6xl geist-mono
+            bg-gradient-to-r bg-clip-text text-transparent 
+            from-neutral-950 via-rose-400 to-rose-200
+            animate-text hover:text-rose-400" to="/">Cindy Qian</Link> */}
+            <Link style={{ textDecoration: "none" }} className="text-6xl geist-mono text-rose-400 hover:text-rose-500" to="/">Cindy Qian</Link>
+          </h1>
         </div>
 
 

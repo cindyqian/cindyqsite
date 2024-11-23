@@ -7,7 +7,7 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { useRef, useEffect, useState } from 'react';
 
 
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -123,9 +123,10 @@ function TechnicalPortfolio() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
         <div id="mainText" className="w-1/3 fixed top-0 self-center my-32 z-50">
+
           <h1 className="text-xl text-center mb-10 geist-mono" id="cindyqian" onClick={sayHi}>
-            Cindy Qian
-              </h1>
+            <Link style={{ textDecoration: "none" }} className="font-medium text-yellow-500 hover:text-yellow-600" to="/">Cindy Qian</Link>
+          </h1>
 
           <p className="text-sm text-left geist-mono inline" id="intro">
             Scroll to take a look around :)
@@ -259,7 +260,7 @@ function TechnicalPortfolio() {
             <div className="w-full table-fixed border-spacing-y-96">
               <div className="table-row" id="graduationImages">
 
-                <div className="table-cell w-3/12" style={{borderBottomWidth: "0 !important"}}>
+                <div className="table-cell w-3/12" style={{ borderBottomWidth: "0 !important" }}>
                   <img
                     src={require("../images/technical/gradjump.png")}
                     alt="jumping with her graduation cap in one hand and a bouquet of flowers in another" />
