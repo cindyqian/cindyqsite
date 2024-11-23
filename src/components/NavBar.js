@@ -20,7 +20,7 @@ export default function NavBar(props) {
         </div>
 
         <div className="table-cell px-10">
-          <Link style={{ textDecoration: "none" }} className="font-medium text-rose-400 hover:text-rose-50" to="/CreativePortfolio">Creative Portfolio</Link>
+          <Link style={{ textDecoration: "none" }} className="font-medium text-rose-400 hover:text-rose-500" to="/CreativePortfolio">Creative Portfolio</Link>
         </div>
 
         {/* </ul> */}
