@@ -13,8 +13,8 @@ import { Link } from 'react-router-dom';
 
 
 function CreativePortfolio() {
-  
-  
+
+
 
   const [h1Color, updateh1Color] = useState("text-rose-400 hover:text-rose-500");
   // set default h1 color
@@ -67,7 +67,17 @@ function CreativePortfolio() {
   const currImagesOnScreen = new Set()
 
   window.onscroll = function () {
-    checkImageVisibility()
+    handleScroll()
+  };
+
+  const handleScroll = async () => {
+    if (
+      window.location.href.includes('CreativePortfolio') &&
+      window.innerHeight + Math.ceil(window.scrollY) >=
+      document.body.offsetHeight + 80
+    ) {
+      await checkImageVisibility();
+    }
   };
 
   const checkImageVisibility = () => {
@@ -99,14 +109,14 @@ function CreativePortfolio() {
     const numOfEachColor = new Map();
     for (let image of currImagesOnScreen) {
       let color = imageToColor.get(image);
-      if (!numOfEachColor.has(color)){
+      if (!numOfEachColor.has(color)) {
         numOfEachColor.set(color, 1);
       } else {
         numOfEachColor.set(color, numOfEachColor.get(color) + 1);
       }
     }
 
-    
+
 
     let maxNum = 0;
     let maxColor = "na";
@@ -138,7 +148,7 @@ function CreativePortfolio() {
 
       </div> */}
 
-      <div className="w-full pl-52 fixed mt-80 z-50" >
+      <div className="w-full pl-52 fixed mt-80 pt-2 z-50" >
         <div className="w-full border-spacing-10" >
           <h1 className="text-6xl text-left mb-10 geist-mono left-4" id="cindyqian">
 
@@ -155,11 +165,10 @@ function CreativePortfolio() {
           <p className="text-sm text-left geist-mono inline">
             I'm a
             <ColorfulLink textColor={h1Color} link="https://www.instagram.com/bycindyq/" text=" photographer "></ColorfulLink>
-            + creative! I love love things that evoke emotion and help us feel more connected to the &#127757;.
+            + creative! I love making things that evoke emotion and help us feel more connected to the &#127757;!
             &nbsp;
             <br></br><br></br>
-            Whether it be planning an event, doing a photoshoot, or , I am passionate about helping people feel closer
-            to the world  around them and greatly value the importance of driving the vision, intention, and impact of everything I create.
+            Whether it be planning an event, doing a photoshoot, or , I am passionate driving the vision, intention, and impact of everything I create.
             <br></br><br></br>
             I'm still developing this site, come back later for more!
             {/* I do event, portrait, and concept photoshoots, compose self portraits, and */}
