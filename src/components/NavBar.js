@@ -1,38 +1,42 @@
+
 import React from "react"; //import React library
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import './index.css';
 
 export default function NavBar(props) {
-	return (
-		<nav className="navnav">
-			<div className="nav-left">
-				<Link to="/" className="site-logo">
-					<img src="../img/plant-logo-full.png" alt="logo"></img>
-				</Link>
-				<ul>
-					<CustomLink textType="home" key="home" to="/HomePage">Cindy Qian</CustomLink>
-					<CustomLink textType="technical" key="technical" to="/TechnicalPortfolio">Technical Portfolio</CustomLink>
-					<CustomLink textType="creative" key="creative" to="/CreativePortfolio">Creative Portfolio</CustomLink>
-					{/* <CustomLink key="compare" to="/TechnicalPortfolio">Technical Portfolio</CustomLink>
-					<CustomLink key="compare" to="/CreativePortfolio">Creative Portfolio</CustomLink> */}
-				</ul>
-			</div>
-		</nav>
-	);
+  return (
+    <nav>
+      <div className="table-row">
+        {/* <Link to="/" className="site-logo"> */}
+        {/* <img src="../img/plant-logo-full.png" alt="logo"></img> */}
+        {/* </Link> */}
+        {/* <ul> */}
+        {/* <CustomLink key="technical" to="/">Home</CustomLink>
+          <CustomLink key="creative" to="/ComparisonPage">Comparison</CustomLink> */}
+        {/* <Link key="home" to="/">Home</Link> */}
+
+
+        <div className="table-cell px-10">
+          <Link style={{ textDecoration: "none" }} className="font-medium text-yellow-500 hover:text-yellow-600" to="/TechnicalPortfolio">Technical Portfolio</Link>
+        </div>
+
+        <div className="table-cell px-10">
+          <Link style={{ textDecoration: "none" }} className="font-medium text-rose-400 hover:text-rose-50" to="/CreativePortfolio">Creative Portfolio</Link>
+        </div>
+
+        {/* </ul> */}
+      </div>
+    </nav>
+  );
 }
 
-function CustomLink({ to, children, ...props }) {
-	const resolvedPath = useResolvedPath(to);
-	const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-	var color = "yellow"
-  if (props.textType == "creative") {
-    color = "red";
-  }
-	return (
-		<li className={isActive ? "active" : ""}>
-			<Link text-decoration="none" className={"font-medium text-" + color + "-500 hover:text-" + color + "-600"} to={to} {...props}>
-				{children}
-			</Link>
-		</li>
-	);
-}
+// function CustomLink({ to, children, ...props }) {
+//   const resolvedPath = useResolvedPath(to);
+//   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+//   return (
+//     <li className={isActive ? "active" : ""}>
+//       <Link className="navLink" to={to} {...props}>
+//         {children}
+//       </Link>
+//     </li>
+//   );
+// }

@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
-
+import NavBar from "./NavBar.js";
 // import LinkButton from './LinkButton'
 // import Link from 'next/link';
 
@@ -51,17 +51,15 @@ function HomePage() {
           <div className="" >
             <div className="table-row">
 
-              <div className="table-cell px-10">
-                {/* <ColorfulLink textType="technical" link="#" text="Technical Portfolio"></ColorfulLink> */}
-                {/* <a target="_blank" style={{textDecoration: "none"}} className="font-medium text-yellow-500 hover:text-yellow-600" onClick={handleClick("technical")}>Technical Portfolio</a> */}
+              {/* <div className="table-cell px-10">
                 <a href='/TechnicalPortfolio' target="_blank" style={{textDecoration: "none"}} className="font-medium text-yellow-500 hover:text-yellow-600">Technical Portfolio</a>
 
               </div>
 
               <div className="table-cell px-10">
-                {/* <ColorfulLink textType="creative" link="#" text="Creative Portfolio"></ColorfulLink> */}
                 <a href='/CreativePortfolio' target="_blank" style={{textDecoration: "none"}} className="font-medium text-rose-400 hover:text-rose-500">Creative Portfolio</a>
-              </div>
+              </div> */}
+              <NavBar />
 
             </div>
           </div>
