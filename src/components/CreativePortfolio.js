@@ -13,9 +13,182 @@ import { Link } from 'react-router-dom';
 
 
 function CreativePortfolio() {
+  const imageOnScreen = new Set(["flowerearring", "courtandpasta", "gradgrass", "suzzwarm", "amyflowers", "picnicandsky", "bw"]);
+
+  const imageToColor = new Map();
+  imageToColor.set("flowerearring", "text-rose-400 hover:text-rose-500");
+  imageToColor.set("flowercommuntiybuilding", "text-rose-400 hover:text-rose-500");
+  imageToColor.set("flowerearringcloseup", "text-rose-400 hover:text-rose-500");
+
+  imageToColor.set("pastagrouppic", "text-amber-200 hover:text-amber-300");
+  imageToColor.set("sittingoncourt", "text-amber-200 hover:text-amber-300");
+
+  imageToColor.set("walkingrainbowfoster", "text-lime-600 hover:text-lime-700");
+  imageToColor.set("quadtree", "text-lime-600 hover:text-lime-700");
+  imageToColor.set("kellylaraspin", "text-lime-600 hover:text-lime-700");
+  imageToColor.set("estherallierun", "text-lime-600 hover:text-lime-700");
+
+  imageToColor.set("amandacrewwhispering", "text-yellow-600 hover:text-yellow-700");
+  imageToColor.set("chelseabacklitsuzz", "text-yellow-600 hover:text-yellow-700");
+  imageToColor.set("cynthiakevinbacklit", "text-yellow-600 hover:text-yellow-700");
+
+  imageToColor.set("amypurple", "text-pink-300 hover:text-pink-400");
+
+  imageToColor.set("blueflowers", "text-sky-500 hover:text-sky-600");
+  imageToColor.set("lassen4hikers", "text-sky-500 hover:text-sky-600");
+  imageToColor.set("peterlassen", "text-sky-500 hover:text-sky-600");
+  imageToColor.set("laracloseupcap", "text-sky-500 hover:text-sky-600");
+
+  imageToColor.set("amandagradrunning", "text-neutral-500 hover:text-neutral-600");
+  imageToColor.set("kevinsitting", "text-neutral-500 hover:text-neutral-600");
+  imageToColor.set("cynthiakevinsteps", "text-neutral-500 hover:text-neutral-600");
+  imageToColor.set("laranickbw", "text-neutral-500 hover:text-neutral-600");
 
 
 
+
+  const colorToImageSet = new Map();
+  colorToImageSet.set("text-rose-400 hover:text-rose-500", ["flowerearring", "flowercommuntiybuilding", "flowerearringcloseup"]);
+  colorToImageSet.set("text-amber-200 hover:text-amber-300", ["pastagrouppic", "sittingoncourt"]);
+  colorToImageSet.set("text-lime-600 hover:text-lime-700", ["walkingrainbowfoster", "quadtree", "kellylaraspin", "estherallierun"]);
+  colorToImageSet.set("text-yellow-600 hover:text-yellow-700", ["amandacrewwhispering", "chelseabacklitsuzz", "cynthiakevinbacklit"]);
+  colorToImageSet.set("text-pink-300 hover:text-pink-400", ["amypurple"]);
+  colorToImageSet.set("text-sky-500 hover:text-sky-600", ["blueflowers", "lassen4hikers", "peterlassen", "laracloseupcap"]);
+  colorToImageSet.set("text-neutral-500 hover:text-neutral-600", ["amandagradrunning", "kevinsitting", "cynthiakevinsteps", "laranickbw"]);
+
+
+  const currImagesOnScreen = new Set()
+  const currColorFocus = new Map();
+
+  // const colorSetToBasicTextColor = new Map();
+  // colorSetToBasicTextColor.set("text-rose-400 hover:text-rose-500", "rose");
+  // colorSetToBasicTextColor.set("text-amber-200 hover:text-amber-300", "amber");
+  // colorSetToBasicTextColor.set("text-lime-600 hover:text-lime-700", "lime");
+  // colorSetToBasicTextColor.set("text-yellow-600 hover:text-yellow-700", "yellow");
+  // colorSetToBasicTextColor.set("text-pink-300 hover:text-pink-400", "pink");
+  // colorSetToBasicTextColor.set("text-sky-500 hover:text-sky-600", "sky");
+  // colorSetToBasicTextColor.set("text-neutral-500 hover:text-neutral-600", "neutral");
+
+
+  window.onscroll = function () {
+    checkImageVisibility()
+  };
+
+  const checkImageVisibility = () => {
+
+    for (let [image, color] of imageToColor) {
+      const currImage = document.getElementById(image);
+      const topBorderOfImage = currImage.getBoundingClientRect().top;
+      const bottomBorderOfImage = currImage.getBoundingClientRect().bottom;
+      // if image is in the viewport
+      if (topBorderOfImage < window.innerHeight && bottomBorderOfImage > 0) {
+        if (!currImagesOnScreen.has(currImage)) {
+          // currImageFocus.clear();
+
+          currImagesOnScreen.add(currImage.id);
+          // console.log("doesnt have, added")
+          // console.log("currColorFocus: " + currColorFocus.size)
+          // break;
+        }
+        // else if (currColorFocus.get(color) < colorToImageSet.get(color).length) {
+        //   currColorFocus.set(color, currColorFocus.get(color) + 1);
+
+        // }
+        // if image has gone over the top
+      } else if (bottomBorderOfImage < 0) {
+        // console.log("deleted 1 ------------------------------------------------------------------------------------------")
+        // console.log("B: color = " + color)
+        // console.log("B: num of colors = " + currColorFocus.get(color))
+        // for (let [color, number] of currColorFocus) {
+        //   console.log("color: " + color + ", num: " + number)
+        // }
+        // currColorFocus.set(color, currColorFocus.get(color) - 1);
+        // console.log("A: num of colors = " + currColorFocus.get(color))
+        currImagesOnScreen.delete(currImage.id);
+        // imagesAboveTop.add(currImage.id)
+      }
+      // else if (bottomBorderOfImage < 0) {
+      //   currColorFocus.delete(color);
+      //   // imagesAboveTop.add(currImage.id)
+      // }
+
+
+    }
+
+    // console.log("currImageFocussize: " + currColorFocus.size)
+
+    console.log(currImagesOnScreen.size)
+    for (let image of currImagesOnScreen) {
+      console.log("image: " + image.id)
+    }
+
+    console.log("currImagesOnScreen size: " + currImagesOnScreen.size)
+    const numOfEachColor = new Map();
+    for (let image of currImagesOnScreen) {
+      console.log("curr image: " + image)
+      let color = imageToColor.get(image);
+      console.log("curr image color: " + color)
+      if (!numOfEachColor.has(color)){
+        numOfEachColor.set(color, 1);
+      } else {
+        numOfEachColor.set(color, numOfEachColor.get(color) + 1);
+      }
+    }
+
+    
+
+    console.log("numOfEachColor size: " + numOfEachColor.size)
+    let maxNum = 0;
+    let maxColor = "na";
+    for (let [color, number] of numOfEachColor) {
+      console.log("curr color: " + color)
+      console.log("------------color: " + color)
+      console.log("------------num: " + number)
+      if (number > maxNum) {
+        maxNum = number;
+        maxColor = color;
+      }
+    }
+
+    // maxColor = 
+
+    // for (let j = 0; j < currImageFocus.size; j++) {
+    //   let color = colorSetToBasicTextColor.get(currImageFocus[j]);
+    //   if (color != maxColor) {
+
+    //   }
+    // }
+
+    console.log("maxColor: " + maxColor);
+
+    // updateText(currImageFocus);
+  }
+
+  // // based on what is on screen, append respective text
+  // const updateText = (currImageFocus) => {
+  //   for (let text of imageOnScreen) {
+  //     document.getElementById(text).style.opacity = "0.3";
+  //   }
+
+  //   let currTextFocus = new Set();
+  //   if (currImageFocus.size == 0) {
+  //     imageOnScreen.forEach(item => currTextFocus.add(item))
+  //   } else {
+  //     for (let image of currImageFocus) {
+  //       imageTextRelationship.get(image).forEach(item => currTextFocus.add(item))
+  //       // currTextFocus.add(imageTextRelationship.get(image));
+  //     }
+
+  //   }
+
+  //   for (let text of currTextFocus) {
+  //     document.getElementById(text).style.opacity = "1";
+  //     // if (text == "instagram") {
+  //     //   document.getElementById(text).fill = "#eab308 hover:#ca8a04";
+  //     // }
+  //     // document.getElementById(text).classList.add = "z-index-100";
+  //   }
+  // }
 
 
 
@@ -53,11 +226,11 @@ function CreativePortfolio() {
           <p className="text-sm text-left geist-mono inline">
             I'm a
             <ColorfulLink textType="creative" link="https://www.instagram.com/bycindyq/" text=" photographer "></ColorfulLink>
-            + creative! I love love things that evoke emotion and help us feel more connected to the world.
+            + creative! I love love things that evoke emotion and help us feel more connected to the &#127757;.
             &nbsp;
             <br></br><br></br>
             Whether it be planning an event, doing a photoshoot, or , I am passionate about helping people feel closer
-            to the world &#127757; around them and greatly value the importance of driving the vision, intention, and impact of everything I create.
+            to the world  around them and greatly value the importance of driving the vision, intention, and impact of everything I create.
             <br></br><br></br>
             I'm still developing this site, come back later for more!
             {/* I do event, portrait, and concept photoshoots, compose self portraits, and */}
@@ -77,74 +250,74 @@ function CreativePortfolio() {
 
         <div className="grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowerearring1.JPG")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowerearring1.JPG")} alt="" id="flowerearring" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/sittingoncourt.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/sittingoncourt.jpg")} alt="" id="sittingoncourt" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/kellylaraspin.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/kellylaraspin.jpg")} alt="" id="kellylaraspin" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/estherallierun1.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/estherallierun1.jpg")} alt="" id="estherallierun" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/quadtree2.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/quadtree2.jpg")} alt="" id="quadtree" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/chelseabacklitsuzz.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/chelseabacklitsuzz.jpg")} alt="" id="chelseabacklitsuzz" />
           </div>
 
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amandacrewwhispering.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amandacrewwhispering.jpg")} alt="" id="amandacrewwhispering" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/laracloseupcap.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/laracloseupcap.jpg")} alt="" id="laracloseupcap" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/peterlassen.JPG")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/peterlassen.JPG")} alt="" id="peterlassen" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/laranick1.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/laranick1.jpg")} alt="" id="laranickbw" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/cynthiakevinsteps.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/cynthiakevinsteps.jpg")} alt="" id="cynthiakevinsteps" />
           </div>
         </div>
 
         <div className="grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowercommuntiybuilding.JPG")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowercommuntiybuilding.JPG")} alt="" id="flowercommuntiybuilding" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowerhand.JPG")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/flowerhand.JPG")} alt="" id="flowerearringcloseup" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/pastagrouppic.JPG")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/pastagrouppic.JPG")} alt="" id="pastagrouppic" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/magnolia.JPG")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/magnolia.JPG")} alt="" id="magnoliaREPLACE!!!!!!" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/walkingrainbowfoster.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/walkingrainbowfoster.jpg")} alt="" id="walkingrainbowfoster" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/cynthiakevinbacklit.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/cynthiakevinbacklit.jpg")} alt="" id="cynthiakevinbacklit" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amypurple.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amypurple.jpg")} alt="" id="amypurple" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/blueflowers.JPG")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/blueflowers.JPG")} alt="" id="blueflowers" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/lassen4hikers.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/lassen4hikers.jpg")} alt="" id="lassen4hikers" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/kevinsitting.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/kevinsitting.jpg")} alt="" id="kevinsitting" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amandagradrunning.jpg")} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={require("../images/creative/photography/amandagradrunning.jpg")} alt="" id="amandagradrunning" />
           </div>
         </div>
 

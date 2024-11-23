@@ -19,15 +19,8 @@ function TechnicalPortfolio() {
 
 
 
-
-  // indicates whether image is visible on the screne    
-  // const imagesOnScreen = new Set();
-
   const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "rest", "resume", "email", "linkedin"]);
-  // const imagesAboveTop = new Set();
-  // const textOnScreen = Intro;
 
-  // indicates what text should appear for each image
   const imageTextRelationship = new Map();
   imageTextRelationship.set("graduationImages", ["graduation"]);
   imageTextRelationship.set("internshipsImages", ["internships"]);
