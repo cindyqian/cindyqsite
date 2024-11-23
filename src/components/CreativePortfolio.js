@@ -138,7 +138,7 @@ function CreativePortfolio() {
   return (
     <main className="w-full gap-8 sm:items-start">
 
-      <div className="w-full pl-52 fixed mt-80 pt-2 z-50" >
+      <div className="w-full pl-52 fixed mt-72 pt-2 z-50" >
         <div className="w-full border-spacing-10" >
           <h1 className="text-6xl text-left mb-10 geist-mono left-4" id="cindyqian">
 
@@ -158,7 +158,8 @@ function CreativePortfolio() {
             + creative! I love making things that evoke emotion and help us feel more connected to the &#127757;!
             &nbsp;
             <br></br><br></br>
-            Whether it be helping people celebrate milestones, taking conceptual self portraits, or capturing the mundane of every day life, I am passionate driving the vision, intention, and impact of everything I create.
+            Whether it be helping others celebrate milestones, taking conceptual self portraits, or capturing
+            the mundane of every day life, I am passionate driving about the vision, intention, and impact of everything I create.
             <br></br><br></br>
             I'm still developing this site, come back later for more!
             {/* I do event, portrait, and concept photoshoots, compose self portraits, and */}
