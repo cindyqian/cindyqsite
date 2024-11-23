@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cindyqsite/static/css/main.37ed5e1e.css",
-    "main.js": "/cindyqsite/static/js/main.b5b7388b.js",
+    "main.css": "/cindyqsite/static/css/main.f1ebc94b.css",
+    "main.js": "/cindyqsite/static/js/main.31a05784.js",
     "static/js/453.68693753.chunk.js": "/cindyqsite/static/js/453.68693753.chunk.js",
     "static/media/gasbill.png": "/cindyqsite/static/media/gasbill.a07a95d6485e2b136ed1.png",
     "static/media/peterlassen.JPG": "/cindyqsite/static/media/peterlassen.9dcd33b417e56510f2cb.JPG",
@@ -45,12 +45,12 @@
     "static/media/GeistMonoVF.woff": "/cindyqsite/static/media/GeistMonoVF.2b49028de50fff5c0296.woff",
     "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
     "index.html": "/cindyqsite/index.html",
-    "main.37ed5e1e.css.map": "/cindyqsite/static/css/main.37ed5e1e.css.map",
-    "main.b5b7388b.js.map": "/cindyqsite/static/js/main.b5b7388b.js.map",
+    "main.f1ebc94b.css.map": "/cindyqsite/static/css/main.f1ebc94b.css.map",
+    "main.31a05784.js.map": "/cindyqsite/static/js/main.31a05784.js.map",
     "453.68693753.chunk.js.map": "/cindyqsite/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37ed5e1e.css",
-    "static/js/main.b5b7388b.js"
+    "static/css/main.f1ebc94b.css",
+    "static/js/main.31a05784.js"
   ]
 }
