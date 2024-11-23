@@ -16,7 +16,7 @@ function TechnicalPortfolio() {
 
 
 
-
+  let specialColor = "text-yellow-500 hover:text-yellow-600";
 
 
   const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "rest", "resume", "email", "linkedin"]);
@@ -130,40 +130,40 @@ function TechnicalPortfolio() {
           </p>
           <p className="text-sm text-left geist-mono inline " id="graduation">
             I recently graduated from the University of Washington with a degree in
-                <ColorfulLink textType="technical" link="https://ischool.uw.edu/programs/informatics" text=" Informatics"></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://ischool.uw.edu/programs/informatics" text=" Informatics"></ColorfulLink>
                 .&nbsp;
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="internships">
             I’ve had the chance to work on a range of exciting projects---from developing an IoT mobile app for
             tracking construction machinery data at
-                <ColorfulLink textType="technical" link="https://breadware.com" text=" Breadware "></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://breadware.com" text=" Breadware "></ColorfulLink>
                 to implementing new information systems for the ecommerce operations team at
-                <ColorfulLink textType="technical" link="https://www.genielift.com" text=" Genie "></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://www.genielift.com" text=" Genie "></ColorfulLink>
                 to identifying a high-level product vision and roadmap for
-                <ColorfulLink textType="technical" link="https://www.thoughtfulgpt.com" text=" ThoughtfulGPT "></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://www.thoughtfulgpt.com" text=" ThoughtfulGPT "></ColorfulLink>
                 to designing a custom point of sale system for
-                <ColorfulLink textType="technical" link="https://ischool.uw.edu/capstone/projects/2024/grand-pere-wholesale-bakery-order-management-system" text=" Grand Père Bakery"></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://ischool.uw.edu/capstone/projects/2024/grand-pere-wholesale-bakery-order-management-system" text=" Grand Père Bakery"></ColorfulLink>
                 .&nbsp;
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="dubhacks">
             I used to coordinate logistics and marketing for the largest hackathon in the PNW,
-                <ColorfulLink textType="technical" link="https://dubhacks.co" text=" DubHacks"></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://dubhacks.co" text=" DubHacks"></ColorfulLink>
                 , at the University of Washington&nbsp;
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="mlh">
             and work as a
-                <ColorfulLink textType="technical" link="https://mlh.io/coaches" text=" hackathon coach "></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://mlh.io/coaches" text=" hackathon coach "></ColorfulLink>
                 at
-                <ColorfulLink textType="technical" link="https://mlh.io" text=" Major League Hacking"></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://mlh.io" text=" Major League Hacking"></ColorfulLink>
                 !&nbsp;
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="photography">
             On the side, I run my own
-                <ColorfulLink textType="technical" link="https://www.instagram.com/bycindyq/" text=" small photography business"></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://www.instagram.com/bycindyq/" text=" small photography business"></ColorfulLink>
           </p>
 
           <p className="text-sm text-left geist-mono inline " id="pokemon">
@@ -173,15 +173,15 @@ function TechnicalPortfolio() {
 
           <p className="text-sm text-left geist-mono inline " id="boulder">
             ,
-                <ColorfulLink textType="technical" link="https://www.instagram.com/wafflehour_/" text=" boulder"></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://www.instagram.com/wafflehour_/" text=" boulder"></ColorfulLink>
           </p>
 
           <p className="text-sm text-left geist-mono inline " id="content">
             , and
-                <ColorfulLink textType="technical" link="https://www.goodreads.com/user/show/175062130-cindy-qian" text=" read"></ColorfulLink>
+                <ColorfulLink textColor={specialColor} link="https://www.goodreads.com/user/show/175062130-cindy-qian" text=" read"></ColorfulLink>
                 .
                 <br></br><br></br>
-            {/* <ColorfulLink textType="technical" link="https://www.instagram.com/cindyqiann/" text=" document my life online :)"></ColorfulLink>
+            {/* <ColorfulLink textColor={specialColor} link="https://www.instagram.com/cindyqiann/" text=" document my life online :)"></ColorfulLink>
                 <br></br><br></br> */}
           </p>
 

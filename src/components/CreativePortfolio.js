@@ -13,6 +13,13 @@ import { Link } from 'react-router-dom';
 
 
 function CreativePortfolio() {
+  
+  
+
+  const [h1Color, updateh1Color] = useState("text-rose-400 hover:text-rose-500");
+  // set default h1 color
+  // updateFetchCount("text-rose-400 hover:text-rose-500");
+
   const imageOnScreen = new Set(["flowerearring", "courtandpasta", "gradgrass", "suzzwarm", "amyflowers", "picnicandsky", "bw"]);
 
   const imageToColor = new Map();
@@ -83,39 +90,17 @@ function CreativePortfolio() {
       // if image is in the viewport
       if (topBorderOfImage < window.innerHeight && bottomBorderOfImage > 0) {
         if (!currImagesOnScreen.has(currImage)) {
-          // currImageFocus.clear();
 
           currImagesOnScreen.add(currImage.id);
-          // console.log("doesnt have, added")
-          // console.log("currColorFocus: " + currColorFocus.size)
-          // break;
         }
-        // else if (currColorFocus.get(color) < colorToImageSet.get(color).length) {
-        //   currColorFocus.set(color, currColorFocus.get(color) + 1);
-
-        // }
-        // if image has gone over the top
-      } else if (bottomBorderOfImage < 0) {
-        // console.log("deleted 1 ------------------------------------------------------------------------------------------")
-        // console.log("B: color = " + color)
-        // console.log("B: num of colors = " + currColorFocus.get(color))
-        // for (let [color, number] of currColorFocus) {
-        //   console.log("color: " + color + ", num: " + number)
-        // }
-        // currColorFocus.set(color, currColorFocus.get(color) - 1);
-        // console.log("A: num of colors = " + currColorFocus.get(color))
-        currImagesOnScreen.delete(currImage.id);
-        // imagesAboveTop.add(currImage.id)
       }
-      // else if (bottomBorderOfImage < 0) {
-      //   currColorFocus.delete(color);
-      //   // imagesAboveTop.add(currImage.id)
-      // }
-
+      // if image has exited the viewport
+      else if (bottomBorderOfImage < 0) {
+        currImagesOnScreen.delete(currImage.id);
+      }
 
     }
 
-    // console.log("currImageFocussize: " + currColorFocus.size)
 
     console.log(currImagesOnScreen.size)
     for (let image of currImagesOnScreen) {
@@ -150,45 +135,39 @@ function CreativePortfolio() {
       }
     }
 
-    // maxColor = 
-
-    // for (let j = 0; j < currImageFocus.size; j++) {
-    //   let color = colorSetToBasicTextColor.get(currImageFocus[j]);
-    //   if (color != maxColor) {
-
-    //   }
-    // }
 
     console.log("maxColor: " + maxColor);
 
-    // updateText(currImageFocus);
+    updateh1Color(maxColor);
   }
 
-  // // based on what is on screen, append respective text
-  // const updateText = (currImageFocus) => {
-  //   for (let text of imageOnScreen) {
-  //     document.getElementById(text).style.opacity = "0.3";
-  //   }
+  // based on what is on screen, append respective text
+  const updateText = (maxColor) => {
+    // for (let text of imageOnScreen) {
+    //   document.getElementById(text).style.opacity = "0.3";
+    // }
 
-  //   let currTextFocus = new Set();
-  //   if (currImageFocus.size == 0) {
-  //     imageOnScreen.forEach(item => currTextFocus.add(item))
-  //   } else {
-  //     for (let image of currImageFocus) {
-  //       imageTextRelationship.get(image).forEach(item => currTextFocus.add(item))
-  //       // currTextFocus.add(imageTextRelationship.get(image));
-  //     }
+    // let currTextFocus = new Set();
+    // if (currImageFocus.size == 0) {
+    //   imageOnScreen.forEach(item => currTextFocus.add(item))
+    // } else {
+    //   for (let image of currImageFocus) {
+    //     imageTextRelationship.get(image).forEach(item => currTextFocus.add(item))
+    //     // currTextFocus.add(imageTextRelationship.get(image));
+    //   }
 
-  //   }
+    // }
 
-  //   for (let text of currTextFocus) {
-  //     document.getElementById(text).style.opacity = "1";
-  //     // if (text == "instagram") {
-  //     //   document.getElementById(text).fill = "#eab308 hover:#ca8a04";
-  //     // }
-  //     // document.getElementById(text).classList.add = "z-index-100";
-  //   }
-  // }
+    // for (let text of currTextFocus) {
+    //   document.getElementById(text).style.opacity = "1";
+    //   // if (text == "instagram") {
+    //   //   document.getElementById(text).fill = "#eab308 hover:#ca8a04";
+    //   // }
+    //   // document.getElementById(text).classList.add = "z-index-100";
+    // }
+    // document.getElementById("cindyqian").classList.add = "0.3";
+    h1Color = maxColor;
+  }
 
 
 
@@ -217,7 +196,7 @@ function CreativePortfolio() {
             bg-gradient-to-r bg-clip-text text-transparent 
             from-neutral-950 via-rose-400 to-rose-200
             animate-text hover:text-rose-400" to="/">Cindy Qian</Link> */}
-            <Link style={{ textDecoration: "none" }} className="text-6xl geist-mono text-rose-400 hover:text-rose-500" to="/">Cindy Qian</Link>
+            <Link style={{ textDecoration: "none" }} className={`text-6xl geist-mono ${h1Color}`} to="/">Cindy Qian</Link>
           </h1>
         </div>
 
@@ -225,7 +204,7 @@ function CreativePortfolio() {
         <div id="mainText" className="w-1/3 fixed top-0 self-center relative">
           <p className="text-sm text-left geist-mono inline">
             I'm a
-            <ColorfulLink textType="creative" link="https://www.instagram.com/bycindyq/" text=" photographer "></ColorfulLink>
+            <ColorfulLink textColor={h1Color} link="https://www.instagram.com/bycindyq/" text=" photographer "></ColorfulLink>
             + creative! I love love things that evoke emotion and help us feel more connected to the &#127757;.
             &nbsp;
             <br></br><br></br>
