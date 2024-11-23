@@ -65,17 +65,6 @@ function CreativePortfolio() {
 
 
   const currImagesOnScreen = new Set()
-  const currColorFocus = new Map();
-
-  // const colorSetToBasicTextColor = new Map();
-  // colorSetToBasicTextColor.set("text-rose-400 hover:text-rose-500", "rose");
-  // colorSetToBasicTextColor.set("text-amber-200 hover:text-amber-300", "amber");
-  // colorSetToBasicTextColor.set("text-lime-600 hover:text-lime-700", "lime");
-  // colorSetToBasicTextColor.set("text-yellow-600 hover:text-yellow-700", "yellow");
-  // colorSetToBasicTextColor.set("text-pink-300 hover:text-pink-400", "pink");
-  // colorSetToBasicTextColor.set("text-sky-500 hover:text-sky-600", "sky");
-  // colorSetToBasicTextColor.set("text-neutral-500 hover:text-neutral-600", "neutral");
-
 
   window.onscroll = function () {
     checkImageVisibility()
@@ -89,8 +78,9 @@ function CreativePortfolio() {
       const bottomBorderOfImage = currImage.getBoundingClientRect().bottom;
       // if image is in the viewport
       if (topBorderOfImage < window.innerHeight && bottomBorderOfImage > 0) {
+        console.log("images on screen: " + currImagesOnScreen.size)
         if (!currImagesOnScreen.has(currImage)) {
-
+          // currImagesOnScreen.clear();
           currImagesOnScreen.add(currImage.id);
         }
       }
@@ -98,21 +88,17 @@ function CreativePortfolio() {
       else if (bottomBorderOfImage < 0) {
         currImagesOnScreen.delete(currImage.id);
       }
+      else if (topBorderOfImage > window.innerHeight) {
+        currImagesOnScreen.delete(currImage.id);
+      }
 
     }
 
 
-    console.log(currImagesOnScreen.size)
-    for (let image of currImagesOnScreen) {
-      console.log("image: " + image.id)
-    }
-
-    console.log("currImagesOnScreen size: " + currImagesOnScreen.size)
+    // check color w max num of images and use that color, doesnt really matter if im clearing above???
     const numOfEachColor = new Map();
     for (let image of currImagesOnScreen) {
-      console.log("curr image: " + image)
       let color = imageToColor.get(image);
-      console.log("curr image color: " + color)
       if (!numOfEachColor.has(color)){
         numOfEachColor.set(color, 1);
       } else {
@@ -122,13 +108,9 @@ function CreativePortfolio() {
 
     
 
-    console.log("numOfEachColor size: " + numOfEachColor.size)
     let maxNum = 0;
     let maxColor = "na";
     for (let [color, number] of numOfEachColor) {
-      console.log("curr color: " + color)
-      console.log("------------color: " + color)
-      console.log("------------num: " + number)
       if (number > maxNum) {
         maxNum = number;
         maxColor = color;
@@ -136,46 +118,14 @@ function CreativePortfolio() {
     }
 
 
-    console.log("maxColor: " + maxColor);
-
+    // update color used for h1, usestate auto updates
     updateh1Color(maxColor);
   }
 
-  // based on what is on screen, append respective text
-  const updateText = (maxColor) => {
-    // for (let text of imageOnScreen) {
-    //   document.getElementById(text).style.opacity = "0.3";
-    // }
-
-    // let currTextFocus = new Set();
-    // if (currImageFocus.size == 0) {
-    //   imageOnScreen.forEach(item => currTextFocus.add(item))
-    // } else {
-    //   for (let image of currImageFocus) {
-    //     imageTextRelationship.get(image).forEach(item => currTextFocus.add(item))
-    //     // currTextFocus.add(imageTextRelationship.get(image));
-    //   }
-
-    // }
-
-    // for (let text of currTextFocus) {
-    //   document.getElementById(text).style.opacity = "1";
-    //   // if (text == "instagram") {
-    //   //   document.getElementById(text).fill = "#eab308 hover:#ca8a04";
-    //   // }
-    //   // document.getElementById(text).classList.add = "z-index-100";
-    // }
-    // document.getElementById("cindyqian").classList.add = "0.3";
-    h1Color = maxColor;
-  }
 
 
 
   return (
-    // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen py-20 gap-16 font-[family-name:var(--font-geist-sans)]">
-    // <div className="grid grid-rows-[20px_1fr_20px] items-center min-h-screen gap-16 geist-mono">
-
     <main className="w-full gap-8 sm:items-start">
 
       {/* <div className="w-1/2 h-5/6 top-0 left-0 absolute -z-10" id="topBanner">
