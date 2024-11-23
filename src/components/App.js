@@ -16,7 +16,7 @@ function App() {
 
 
   let navigate = useNavigate();
-  navigate("/Home", { replace: true });
+  navigate("/", { replace: true });
 
   const root = ReactDOM.createRoot(document.getElementById('root'));
   document.querySelector("body").setAttribute("class", "all-body");
