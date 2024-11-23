@@ -10,12 +10,13 @@ import { BrowserRouter as Router, Routes, Link, Switch, Route } from "react-rout
 import NavBar from "./NavBar.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from 'react-dom/client';
-
+import { useNavigate } from "react-router-dom";
 
 function App() {
 
 
-
+  let navigate = useNavigate();
+  navigate("/Home", { replace: true });
 
   const root = ReactDOM.createRoot(document.getElementById('root'));
   document.querySelector("body").setAttribute("class", "all-body");
@@ -32,7 +33,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/TechnicalPortfolio" element={<TechnicalPortfolio/> } />
           <Route path="/CreativePortfolio" element={<CreativePortfolio/> } />
-          {/* <Route render={() => { <HomePage /> }} /> */}
+          <Route render={() => { <HomePage /> }} />
         </Routes>
         <Footer />
       </Router>
