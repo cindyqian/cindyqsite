@@ -5,6 +5,7 @@ import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { StrictMode } from 'react';
 
 // import { GeistSans } from './fonts/geist/font/sans';
 // import { GeistMono } from './fonts/geist/font/mono';
@@ -14,11 +15,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
 
-  // <React.StrictMode>
+  <StrictMode>
     <BrowserRouter> 
       <App />
     </BrowserRouter>
-  // </React.StrictMode>
+  </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
