@@ -37,7 +37,8 @@
     }
   }
 
-
-  #topBanner {
-    background-image: url("../images/flowerearring1.JPG");
-  }
+/* 
+  img{
+    background-position: center center;
+    background-repeat: no-repeat;
+  } */

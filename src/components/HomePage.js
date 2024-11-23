@@ -10,7 +10,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
 
-
+// import LinkButton from './LinkButton'
+// import Link from 'next/link';
 
 function HomePage() {
 
@@ -41,7 +42,7 @@ function HomePage() {
 
           <p className="text-sm text-left geist-mono inline">
             Hello! I’m passionate about building products and curating experiences that empower people
-            to express themselves in creative and meaningful ways. My creativity thrives
+            to express themselves in thoughtful and meaningful ways. My creativity thrives
             when I’m helping others bring their ideas to life. Take a look at my portfolios below :)
 
           </p>

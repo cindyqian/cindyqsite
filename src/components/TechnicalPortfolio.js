@@ -206,14 +206,14 @@ function TechnicalPortfolio() {
               <div className="table-row " id="graduationImages">
 
                 <div className="table-cell w-4/12"></div> */}
-          <div className="w-full table-fixed border-spacing-10" >
+          <div className="table w-full table-fixed border-spacing-10 " >
             <div className="table-row">
 
               <div className="table-cell px-10" id="resume">
                 {/* Resume */}
                 <a href={require("../assets/CindyQianResume.pdf")} target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                   </svg>
                 </a>
               </div>
@@ -222,8 +222,8 @@ function TechnicalPortfolio() {
               <div className="table-cell px-10" id="email">
                 {/* Email */}
                 <a href="mailto:cindyqian.yushi@gmail.com" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                   </svg>
                 </a>
               </div>
@@ -233,7 +233,7 @@ function TechnicalPortfolio() {
               <div className="table-cell px-10" id="linkedin">
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com/in/cindyqiann/" target="_blank">
-                  <span class="[&>svg]:h-5 [&>svg]:w-5">
+                  <span className="[&>svg]:h-5 [&>svg]:w-5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="black"
@@ -245,22 +245,6 @@ function TechnicalPortfolio() {
                   </span>
                 </a>
               </div>
-
-              {/* <div className="table-cell px-10" id="instagram"> */}
-              {/* Instagram */}
-              {/* <a href="https://www.instagram.com/cindyqiann/" target="_blank">
-                        <span class="[&>svg]:h-5 [&>svg]:w-5">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="black"
-                            viewBox="0 0 448 512"> */}
-              {/* Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
-              {/* <path
-                              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                          </svg>
-                        </span>
-                        </a>
-                  </div> */}
 
             </div>
           </div>
@@ -277,14 +261,14 @@ function TechnicalPortfolio() {
 
                 <div className="table-cell w-3/12" style={{borderBottomWidth: "0 !important"}}>
                   <img
-                    src={require("../images/gradjump.png")}
+                    src={require("../images/technical/gradjump.png")}
                     alt="jumping with her graduation cap in one hand and a bouquet of flowers in another" />
                 </div>
                 <div className="table-cell w-6/12">
                 </div>
                 <div className="table-cell w-3/12">
                   <img
-                    src={require("../images/triograd.png")}
+                    src={require("../images/technical/triograd.png")}
                     alt="Cindy Qian with two friends at graduation" />
                 </div>
               </div>
@@ -293,14 +277,14 @@ function TechnicalPortfolio() {
 
                 <div className="table-cell">
                   <img
-                    src={require("../images/genienametag.png")}
+                    src={require("../images/technical/genienametag.png")}
                     alt="Cindy Qian's name tag at the Genie office" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/geniedrilling.png")}
+                    src={require("../images/technical/geniedrilling.png")}
                     alt="Cindy Qian drilling a vehicle wheel in PPE" />
                 </div>
 
@@ -309,14 +293,14 @@ function TechnicalPortfolio() {
               <div className="table-row " id="dubhacksImages">
                 <div className="table-cell">
                   <img
-                    src={require("../images/dhselfie.png")}
+                    src={require("../images/technical/dhselfie.png")}
                     alt="Selfie of Cindy Qian and 2 other DubHacks hackathon organizers" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/iorganizedsticker.png")}
+                    src={require("../images/technical/iorganizedsticker.png")}
                     alt="Cindy Qian holding an I Organized sticker from Major League Hacking, is given to hackathon organizers" />
                 </div>
               </div>
@@ -324,14 +308,14 @@ function TechnicalPortfolio() {
               <div className="table-row " id="mlhImages">
                 <div className="table-cell">
                   <img
-                    src={require("../images/tt1.png")}
+                    src={require("../images/technical/tt1.png")}
                     alt="Cindy Qian presenting on stage for Major League Hacking" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/tt7.png")}
+                    src={require("../images/technical/tt7.png")}
                     alt="Cindy Qian handing out prizes to a hackathon participant" />
                 </div>
               </div>
@@ -340,14 +324,14 @@ function TechnicalPortfolio() {
               <div className="table-row " id="photographyImages">
                 <div className="table-cell">
                   <img
-                    src={require("../images/pillars.png")}
+                    src={require("../images/technical/pillars.png")}
                     alt="Cindy Qian taking graduation photos for 2 girls at the University of Washington value pillars" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/canon100.png")}
+                    src={require("../images/technical/canon100.png")}
                     alt="Cindy Qian holding a Canon Powershot 100" />
                 </div>
               </div>
@@ -355,14 +339,14 @@ function TechnicalPortfolio() {
               <div className="table-row " id="pokemonImages">
                 <div className="table-cell">
                   <img
-                    src={require("../images/pogo1.png")}
+                    src={require("../images/technical/pogo1.png")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/pocket.jpeg")}
+                    src={require("../images/technical/pocket.jpeg")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
               </div>
@@ -370,14 +354,14 @@ function TechnicalPortfolio() {
               <div className="table-row " id="boulderImages">
                 <div className="table-cell">
                   <img
-                    src={require("../images/pinkclimb.png")}
+                    src={require("../images/technical/pinkclimb.png")}
                     alt="Cindy Qian bouldering up a wall" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/magikarp.png")}
+                    src={require("../images/technical/magikarp.png")}
                     alt="Cindy Qian kissing her Magikarp shaped bouldering chalk bag" />
                 </div>
               </div>
@@ -385,14 +369,14 @@ function TechnicalPortfolio() {
               <div className="table-row " id="contentImages">
                 <div className="table-cell">
                   <img
-                    src={require("../images/gasbill.png")}
+                    src={require("../images/technical/gasbill.png")}
                     alt="Cindy Qian taking a selfie" />
                 </div>
                 <div className="table-cell">
                 </div>
                 <div className="table-cell">
                   <img
-                    src={require("../images/teacomic.png")}
+                    src={require("../images/technical/teacomic.png")}
                     alt="Cindy Qian squatting" />
                 </div>
               </div>
