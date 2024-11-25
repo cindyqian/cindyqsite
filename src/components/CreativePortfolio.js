@@ -159,7 +159,7 @@ function CreativePortfolio() {
             &nbsp;
             <br></br><br></br>
             Whether it be helping others celebrate milestones, taking conceptual self portraits, or capturing
-            the mundane of every day life, I am passionate about driving about the vision, intention, and impact of everything I create.
+            the mundane of every day life, I am passionate about driving the vision, intention, and impact of everything I create.
             <br></br><br></br>
             I'm still developing this site, come back later for more!
             {/* I do event, portrait, and concept photoshoots, compose self portraits, and */}
