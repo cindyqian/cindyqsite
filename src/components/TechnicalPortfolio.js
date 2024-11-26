@@ -253,15 +253,15 @@ function TechnicalPortfolio() {
             <div className="w-full table-fixed border-spacing-y-96">
               <div className="table-row" id="graduationImages">
 
-                <div className="table-cell w-3/12" style={{ borderBottomWidth: "0 !important" }}>
+                <div className="table-cell align-middle w-3/12" style={{ borderBottomWidth: "0 !important" }}>
                   <img
                     loading="eager"
                     src={require("../images/technical/gradjump.png")}
                     alt="jumping with her graduation cap in one hand and a bouquet of flowers in another" />
                 </div>
-                <div className="table-cell w-6/12">
+                <div className="table-cell align-middle w-6/12">
                 </div>
-                <div className="table-cell w-3/12">
+                <div className="table-cell align-middle w-3/12">
                   <img
                     loading="eager"
                     src={require("../images/technical/triograd.png")}
@@ -271,15 +271,15 @@ function TechnicalPortfolio() {
 
               <div className="table-row " id="internshipsImages">
 
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/genienametag.png")}
                     alt="Cindy Qian's name tag at the Genie office" />
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/geniedrilling.png")}
@@ -289,15 +289,15 @@ function TechnicalPortfolio() {
               </div>
 
               <div className="table-row " id="dubhacksImages">
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/dhselfie.png")}
                     alt="Selfie of Cindy Qian and 2 other DubHacks hackathon organizers" />
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/iorganizedsticker.png")}
@@ -306,15 +306,15 @@ function TechnicalPortfolio() {
               </div>
 
               <div className="table-row " id="mlhImages">
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/tt1.png")}
                     alt="Cindy Qian presenting on stage for Major League Hacking" />
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/tt7.png")}
@@ -324,15 +324,15 @@ function TechnicalPortfolio() {
 
 
               <div className="table-row " id="photographyImages">
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/pillars.png")}
                     alt="Cindy Qian taking graduation photos for 2 girls at the University of Washington value pillars" />
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/canon100.png")}
@@ -341,15 +341,15 @@ function TechnicalPortfolio() {
               </div>
 
               <div className="table-row " id="pokemonImages">
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/pogo1.png")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/pocket.jpeg")}
@@ -358,15 +358,15 @@ function TechnicalPortfolio() {
               </div>
 
               <div className="table-row " id="boulderImages">
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/pinkclimb.png")}
                     alt="Cindy Qian bouldering up a wall" />
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/magikarp.png")}
@@ -375,15 +375,15 @@ function TechnicalPortfolio() {
               </div>
 
               <div className="table-row " id="contentImages">
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/gasbill.png")}
                     alt="Cindy Qian taking a selfie" />
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                 </div>
-                <div className="table-cell">
+                <div className="table-cell align-middle">
                   <img
                     loading="eager"
                     src={require("../images/technical/teacomic.png")}
