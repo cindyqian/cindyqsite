@@ -121,21 +121,19 @@ function TechnicalPortfolio() {
             <Link style={{ textDecoration: "none" }} className="font-medium text-yellow-500 hover:text-yellow-600" to="/">Cindy Qian</Link>
           </h1>
 
-          <p className="text-sm text-left geist-mono inline" id="intro">
-            Scroll to take a look around :)
-
-                <br></br><br></br>
-
-
-          </p>
+          
           <p className="text-sm text-left geist-mono inline " id="graduation">
-            I recently graduated from the University of Washington with a degree in
+            Hi! I'm a University of Washington graduate with a degree in
                 <ColorfulLink textColor={specialColor} link="https://ischool.uw.edu/programs/informatics" text=" Informatics"></ColorfulLink>
-                .&nbsp;
-              </p>
+                . 
+                I have 4 years of project management experience, specifically in event planning and marketing,
+                and 2 years of technical product management experience, specifically in web and mobile app development.
+                This site was developed with React, scroll to take a look around :)
+                <br></br><br></br>
+          </p>
 
           <p className="text-sm text-left geist-mono inline " id="internships">
-            I’ve had the chance to work on a range of exciting projects---from developing an IoT mobile app for
+            Over the past few years, I’ve had the chance to work on a range of exciting projects---from developing an IoT mobile app for
             tracking construction machinery data at
                 <ColorfulLink textColor={specialColor} link="https://breadware.com" text=" Breadware "></ColorfulLink>
                 to implementing new information systems for the ecommerce operations team at
@@ -186,8 +184,8 @@ function TechnicalPortfolio() {
           </p>
 
           <p className="text-sm text-left geist-mono inline " id="rest">
-            While I’m still figuring out the path that fits me best, I’m seeking opportunities
-            that will let me hone my product management, marketing, project management skills and collaborate with inspiring teams :)
+            I’m currently seeking opportunities
+            that will let me hone my product management, marketing, and project management skills (and work on a cool product with cool people) :)
 
                 <br></br><br></br>
 
@@ -352,7 +350,7 @@ function TechnicalPortfolio() {
                 <div className="table-cell align-middle">
                   <img
                     loading="eager"
-                    src={require("../images/technical/pocket.jpeg")}
+                    src={require("../images/technical/pocket.jpg")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
               </div>
