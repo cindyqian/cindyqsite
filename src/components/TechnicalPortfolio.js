@@ -19,7 +19,7 @@ function TechnicalPortfolio() {
   let specialColor = "text-yellow-500 hover:text-yellow-600";
 
 
-  const textOnScreen = new Set(["cindyqian", "intro", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "rest", "resume", "email", "linkedin"]);
+  const textOnScreen = new Set(["cindyqian", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "rest", "resume", "email", "linkedin"]);
 
   const imageTextRelationship = new Map();
   imageTextRelationship.set("graduationImages", ["graduation"]);
@@ -123,7 +123,7 @@ function TechnicalPortfolio() {
 
           
           <p className="text-sm text-left geist-mono inline " id="graduation">
-            Hi! I'm a University of Washington graduate with a degree in
+            I'm a University of Washington graduate with a degree in
                 <ColorfulLink textColor={specialColor} link="https://ischool.uw.edu/programs/informatics" text=" Informatics"></ColorfulLink>
                 . 
                 I have 4 years of project management experience, specifically in event planning and marketing,
