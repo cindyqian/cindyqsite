@@ -126,8 +126,6 @@ function TechnicalPortfolio() {
             I'm a University of Washington graduate with a degree in
                 <ColorfulLink textColor={specialColor} link="https://ischool.uw.edu/programs/informatics" text=" Informatics"></ColorfulLink>
                 . 
-                I have 4 years of project management experience, specifically in event planning and marketing,
-                and 2 years of technical product management experience, specifically in web and mobile app development.
                 This site was developed with React, scroll to take a look around :)
                 <br></br><br></br>
           </p>
