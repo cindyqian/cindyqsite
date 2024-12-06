@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cindyqsite/static/css/main.ffcc9828.css",
-    "main.js": "/cindyqsite/static/js/main.d21c543c.js",
+    "main.js": "/cindyqsite/static/js/main.24fac0b7.js",
     "static/js/453.68693753.chunk.js": "/cindyqsite/static/js/453.68693753.chunk.js",
     "static/media/gasbill.png": "/cindyqsite/static/media/gasbill.a07a95d6485e2b136ed1.png",
     "static/media/peterlassen.JPG": "/cindyqsite/static/media/peterlassen.9dcd33b417e56510f2cb.JPG",
@@ -48,11 +48,11 @@
     "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
     "index.html": "/cindyqsite/index.html",
     "main.ffcc9828.css.map": "/cindyqsite/static/css/main.ffcc9828.css.map",
-    "main.d21c543c.js.map": "/cindyqsite/static/js/main.d21c543c.js.map",
+    "main.24fac0b7.js.map": "/cindyqsite/static/js/main.24fac0b7.js.map",
     "453.68693753.chunk.js.map": "/cindyqsite/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffcc9828.css",
-    "static/js/main.d21c543c.js"
+    "static/js/main.24fac0b7.js"
   ]
 }
