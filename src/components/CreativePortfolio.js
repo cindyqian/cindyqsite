@@ -70,6 +70,10 @@ function CreativePortfolio() {
     handleScroll()
   };
 
+  window.onload = (event) => {
+    updateh1Color("text-rose-400 hover:text-rose-500");
+  };
+
   const handleScroll = async () => {
     if (
       window.location.href.includes('CreativePortfolio') &&
