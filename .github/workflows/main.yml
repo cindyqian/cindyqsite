@@ -16,7 +16,7 @@ jobs:
           openai_response=$(curl https://api.openai.com/v1/models \
             -H "Authorization: Bearer $OPENAI_API_KEY" \
             -H "OpenAI-Organization: org-hQljbOzfQqHjE8HZUXwKheSX" \
-            -H "OpenAI-Project: $PROJECT_ID"
+            -H "OpenAI-Project: proj_LKiV0Urkqefy2A2zxFPkaE6P"
             
             "https://api.openai.com/v1/completions")
           echo "OpenAI response: $openai_response"
