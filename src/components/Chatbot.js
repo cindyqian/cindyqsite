@@ -34,7 +34,11 @@ function Chatbot() {
   }
 
   async function processMessageToCindy(chatMessages) {
-    
+    const API_KEY = os.environ["OPENAI_API_KEY"]
+
+    // if (!API_KEY) {
+    //   throw new Error("OPENAI_API_KEY environment variable not set.");
+    // }
     
     let apiMessages = chatMessages.map((messageObject) => {
       let role = "";
