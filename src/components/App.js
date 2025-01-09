@@ -7,10 +7,9 @@ import CreativePortfolio from './CreativePortfolio';
 import HomePage from './HomePage';
 import { Footer } from './Footer';
 import { BrowserRouter, Routes, Link, Switch, Route } from "react-router-dom";
-import NavBar from "./NavBar.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from 'react-dom/client';
-import { useNavigate } from "react-router-dom";
+import Chatbot from './Chatbot';
 
 function App() {
 
@@ -37,6 +36,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                     <Route path="/TechnicalPortfolio" element={<TechnicalPortfolio/> } />
                     <Route path="/CreativePortfolio" element={<CreativePortfolio/> } />
+                    <Route path="/Chatbot" element={<Chatbot/> } />
                     <Route render={() => { <HomePage /> }} />
                 </Routes>  
             <Footer/>
