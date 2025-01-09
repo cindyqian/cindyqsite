@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cindyqsite/static/css/main.ffcc9828.css",
-    "main.js": "/cindyqsite/static/js/main.176b397f.js",
+    "main.css": "/cindyqsite/static/css/main.0c63a4b3.css",
+    "main.js": "/cindyqsite/static/js/main.806dc01d.js",
     "static/js/453.68693753.chunk.js": "/cindyqsite/static/js/453.68693753.chunk.js",
     "static/media/gasbill.png": "/cindyqsite/static/media/gasbill.a07a95d6485e2b136ed1.png",
     "static/media/peterlassen.JPG": "/cindyqsite/static/media/peterlassen.9dcd33b417e56510f2cb.JPG",
@@ -9,6 +9,7 @@
     "static/media/dhselfie.png": "/cindyqsite/static/media/dhselfie.7b3efb1a94a55de12c11.png",
     "static/media/triograd.png": "/cindyqsite/static/media/triograd.a8c8a36d21f3fb655adf.png",
     "static/media/blueflowers.JPG": "/cindyqsite/static/media/blueflowers.78bcdb565b647bfb3d9f.JPG",
+    "static/media/pfp.jpg": "/cindyqsite/static/media/pfp.d0b47241ef5cc1c3f326.jpg",
     "static/media/iorganizedsticker.png": "/cindyqsite/static/media/iorganizedsticker.ac55152242e30d0f4a22.png",
     "static/media/genienametag.png": "/cindyqsite/static/media/genienametag.09a54020f7a0dc157853.png",
     "static/media/teacomic.png": "/cindyqsite/static/media/teacomic.3bb9ad0dd505ba8e594b.png",
@@ -47,12 +48,12 @@
     "static/media/GeistMonoVF.woff": "/cindyqsite/static/media/GeistMonoVF.2b49028de50fff5c0296.woff",
     "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
     "index.html": "/cindyqsite/index.html",
-    "main.ffcc9828.css.map": "/cindyqsite/static/css/main.ffcc9828.css.map",
-    "main.176b397f.js.map": "/cindyqsite/static/js/main.176b397f.js.map",
+    "main.0c63a4b3.css.map": "/cindyqsite/static/css/main.0c63a4b3.css.map",
+    "main.806dc01d.js.map": "/cindyqsite/static/js/main.806dc01d.js.map",
     "453.68693753.chunk.js.map": "/cindyqsite/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffcc9828.css",
-    "static/js/main.176b397f.js"
+    "static/css/main.0c63a4b3.css",
+    "static/js/main.806dc01d.js"
   ]
 }
