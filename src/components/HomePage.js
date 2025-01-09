@@ -15,7 +15,7 @@ import NavBar from "./NavBar.js";
 
 function HomePage() {
 
-  
+
   // const navigate = useNavigate();
 
   // const handleClick = (textType) => {
@@ -34,6 +34,12 @@ function HomePage() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen py-20 gap-16 geist-mono">
 
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <div className="table-cell align-middle w-3/12" style={{ borderBottomWidth: "0 !important" }}>
+          <img
+            loading="eager"
+            src={require("../images/technical/gradjump.png")}
+            alt="jumping with her graduation cap in one hand and a bouquet of flowers in another" />
+        </div>
 
         <div id="mainText" className="w-1/3 top-0 self-center my-32 z-50">
           <h1 className="text-xl text-center mb-10 geist-mono" id="cindyqian">
