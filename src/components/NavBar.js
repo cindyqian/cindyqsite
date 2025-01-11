@@ -16,7 +16,7 @@ export default function NavBar(props) {
           <Link style={{ textDecoration: "none" }} className="font-medium text-rose-400 hover:text-rose-500" to="/CreativePortfolio">Creative Portfolio</Link>
         </div>
 
-        <div className=" mx-10 align-middle">
+        <div className=" mx-10 align-middle px-4 -mt-2">
           <div className=" bg-gradient-to-r bg-clip-text text-transparent 
             from-indigo-500 via-purple-500 to-indigo-500
             animate-text hover:via-purple-500">
