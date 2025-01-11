@@ -5,25 +5,18 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 export default function NavBar(props) {
   return (
     <nav>
-      <div className="table-row ">
-        {/* <Link to="/" className="site-logo"> */}
-        {/* <img src="../img/plant-logo-full.png" alt="logo"></img> */}
-        {/* </Link> */}
-        {/* <ul> */}
-        {/* <CustomLink key="technical" to="/">Home</CustomLink>
-          <CustomLink key="creative" to="/ComparisonPage">Comparison</CustomLink> */}
-        {/* <Link key="home" to="/">Home</Link> */}
+      <div className="flex justify-center">
 
 
-        <div className="table-cell px-10 pt-3 align-middle">
+        <div className="mx-10 align-middle">
           <Link style={{ textDecoration: "none" }} className="font-medium text-yellow-500 hover:text-yellow-600" to="/TechnicalPortfolio">Technical Portfolio</Link>
         </div>
 
-        <div className="table-cell px-10 pt-3 align-middle">
+        <div className="mx-10 align-middle">
           <Link style={{ textDecoration: "none" }} className="font-medium text-rose-400 hover:text-rose-500" to="/CreativePortfolio">Creative Portfolio</Link>
         </div>
 
-        <div className="table-cell px-10 pt-3 align-middle">
+        <div className=" mx-10 align-middle">
           <div className=" bg-gradient-to-r bg-clip-text text-transparent 
             from-indigo-500 via-purple-500 to-indigo-500
             animate-text hover:via-purple-500">
@@ -39,7 +32,6 @@ export default function NavBar(props) {
           </div>
           </div>
 
-        {/* </ul> */}
       </div>
     </nav>
   );

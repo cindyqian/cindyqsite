@@ -135,7 +135,7 @@ function TechnicalPortfolio() {
 
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
-        <div id="mainText" className="w-1/3 fixed top-0 self-center my-32 z-50">
+        <div id="mainText" className="w-1/3 fixed top-10 self-center my-32 z-50">
 
           <h1 className="text-xl text-center mb-10 geist-mono" id="cindyqian" onClick={sayHi}>
             <Link style={{ textDecoration: "none" }} className="font-medium text-yellow-500 hover:text-yellow-600" to="/">Cindy Qian</Link>
@@ -203,7 +203,7 @@ function TechnicalPortfolio() {
 
           <p className="text-sm text-left geist-mono inline " id="rest">
             I’m currently seeking opportunities
-            that will let me hone my product management, marketing, and project management skills (and work on a cool product with cool people) :)
+            that will let me hone my product management, marketing, and project management skills.
 
                 <br></br><br></br>
 
