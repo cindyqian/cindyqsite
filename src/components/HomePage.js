@@ -50,7 +50,10 @@ function HomePage() {
           <p className="text-sm text-left geist-mono inline">
             Hello! I’m passionate about building products and curating experiences that empower people
             to express themselves in thoughtful and meaningful ways. My creativity thrives
-            when I’m helping others bring their ideas to life. Take a look at my portfolios below :)
+            when I’m helping others bring their ideas to life.
+            <br></br><br></br>
+            I’m currently seeking opportunities
+            that will let me hone my product management, marketing, and project management skills (and maybe work on a cool product with cool people &#128302;)
 
           </p>
           <br></br><br></br>
