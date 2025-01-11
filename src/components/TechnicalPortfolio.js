@@ -17,7 +17,7 @@ function TechnicalPortfolio() {
 
 
 
-  
+
   // const openai = new OpenAI();
 
   // const completion = await openai.chat.completions.create({
@@ -135,17 +135,17 @@ function TechnicalPortfolio() {
 
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
-        <div id="mainText" className="w-1/3 fixed top-10 self-center my-32 z-50">
+        <div id="mainText" className="w-1/3 fixed top-5 self-center my-32 z-50">
 
           <h1 className="text-xl text-center mb-10 geist-mono" id="cindyqian" onClick={sayHi}>
             <Link style={{ textDecoration: "none" }} className="font-medium text-yellow-500 hover:text-yellow-600" to="/">Cindy Qian</Link>
           </h1>
 
-          
+
           <p className="text-sm text-left geist-mono inline " id="graduation">
             I'm a University of Washington graduate with a degree in
                 <ColorfulLink textColor={specialColor} link="https://ischool.uw.edu/programs/informatics" text=" Informatics"></ColorfulLink>
-                . 
+                .
                 This site was developed with React, scroll to take a look around :)
                 <br></br><br></br>
           </p>
@@ -205,7 +205,13 @@ function TechnicalPortfolio() {
             I’m currently seeking opportunities
             that will let me hone my product management, marketing, and project management skills.
 
-                <br></br><br></br>
+            <br></br><br></br>
+
+            &#128188;: Java, HTML, CSS, Javascript, React.js, R, SQL, Microsoft Suite,
+            Azure DevOps, Jira, Figma, Miro, Adobe Photoshop & Lightroom, Wordpress,
+            Canva, Contentful, Asana, and some HubSpot
+
+            <br></br><br></br>
 
             {/* Welcome! Take a look around :) */}
           </p>
@@ -216,7 +222,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="graduationImages">
 
                 <div className="table-cell w-4/12"></div> */}
-          <div className="table w-full table-fixed border-spacing-10 " >
+          <div className="table w-full table-fixed border-spacing-x-10 " >
             <div className="table-row">
 
               <div className="table-cell px-10" id="resume">
