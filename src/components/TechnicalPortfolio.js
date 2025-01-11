@@ -146,7 +146,7 @@ function TechnicalPortfolio() {
             I'm a University of Washington graduate with a degree in
                 <ColorfulLink textColor={specialColor} link="https://ischool.uw.edu/programs/informatics" text=" Informatics"></ColorfulLink>
                 .
-                This site was developed with React, scroll to take a look around :)
+                This site was developed with React, scroll to see some photos :)
                 <br></br><br></br>
           </p>
 
