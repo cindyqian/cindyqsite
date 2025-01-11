@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cindyqsite/static/css/main.045744e4.css",
-    "main.js": "/cindyqsite/static/js/main.f690542a.js",
+    "main.css": "/cindyqsite/static/css/main.510bca84.css",
+    "main.js": "/cindyqsite/static/js/main.8740c70f.js",
     "static/js/453.68693753.chunk.js": "/cindyqsite/static/js/453.68693753.chunk.js",
     "static/media/gasbill.png": "/cindyqsite/static/media/gasbill.a07a95d6485e2b136ed1.png",
     "static/media/peterlassen.JPG": "/cindyqsite/static/media/peterlassen.9dcd33b417e56510f2cb.JPG",
@@ -44,16 +44,16 @@
     "static/media/pogo1.png": "/cindyqsite/static/media/pogo1.a829216aa33c601fb5c7.png",
     "static/media/pillars.png": "/cindyqsite/static/media/pillars.f40326eed0bb4a7c56ab.png",
     "static/media/pocket.jpg": "/cindyqsite/static/media/pocket.0e8891194cf9687bd04a.jpg",
-    "static/media/CindyQianResume.pdf": "/cindyqsite/static/media/CindyQianResume.1d079dfcbce87bd6cd1e.pdf",
+    "static/media/CindyQianResume.pdf": "/cindyqsite/static/media/CindyQianResume.e475ce85d9d3adc45b10.pdf",
     "static/media/GeistMonoVF.woff": "/cindyqsite/static/media/GeistMonoVF.2b49028de50fff5c0296.woff",
     "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
     "index.html": "/cindyqsite/index.html",
-    "main.045744e4.css.map": "/cindyqsite/static/css/main.045744e4.css.map",
-    "main.f690542a.js.map": "/cindyqsite/static/js/main.f690542a.js.map",
+    "main.510bca84.css.map": "/cindyqsite/static/css/main.510bca84.css.map",
+    "main.8740c70f.js.map": "/cindyqsite/static/js/main.8740c70f.js.map",
     "453.68693753.chunk.js.map": "/cindyqsite/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.045744e4.css",
-    "static/js/main.f690542a.js"
+    "static/css/main.510bca84.css",
+    "static/js/main.8740c70f.js"
   ]
 }
