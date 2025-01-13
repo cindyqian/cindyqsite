@@ -166,7 +166,7 @@ function TechnicalPortfolio() {
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="dubhacks">
-            I used to coordinate logistics and marketing for the largest hackathon in the PNW,
+            I used to coordinate logistics and marketing for the largest hackathon in the PNW of over 1200 people,
                 <ColorfulLink textColor={specialColor} link="https://dubhacks.co" text=" DubHacks"></ColorfulLink>
                 , at the University of Washington&nbsp;
               </p>
