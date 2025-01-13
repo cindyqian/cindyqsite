@@ -39,7 +39,7 @@ function TechnicalPortfolio() {
   let specialColor = "text-yellow-500 hover:text-yellow-600";
 
 
-  const textOnScreen = new Set(["cindyqian", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "rest", "resume", "email", "linkedin"]);
+  const textOnScreen = new Set(["cindyqian", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "skills", "rest", "resume", "email", "linkedin"]);
 
   const imageTextRelationship = new Map();
   imageTextRelationship.set("graduationImages", ["graduation"]);
@@ -50,6 +50,7 @@ function TechnicalPortfolio() {
   imageTextRelationship.set("pokemonImages", ["pokemon"]);
   imageTextRelationship.set("boulderImages", ["boulder"]);
   imageTextRelationship.set("contentImages", ["content"]);
+  imageTextRelationship.set("skillsImages", ["skills"]);
 
   // do i need this????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
   const textImageRelationship = new Map();
@@ -61,6 +62,7 @@ function TechnicalPortfolio() {
   textImageRelationship.set("pokemon", "pokemonImages");
   textImageRelationship.set("boulder", "boulderImages");
   textImageRelationship.set("content", "contentImages");
+  textImageRelationship.set("skills", "skillsImages");
   // imageTextRelationship.set("thirdImage", "genie");
 
   window.onscroll = function () {
@@ -201,11 +203,7 @@ function TechnicalPortfolio() {
                 <br></br><br></br> */}
           </p>
 
-          <p className="text-sm text-left geist-mono inline " id="rest">
-            I’m currently seeking opportunities
-            that will let me hone my product management, marketing, and project management skills.
-
-            <br></br><br></br>
+          <p className="text-sm text-left geist-mono inline " id="skills">
 
             &#128188;: Java, HTML, CSS, Javascript, React.js, R, SQL, Microsoft Suite,
             Azure DevOps, Jira, Figma, Miro, Adobe Photoshop & Lightroom, Wordpress,
@@ -215,6 +213,13 @@ function TechnicalPortfolio() {
 
             {/* Welcome! Take a look around :) */}
           </p>
+          <p className="text-sm text-left geist-mono inline " id="rest">
+            I’m currently seeking opportunities
+            that will let me hone my product management, marketing, and project management skills.
+
+            <br></br><br></br>
+          </p>
+
 
 
 
@@ -410,6 +415,23 @@ function TechnicalPortfolio() {
                     loading="eager"
                     src={require("../images/technical/teacomic.png")}
                     alt="Cindy Qian squatting" />
+                </div>
+              </div>
+
+              <div className="table-row " id="skillsImages">
+                <div className="table-cell align-middle">
+                  <img
+                    loading="eager"
+                    src={require("../images/technical/skills/1.png")}
+                    alt="3 art graphics of a dragon, members of a club, and a placemat" />
+                </div>
+                <div className="table-cell align-middle">
+                </div>
+                <div className="table-cell align-middle">
+                  <img
+                    loading="eager"
+                    src={require("../images/technical/skills/2.png")}
+                    alt="3 photos of wireframes designed in figma" />
                 </div>
               </div>
 
