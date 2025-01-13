@@ -39,7 +39,7 @@ function TechnicalPortfolio() {
   let specialColor = "text-yellow-500 hover:text-yellow-600";
 
 
-  const textOnScreen = new Set(["cindyqian", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "skills", "rest", "resume", "email", "linkedin"]);
+  const textOnScreen = new Set(["cindyqian", "graduation", "internships", "dubhacks", "mlh", "photography", /*"pokemon",*/ "boulder", "content", "skills", "rest", "resume", "email", "linkedin"]);
 
   const imageTextRelationship = new Map();
   imageTextRelationship.set("graduationImages", ["graduation"]);
@@ -47,7 +47,7 @@ function TechnicalPortfolio() {
   imageTextRelationship.set("dubhacksImages", ["dubhacks"]);
   imageTextRelationship.set("mlhImages", ["mlh"]);
   imageTextRelationship.set("photographyImages", ["photography"]);
-  imageTextRelationship.set("pokemonImages", ["pokemon"]);
+  // imageTextRelationship.set("pokemonImages", ["pokemon"]);
   imageTextRelationship.set("boulderImages", ["boulder"]);
   imageTextRelationship.set("contentImages", ["content"]);
   imageTextRelationship.set("skillsImages", ["skills"]);
@@ -59,7 +59,7 @@ function TechnicalPortfolio() {
   textImageRelationship.set("dubhacks", "dubhacksImages");
   textImageRelationship.set("mlh", "mlhImages");
   textImageRelationship.set("photography", "photographyImages");
-  textImageRelationship.set("pokemon", "pokemonImages");
+  // textImageRelationship.set("pokemon", "pokemonImages");
   textImageRelationship.set("boulder", "boulderImages");
   textImageRelationship.set("content", "contentImages");
   textImageRelationship.set("skills", "skillsImages");
@@ -137,7 +137,7 @@ function TechnicalPortfolio() {
 
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
-        <div id="mainText" className="w-1/3 fixed top-5 self-center my-32 z-50">
+        <div id="mainText" className="w-1/3 fixed top-5 self-center my-24 z-50">
 
           <h1 className="text-xl text-center mb-10 geist-mono" id="cindyqian" onClick={sayHi}>
             <Link style={{ textDecoration: "none" }} className="font-medium text-yellow-500 hover:text-yellow-600" to="/">Cindy Qian</Link>
@@ -166,13 +166,13 @@ function TechnicalPortfolio() {
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="dubhacks">
-            I used to coordinate logistics and marketing for the largest hackathon in the PNW of over 1200 people,
+            I used to coordinate logistics and marketing for the largest hackathon in the PNW,
                 <ColorfulLink textColor={specialColor} link="https://dubhacks.co" text=" DubHacks"></ColorfulLink>
                 , at the University of Washington&nbsp;
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="mlh">
-            and work as a
+            and mentor other organizers around the country as a
                 <ColorfulLink textColor={specialColor} link="https://mlh.io/coaches" text=" hackathon coach "></ColorfulLink>
                 at
                 <ColorfulLink textColor={specialColor} link="https://mlh.io" text=" Major League Hacking"></ColorfulLink>
@@ -184,10 +184,10 @@ function TechnicalPortfolio() {
                 <ColorfulLink textColor={specialColor} link="https://www.instagram.com/bycindyq/" text=" small photography business"></ColorfulLink>
           </p>
 
-          <p className="text-sm text-left geist-mono inline " id="pokemon">
+          {/* <p className="text-sm text-left geist-mono inline " id="pokemon">
             ,
             avidly play pokemon go and pokemon pocket
-              </p>
+              </p> */}
 
           <p className="text-sm text-left geist-mono inline " id="boulder">
             ,
@@ -367,7 +367,7 @@ function TechnicalPortfolio() {
                 </div>
               </div>
 
-              <div className="table-row " id="pokemonImages">
+              {/* <div className="table-row " id="pokemonImages">
                 <div className="table-cell align-middle">
                   <img
                     loading="eager"
@@ -382,7 +382,7 @@ function TechnicalPortfolio() {
                     src={require("../images/technical/pocket.jpg")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
-              </div>
+              </div> */}
 
               <div className="table-row " id="boulderImages">
                 <div className="table-cell align-middle">
