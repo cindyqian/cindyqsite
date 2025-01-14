@@ -116,7 +116,7 @@ function Chatbot() {
           </Link>
          
         </div>
-        <p className="w-1/3 fixed top-0 self-center my-32 ml-16 italic">feel free to play around but it's still under construction!</p>
+        <p className="w-1/3 fixed top-0 self-center my-32 ml-16 italic">still under construction! trying to figure out the api :,)</p>
         <div className="w-1/3 fixed top-10 self-center my-32 z-50">
           <div className="response-area">
             {messages.map((message, index) => {
