@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cindyqsite/static/css/main.46a46d7c.css",
-    "main.js": "/cindyqsite/static/js/main.8ebe4019.js",
+    "main.js": "/cindyqsite/static/js/main.ada01595.js",
     "static/js/453.68693753.chunk.js": "/cindyqsite/static/js/453.68693753.chunk.js",
     "static/media/1.png": "/cindyqsite/static/media/1.b8242b23876db6c362c9.png",
     "static/media/gasbill.png": "/cindyqsite/static/media/gasbill.a07a95d6485e2b136ed1.png",
@@ -40,20 +40,22 @@
     "static/media/cynthiakevinbacklit.jpg": "/cindyqsite/static/media/cynthiakevinbacklit.a304c40755dc12263b02.jpg",
     "static/media/estherallierun1.jpg": "/cindyqsite/static/media/estherallierun1.9653a9b088ffc8396d22.jpg",
     "static/media/flowercommuntiybuilding.JPG": "/cindyqsite/static/media/flowercommuntiybuilding.15bb967e9c2acd337c89.JPG",
+    "static/media/pocket2.JPG": "/cindyqsite/static/media/pocket2.a69dee9530b28e3e77e0.JPG",
     "static/media/kellylaraspin.jpg": "/cindyqsite/static/media/kellylaraspin.2f3c1bd53f29a6406f1a.jpg",
     "static/media/bathtubcindy.jpg": "/cindyqsite/static/media/bathtubcindy.cc32188f1d6140d010c7.jpg",
     "static/media/tt7.png": "/cindyqsite/static/media/tt7.1d4feb24b8be00b362f6.png",
+    "static/media/pogo1.png": "/cindyqsite/static/media/pogo1.a829216aa33c601fb5c7.png",
     "static/media/pillars.png": "/cindyqsite/static/media/pillars.f40326eed0bb4a7c56ab.png",
     "static/media/CindyQianResume.pdf": "/cindyqsite/static/media/CindyQianResume.e475ce85d9d3adc45b10.pdf",
     "static/media/GeistMonoVF.woff": "/cindyqsite/static/media/GeistMonoVF.2b49028de50fff5c0296.woff",
     "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
     "index.html": "/cindyqsite/index.html",
     "main.46a46d7c.css.map": "/cindyqsite/static/css/main.46a46d7c.css.map",
-    "main.8ebe4019.js.map": "/cindyqsite/static/js/main.8ebe4019.js.map",
+    "main.ada01595.js.map": "/cindyqsite/static/js/main.ada01595.js.map",
     "453.68693753.chunk.js.map": "/cindyqsite/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46a46d7c.css",
-    "static/js/main.8ebe4019.js"
+    "static/js/main.ada01595.js"
   ]
 }
