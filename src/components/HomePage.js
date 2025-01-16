@@ -59,7 +59,7 @@ function HomePage() {
         <div id="mainText" className="w-1/3 self-center z-50">
           <p className="text-sm text-left geist-mono inline">
             I’m currently seeking opportunities
-            that will let me hone my product management, marketing, and project management skills (and maybe work on a cool product with cool people &#128302;)
+            in product management, marketing, project management, and event planning (+ maybe meet cool people &#128302;)
           </p>
         </div>
 

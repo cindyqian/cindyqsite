@@ -39,7 +39,7 @@ function TechnicalPortfolio() {
   let specialColor = "text-yellow-500 hover:text-yellow-600";
 
 
-  const textOnScreen = new Set(["cindyqian", "graduation", "internships", "dubhacks", "mlh", "photography", /*"pokemon",*/ "boulder", "content", "skills", "rest", "resume", "email", "linkedin"]);
+  const textOnScreen = new Set(["cindyqian", "graduation", "internships", "dubhacks", "mlh", "photography", "pokemon", "boulder", "content", "skills", "rest", "resume", "email", "linkedin"]);
 
   const imageTextRelationship = new Map();
   imageTextRelationship.set("graduationImages", ["graduation"]);
@@ -47,7 +47,7 @@ function TechnicalPortfolio() {
   imageTextRelationship.set("dubhacksImages", ["dubhacks"]);
   imageTextRelationship.set("mlhImages", ["mlh"]);
   imageTextRelationship.set("photographyImages", ["photography"]);
-  // imageTextRelationship.set("pokemonImages", ["pokemon"]);
+  imageTextRelationship.set("pokemonImages", ["pokemon"]);
   imageTextRelationship.set("boulderImages", ["boulder"]);
   imageTextRelationship.set("contentImages", ["content"]);
   imageTextRelationship.set("skillsImages", ["skills"]);
@@ -59,7 +59,7 @@ function TechnicalPortfolio() {
   textImageRelationship.set("dubhacks", "dubhacksImages");
   textImageRelationship.set("mlh", "mlhImages");
   textImageRelationship.set("photography", "photographyImages");
-  // textImageRelationship.set("pokemon", "pokemonImages");
+  textImageRelationship.set("pokemon", "pokemonImages");
   textImageRelationship.set("boulder", "boulderImages");
   textImageRelationship.set("content", "contentImages");
   textImageRelationship.set("skills", "skillsImages");
@@ -184,10 +184,10 @@ function TechnicalPortfolio() {
                 <ColorfulLink textColor={specialColor} link="https://www.instagram.com/bycindyq/" text=" small photography business"></ColorfulLink>
           </p>
 
-          {/* <p className="text-sm text-left geist-mono inline " id="pokemon">
+          <p className="text-sm text-left geist-mono inline " id="pokemon">
             ,
             avidly play pokemon go and pokemon pocket
-              </p> */}
+              </p>
 
           <p className="text-sm text-left geist-mono inline " id="boulder">
             ,
@@ -367,7 +367,7 @@ function TechnicalPortfolio() {
                 </div>
               </div>
 
-              {/* <div className="table-row " id="pokemonImages">
+              <div className="table-row " id="pokemonImages">
                 <div className="table-cell align-middle">
                   <img
                     loading="eager"
@@ -379,10 +379,10 @@ function TechnicalPortfolio() {
                 <div className="table-cell align-middle">
                   <img
                     loading="eager"
-                    src={require("../images/technical/pocket.jpg")}
+                    src={require("../images/technical/pocket2.JPG")}
                     alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
                 </div>
-              </div> */}
+              </div>
 
               <div className="table-row " id="boulderImages">
                 <div className="table-cell align-middle">
