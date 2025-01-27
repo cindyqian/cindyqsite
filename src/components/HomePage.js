@@ -33,7 +33,7 @@ function HomePage() {
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     <div className="flex items-center justify-items-center min-h-screen geist-mono">
 
-      <main className="flex flex-col gap-8 items-center sm:items-start ">
+      <main className="flex flex-col gap-8 items-center sm:items-start -mt-9">
         <div className=" w-48 self-center z-50">
           <img
             loading="eager"
@@ -51,15 +51,17 @@ function HomePage() {
         <div id="mainText" className="w-1/3 self-center z-50">
           <p className="text-sm text-left geist-mono inline">
             Hello! I’m passionate about building products and curating experiences that empower people
-            to express themselves in thoughtful and meaningful ways. My creativity thrives
-            when I’m helping others bring their ideas to life.
+            to express themselves
+            {/* in thoughtful and meaningful ways */}
+            . I'm obsessed with deeply understanding people's needs to uncover
+            the <strong>"why?"</strong> behind their <em>"whats"</em>.
             </p>
         </div>
 
         <div id="mainText" className="w-1/3 self-center z-50">
           <p className="text-sm text-left geist-mono inline">
             I’m currently seeking opportunities
-            in product management, marketing, project management, and event planning (+ maybe meet cool people &#128302;)
+            in product management, marketing, and project management (+ maybe meet cool people &#128302;)
           </p>
         </div>
 
