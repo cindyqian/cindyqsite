@@ -53,7 +53,7 @@ function HomePage() {
             Hello! I’m passionate about building products and curating experiences that empower people
             to express themselves
             {/* in thoughtful and meaningful ways */}
-            . I'm obsessed with deeply understanding people's needs to uncover
+            . I care a lot about deeply understanding people's needs in order to uncover
             the <strong>"why?"</strong> behind their <em>"whats"</em>.
             </p>
         </div>
