@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cindyqsite/static/css/main.02b1ff8b.css",
-    "main.js": "/cindyqsite/static/js/main.1f2cfe42.js",
+    "main.js": "/cindyqsite/static/js/main.17dc8e5b.js",
     "static/js/453.68693753.chunk.js": "/cindyqsite/static/js/453.68693753.chunk.js",
     "static/media/1.png": "/cindyqsite/static/media/1.b8242b23876db6c362c9.png",
     "static/media/gasbill.png": "/cindyqsite/static/media/gasbill.a07a95d6485e2b136ed1.png",
@@ -51,11 +51,11 @@
     "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
     "index.html": "/cindyqsite/index.html",
     "main.02b1ff8b.css.map": "/cindyqsite/static/css/main.02b1ff8b.css.map",
-    "main.1f2cfe42.js.map": "/cindyqsite/static/js/main.1f2cfe42.js.map",
+    "main.17dc8e5b.js.map": "/cindyqsite/static/js/main.17dc8e5b.js.map",
     "453.68693753.chunk.js.map": "/cindyqsite/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02b1ff8b.css",
-    "static/js/main.1f2cfe42.js"
+    "static/js/main.17dc8e5b.js"
   ]
 }
