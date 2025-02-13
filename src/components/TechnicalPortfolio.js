@@ -186,7 +186,7 @@ function TechnicalPortfolio() {
 
           <p className="text-sm text-left geist-mono inline " id="pokemon">
             ,
-            avidly play pokemon go and pokemon pocket
+            love to cook and eat
               </p>
 
           <p className="text-sm text-left geist-mono inline " id="boulder">
@@ -371,16 +371,16 @@ function TechnicalPortfolio() {
                 <div className="table-cell align-middle">
                   <img
                     loading="eager"
-                    src={require("../images/technical/pogo1.png")}
-                    alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
+                    src={require("../images/technical/cooking1.png")}
+                    alt="a pesto turkey mozzarella sandwich, focaccia dough, and a plate of tomatoes and eggplants made to look like a face" />
                 </div>
                 <div className="table-cell align-middle">
                 </div>
                 <div className="table-cell align-middle">
                   <img
                     loading="eager"
-                    src={require("../images/technical/pocket2.JPG")}
-                    alt="4 screenshots of Cindy Qian's most prized Pokemon Go catches" />
+                    src={require("../images/technical/cooking2.png")}
+                    alt="a strawberry cheesecake, tomato basil pizza, and chopped green onions" />
                 </div>
               </div>
 
