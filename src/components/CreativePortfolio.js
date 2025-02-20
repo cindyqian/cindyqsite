@@ -158,7 +158,7 @@ function CreativePortfolio() {
         <div id="mainText" className="w-1/3 fixed top-0 self-center relative">
           <p className="text-sm text-left geist-mono inline">
             I'm a
-            <ColorfulLink textColor={h1Color} link="https://www.instagram.com/bycindyq/" text=" photographer "></ColorfulLink>
+            <ColorfulLink textColor={h1Color} link="https://planet-juice-e1f.notion.site/Welcome-8fc65c4f45aa4efaa8451fde96104b8f" text=" photographer "></ColorfulLink>
             + creative! I love making things that evoke emotion and help us feel more connected to the &#127757;!
             &nbsp;
             <br></br><br></br>
