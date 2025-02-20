@@ -51,7 +51,7 @@ function HomePage() {
         <div id="mainText" className="w-1/3 self-center z-50">
           <p className="text-sm text-left geist-mono inline">
             Hello! I’m passionate about building products and curating experiences that empower people
-            to express themselves
+            to creatively express themselves
             {/* in thoughtful and meaningful ways */}
             . I care a lot about deeply understanding people's needs in order to uncover
             the <strong>"why?"</strong> behind their <em>"whats"</em>.
