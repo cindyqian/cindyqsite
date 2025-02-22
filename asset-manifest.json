@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cindyqsite/static/css/main.02b1ff8b.css",
-    "main.js": "/cindyqsite/static/js/main.8c016b43.js",
+    "main.js": "/cindyqsite/static/js/main.95c6b961.js",
     "static/js/453.68693753.chunk.js": "/cindyqsite/static/js/453.68693753.chunk.js",
     "static/media/cooking2.png": "/cindyqsite/static/media/cooking2.4fab090e4fd7665454a4.png",
     "static/media/cooking1.png": "/cindyqsite/static/media/cooking1.4396b3e9008a769d3061.png",
@@ -19,6 +19,7 @@
     "static/media/teacomic.png": "/cindyqsite/static/media/teacomic.3bb9ad0dd505ba8e594b.png",
     "static/media/tt1.png": "/cindyqsite/static/media/tt1.dc22879a58fbcc23ffbb.png",
     "static/media/lassen4hikers.jpg": "/cindyqsite/static/media/lassen4hikers.244bad6f35a426a297a4.jpg",
+    "static/media/CindyQianResume.pdf": "/cindyqsite/static/media/CindyQianResume.8365628c9fa948a4d42e.pdf",
     "static/media/cynthiakevinsteps.jpg": "/cindyqsite/static/media/cynthiakevinsteps.dc95b486d8f0be7fd4d5.jpg",
     "static/media/birdsinwater.JPG": "/cindyqsite/static/media/birdsinwater.75052e35009683e54565.JPG",
     "static/media/geniedrilling.png": "/cindyqsite/static/media/geniedrilling.ec891c8bbd1f517eff84.png",
@@ -46,16 +47,15 @@
     "static/media/bathtubcindy.jpg": "/cindyqsite/static/media/bathtubcindy.cc32188f1d6140d010c7.jpg",
     "static/media/tt7.png": "/cindyqsite/static/media/tt7.1d4feb24b8be00b362f6.png",
     "static/media/pillars.png": "/cindyqsite/static/media/pillars.f40326eed0bb4a7c56ab.png",
-    "static/media/CindyQianResume.pdf": "/cindyqsite/static/media/CindyQianResume.a6cfed6e0d5368380f0d.pdf",
     "static/media/GeistMonoVF.woff": "/cindyqsite/static/media/GeistMonoVF.2b49028de50fff5c0296.woff",
     "static/media/GeistVF.woff": "/cindyqsite/static/media/GeistVF.c14dabdcab679dcff026.woff",
     "index.html": "/cindyqsite/index.html",
     "main.02b1ff8b.css.map": "/cindyqsite/static/css/main.02b1ff8b.css.map",
-    "main.8c016b43.js.map": "/cindyqsite/static/js/main.8c016b43.js.map",
+    "main.95c6b961.js.map": "/cindyqsite/static/js/main.95c6b961.js.map",
     "453.68693753.chunk.js.map": "/cindyqsite/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02b1ff8b.css",
-    "static/js/main.8c016b43.js"
+    "static/js/main.95c6b961.js"
   ]
 }
