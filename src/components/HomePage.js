@@ -54,10 +54,10 @@ function HomePage() {
             to creatively express themselves
             {/* in thoughtful and meaningful ways */}
             . I care a lot about deeply understanding people's needs in order to uncover
-            the <strong>"why?"</strong> behind their <em>"whats"</em>.
+            the "why?" behind their "whats"
 
             <br></br><br></br>
-            Currently: building a location based social app called 
+            <strong>Currently:</strong> writing prds, designing mockups, and doing marketing for a location based social app called 
               <ColorfulLink textColor="text-fuchsia-500 hover:text-fuchsia-600" link="https://swirl.chat/#intro" text=" Swirl "></ColorfulLink>
             &#128302;
             </p>
