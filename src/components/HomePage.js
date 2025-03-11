@@ -33,7 +33,7 @@ function HomePage() {
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     <div className="flex items-center justify-items-center min-h-screen geist-mono">
 
-      <main className="flex flex-col gap-8 items-center sm:items-start -mt-9">
+      <main className="flex flex-col gap-8 items-center sm:items-start -mt-12">
         <div className=" w-48 self-center z-50">
           <img
             loading="eager"
@@ -55,17 +55,24 @@ function HomePage() {
             {/* in thoughtful and meaningful ways */}
             . I care a lot about deeply understanding people's needs in order to uncover
             the <strong>"why?"</strong> behind their <em>"whats"</em>.
+
+            <br></br><br></br>
+            Currently: building a location based social app called 
+              <ColorfulLink textColor="text-fuchsia-500 hover:text-fuchsia-600" link="https://swirl.chat/#intro" text=" Swirl "></ColorfulLink>
+            &#128302;
             </p>
+
+            
         </div>
 
-        <div id="mainText" className="w-1/3 self-center z-50">
+        {/* <div id="mainText" className="w-1/3 self-center z-50">
           <p className="text-sm text-left geist-mono inline">
             I’m currently seeking opportunities
             in product management, marketing, and project management (+ maybe meet cool people &#128302;)
           </p>
-        </div>
+        </div> */}
 
-        <div id="mainText" className="w-1/3 self-center z-50">
+        <div id="mainText" className="w-1/3 self-center z-50 -ml-5">
 
           <div className="" >
             <div className="table-row">
