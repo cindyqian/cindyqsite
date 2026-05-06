@@ -2,9 +2,8 @@
 <html>
   <head>
     <script>
-      window.location.replace(
-        '/cindyqsite/?/' + window.location.pathname.slice(1)
-      );
+      sessionStorage.redirect = window.location.href;
+      window.location.replace('/cindyqsite/');
     </script>
   </head>
 </html>
