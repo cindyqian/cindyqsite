@@ -96,21 +96,13 @@ export default function BucketList() {
     };
   }, [dropdownOpen]);
 
-  return (
-    <div className="flex flex-col items-center min-h-screen geist-mono py-16 px-12">
-      <main className="flex flex-col gap-8 max-w-2xl w-full mx-auto items-center">
 
-        <h1 className="text-2xl text-center">Cindy&apos;s 🌎 Bucket List 🪣 !</h1>
-                  
-        <p className="text-sm text-gray-600 text-center">
-          every once in a while, I&apos;ll go through all the places I&apos;ve saved on instagram and tiktok
-          and compile them in google maps folders with the specific recommendations from those posts!
-          I haven&apos;t visited 99% of these places yet,
-          but I&apos;m pretty excited to go to all of them + proud of compiling these hehe
-          <br />
-          <br />
-          lmk if you ever go to any of these, I'm super curious whether these online recs are worth the hype :)
-        </p>
+  const topRef = useRef(null);
+
+  return (
+    <div ref={topRef} className="flex flex-col items-center min-h-screen geist-mono py-16 px-12">
+      <main className="flex flex-col gap-8 max-w-2xl w-full mx-auto items-center">
+        <h1 className="text-2xl text-center">Cindy&apos;s 🌎 Bucket List 🪣 </h1>
 
         <div
           ref={comboRef}
@@ -122,7 +114,7 @@ export default function BucketList() {
           <input
             id="bucket-search"
             type="search"
-            placeholder="Search places & themes…"
+            placeholder="where are you going?"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => setDropdownOpen(true)}
@@ -139,7 +131,7 @@ export default function BucketList() {
             <div
               id="bucket-list-dropdown"
               role="listbox"
-              className="absolute left-0 right-0 top-full z-50 mt-1 max-h-64 overflow-y-auto rounded-lg border border-pink-200 bg-white py-1"
+              className="absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-pink-200 bg-white py-1"
             >
               {filtered.length === 0 ? (
                 <div className="px-3 py-2.5 text-sm text-pink-500">No matches — try another search.</div>
@@ -179,6 +171,16 @@ export default function BucketList() {
             </div>
           ) : null}
         </div>
+
+        <p className="text-sm text-gray-600 text-justify max-w-md">
+          every once in a while, I&apos;ll go through all the places I&apos;ve saved on instagram and tiktok
+          and compile them in google maps folders with the specific recommendations from those posts!
+          I haven&apos;t visited 99% of these places yet,
+          but I&apos;m pretty excited to go to all of them + proud of compiling these hehe
+          <br />
+          <br />
+          lmk if you ever go to any of these, I'm super curious whether these online recs are worth the hype :)
+        </p>
 
         <div className="table-cell px-10" id="instagram">
             <a href="https://www.instagram.com/cindyqiann/" target="_blank">
