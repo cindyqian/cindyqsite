@@ -227,7 +227,7 @@ function TechnicalPortfolio() {
               <div className="table-row " id="graduationImages">
 
                 <div className="table-cell w-4/12"></div> */}
-          <div className="table w-full table-fixed border-spacing-x-10 " >
+          <div className="table w-full table-fixed border-spacing-x-10 pt-2" >
             <div className="table-row">
 
               <div className="table-cell px-10" id="resume">

@@ -267,7 +267,7 @@ function CreativePortfolio() {
 
 
 
-      <div className="w-1/3 fixed w-full self-center table-fixed border-spacing-10" >
+      <div className="w-1/3 fixed w-full self-center table-fixed border-spacing-10 pt-24" >
         <div className="table-row">
 
           <div className="table-cell px-10" id="resume">
