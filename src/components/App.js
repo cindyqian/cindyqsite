@@ -31,19 +31,20 @@ function App() {
       <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
       <link rel="icon" type="image/png" href="img/favicon.png" />
-      <BrowserRouter basename={routerBaseName}>
+      {/* <BrowserRouter basename={routerBaseName}> */}
       {/* ReactDOM.render(<Router basename={routerBaseName}>< App /></Router>, document.getElementById(‘root’)); */}
-            {/* <NavBar/> */}
-                <Routes>
-                <Route path="/" element={<HomePage />} />
-                    <Route path="/TechnicalPortfolio" element={<TechnicalPortfolio/> } />
-                    <Route path="/CreativePortfolio" element={<CreativePortfolio/> } />
-                    <Route path="/bucketlist" element={<BucketList />} />
-                    {/* <Route path="/Chatbot" element={<Chatbot/> } /> */}
-                    <Route render={() => { <HomePage /> }} />
-                </Routes>  
-            <Footer/>
-        </BrowserRouter>
+          {/* <NavBar/> */}
+              {/* <Routes>
+              <Route path="/" element={<HomePage />} />
+                  <Route path="/TechnicalPortfolio" element={<TechnicalPortfolio/> } />
+                  <Route path="/CreativePortfolio" element={<CreativePortfolio/> } />
+                  <Route path="/bucketlist" element={<BucketList />} /> */}
+                  {/* <Route path="/Chatbot" element={<Chatbot/> } /> */}
+                  {/* <Route render={() => { <HomePage /> }} />
+              </Routes>  
+          <Footer/> */}
+      {/* </BrowserRouter> */}
+      <BucketList />
     </React.StrictMode>
 
 

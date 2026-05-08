@@ -8,7 +8,7 @@ const BUCKET_OPTIONS_RAW = [
   { label: 'los angeles', href: 'https://maps.app.goo.gl/qC6euZb2MN6GZngj7' },
   { label: 'seattle', href: 'https://maps.app.goo.gl/esgRE17Ty53PXevK9' },
   { label: 'places I want to take my parents', href: 'https://maps.app.goo.gl/F81DMfXun6KacRtK8' },
-  { label: 'outdoors', href: 'https://maps.app.goo.gl/3BcdUAAzc34X6nxy7' },
+  { label: '⛰️ outdoors', href: 'https://maps.app.goo.gl/3BcdUAAzc34X6nxy7' },
   { label: 'vancouver + richmond', href: 'https://maps.app.goo.gl/rvd9VHMr8wp9j8daA' },
   { label: 'hong kong', href: 'https://maps.app.goo.gl/2Nq6WYx7cZdQZSJZ7' },
   { label: 'texas', href: 'https://maps.app.goo.gl/QcWCghZAgdSRmtyd8' },
@@ -44,6 +44,10 @@ const BUCKET_OPTIONS_RAW = [
   { label: 'india', href: 'https://maps.app.goo.gl/hbk41dBrUzK16dMF7' },
   { label: 'taiwan', href: 'https://maps.app.goo.gl/DHZTGR7jD4w3nR2JA' },
   { label: 'quebec', href: 'https://maps.app.goo.gl/4uRNUx8CuANjan4z8' },
+  { label: 'utah', href: 'https://maps.app.goo.gl/aDpBhXvqSCY2fFJZ6' },
+  { label: 'costa rica', href: 'https://maps.app.goo.gl/qRyZt5AdYoWGpGmj7' },
+  { label: 'philippines', href: 'https://maps.app.goo.gl/BhS9qx33R8RhAizy6' },
+  { label: 'philly', href: 'https://maps.app.goo.gl/PkWhzBP3dYUGbnTc9' },
 ];
 
 function dedupePreserveOrder(items) {
