@@ -31,7 +31,7 @@ const BUCKET_OPTIONS_RAW = [
   { label: 'chicago', href: 'https://maps.app.goo.gl/Y8vaR8JqEN3vsmY89' },
   { label: '🎂 birthday freebies', href: 'https://maps.app.goo.gl/hoAe8kd1nYMmRCJH9' },
   { label: 'ohio', href: 'https://maps.app.goo.gl/7J5xS7y9BTVyRarq8' },
-  { label: 'new jersey', href: 'https://maps.app.goo.gl/8jNgTGv31tqnFU5L6' },
+  { label: 'new jersey', href: 'https://maps.app.goo.gl/rbJFv3pF7uowB4N38' },
   { label: '👚 thrifting', href: 'https://maps.app.goo.gl/ELxtkHTD4UQe23V48' },
   { label: 'las vegas', href: 'https://maps.app.goo.gl/iupG9WQJBfDcR2TU6' },
   { label: 'mexico', href: 'https://maps.app.goo.gl/drWJdSjQuvSUCEp47' },
@@ -48,6 +48,24 @@ const BUCKET_OPTIONS_RAW = [
   { label: 'costa rica', href: 'https://maps.app.goo.gl/qRyZt5AdYoWGpGmj7' },
   { label: 'philippines', href: 'https://maps.app.goo.gl/BhS9qx33R8RhAizy6' },
   { label: 'philly', href: 'https://maps.app.goo.gl/PkWhzBP3dYUGbnTc9' },
+  { label: 'spain', href: 'https://maps.app.goo.gl/8FjxARfUieoBwLLE8' },
+  { label: 'georgia', href: 'https://maps.app.goo.gl/EnTaXcshad3aAUgQ6' },
+  { label: 'norway', href: 'https://maps.app.goo.gl/eqV4mtF1bhkXHFpQ9' },
+  { label: 'cambodia', href: 'https://maps.app.goo.gl/ghnhkAio1jgGXeov6' },
+  { label: 'montreal', href: 'https://maps.app.goo.gl/tm2d8HNRDfeJTrYg7' },
+  { label: 'pittsburg', href: 'https://maps.app.goo.gl/tm2d8HNRDfeJTrYg7' },
+  { label: 'dubai', href: 'https://maps.app.goo.gl/tm2d8HNRDfeJTrYg7' },
+  { label: 'north carolina', href: 'https://maps.app.goo.gl/tm2d8HNRDfeJTrYg7' },
+  { label: 'maryland', href: 'https://maps.app.goo.gl/Sb1og1So2CN86bGH6' },
+  { label: 'switzerland', href: 'https://maps.app.goo.gl/Sb1og1So2CN86bGH6' },
+  { label: 'dublin', href: 'https://maps.app.goo.gl/fxJGpAooTBeJbNCJ7' },
+  { label: 'amsterdam', href: 'https://maps.app.goo.gl/nyQw6ZPziw4fbFkk8' },
+  { label: 'arizona', href: 'https://maps.app.goo.gl/NQXCvXAVALbAy59K8' },
+  { label: 'oregon', href: 'https://maps.app.goo.gl/D5V65EVx7F1QP1pF9' },
+  { label: 'alaska', href: 'https://maps.app.goo.gl/58PBvcy19mURaMUp8' },
+  { label: 'colorado', href: 'https://maps.app.goo.gl/5TMgbzSZWjtiRoUn9' },
+  { label: 'montana', href: 'https://maps.app.goo.gl/RHreegexmktwEoPK6' },
+  { label: 'maine', href: 'https://maps.app.goo.gl/rAtKCD2S4fi6FPdA8' },
 ];
 
 function dedupePreserveOrder(items) {
@@ -177,13 +195,8 @@ export default function BucketList() {
         </div>
 
         <p className="text-sm text-gray-600 text-justify max-w-md">
-          every once in a while, I&apos;ll go through all the places I&apos;ve saved on instagram and tiktok
-          and compile them in google maps folders with the specific recommendations from those posts!
-          I haven&apos;t visited 99% of these places yet,
-          but I&apos;m pretty excited to go to all of them + proud of compiling these hehe
-          <br />
-          <br />
-          lmk if you ever go to any of these, I'm super curious whether these online recs are worth the hype :)
+          compiling all my saved instagram and tiktok saved spots in google maps folders with the exact recommendations from those posts!
+          I haven&apos;t visited 99% of these places yet, so lmk if you ever go to any of these, I'm super curious whether these online recs are worth the hype :)
         </p>
 
         <div className="table-cell px-10" id="instagram">
