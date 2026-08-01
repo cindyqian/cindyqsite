@@ -196,6 +196,8 @@ export default function BucketList() {
 
         <p className="text-sm text-gray-600 text-justify max-w-md">
           compiling all my saved instagram and tiktok saved spots in google maps folders with the exact recommendations from those posts!
+          <br />
+          <br />
           I haven&apos;t visited 99% of these places yet, so lmk if you ever go to any of these, I'm super curious whether these online recs are worth the hype :)
         </p>
 
