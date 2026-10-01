@@ -76,6 +76,7 @@ const BUCKET_OPTIONS_RAW = [
   { label: 'minnesota', href: 'https://maps.app.goo.gl/hsL9bFzGKfbJfMTWA' },
   { label: 'romania', href: 'https://maps.app.goo.gl/acsJZS8wC3hqTDKJ9' },
   { label: 'nebraska', href: 'https://maps.app.goo.gl/fdQ2ktdBH4vZ5Ut98' },
+  { label: 'austria', href: 'https://maps.app.goo.gl/XepKp88g3aNzzGMt6' },
 ];
 
 function dedupePreserveOrder(items) {
