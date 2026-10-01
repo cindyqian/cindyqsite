@@ -66,6 +66,16 @@ const BUCKET_OPTIONS_RAW = [
   { label: 'colorado', href: 'https://maps.app.goo.gl/5TMgbzSZWjtiRoUn9' },
   { label: 'montana', href: 'https://maps.app.goo.gl/RHreegexmktwEoPK6' },
   { label: 'maine', href: 'https://maps.app.goo.gl/rAtKCD2S4fi6FPdA8' },
+  { label: 'idaho', href: 'https://maps.app.goo.gl/bdLCitn4qnCV4ZUw9' },
+  { label: 'virginia', href: 'https://maps.app.goo.gl/9AyRvZwcuCQAkcb58' },
+  { label: 'wisconsin', href: 'https://maps.app.goo.gl/NRVLwuw3TSW2x3px9' },
+  { label: 'indiana', href: 'https://maps.app.goo.gl/gJ4ULmx8cJ467GLn6' },
+  { label: 'bolivia', href: 'https://maps.app.goo.gl/uaSKNdopcmRB16ME9' },
+  { label: 'washington dc', href: 'https://maps.app.goo.gl/isw3KL2gwhMdHYqG7' },
+  { label: 'indonesia', href: 'https://maps.app.goo.gl/KzY76vu8MYy9NMTM7' },
+  { label: 'minnesota', href: 'https://maps.app.goo.gl/hsL9bFzGKfbJfMTWA' },
+  { label: 'romania', href: 'https://maps.app.goo.gl/acsJZS8wC3hqTDKJ9' },
+  { label: 'nebraska', href: 'https://maps.app.goo.gl/fdQ2ktdBH4vZ5Ut98' },
 ];
 
 function dedupePreserveOrder(items) {
