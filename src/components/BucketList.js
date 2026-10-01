@@ -146,6 +146,7 @@ export default function BucketList() {
             aria-controls="bucket-list-dropdown"
             aria-autocomplete="list"
             autoComplete="off"
+            inputMode="none"
             className="w-full px-4 py-2.5 text-sm text-left border border-pink-300 rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-pink-200 focus:border-transparent placeholder:text-pink-400"
           />
 
