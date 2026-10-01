@@ -124,7 +124,7 @@ export default function BucketList() {
   return (
     <div ref={topRef} className="flex flex-col items-center min-h-screen geist-mono py-16 px-12">
       <main className="flex flex-col gap-8 max-w-2xl w-full mx-auto items-center">
-        <h1 className="text-2xl text-center">Cindy&apos;s 🌎 Bucket List 🪣 </h1>
+        <h1 className="text-2xl text-center">Cindy&apos;s 🪣 List</h1>
 
         <div
           ref={comboRef}
@@ -195,10 +195,7 @@ export default function BucketList() {
         </div>
 
         <p className="text-sm text-gray-600 text-justify max-w-md">
-          compiling all my saved instagram and tiktok saved spots in google maps folders with the exact recommendations from those posts!
-          <br />
-          <br />
-          I haven&apos;t visited 99% of these places yet, so lmk if you ever go to any of these, I'm super curious whether these online recs are worth the hype :)
+          compiling all my bucket list spots in google maps folders with the exact recommendations of what to do or get there! I haven&apos;t visited 99% of these places yet, but I do visit and it&apos;s good I note it down and if it&apos;s bad...I&apos;ll end up removing it...
         </p>
 
         <div className="table-cell px-10" id="instagram">
