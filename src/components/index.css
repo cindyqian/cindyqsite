@@ -13,10 +13,9 @@ nav, img {
     max-height: 50px;
 } */
 
-/* Airbnb Cereal is proprietary, so it only renders where it's installed or self-hosted;
-   DM Sans (Google Fonts, loaded in App.js) is the closest free fallback. */
-.airbnb-medium {
-    font-family: "Airbnb Cereal App", "Airbnb Cereal", "DM Sans", sans-serif;
+/* Inter is loaded from Google Fonts in App.js */
+.inter-medium {
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
