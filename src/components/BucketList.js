@@ -122,7 +122,7 @@ export default function BucketList() {
   const topRef = useRef(null);
 
   return (
-    <div ref={topRef} className="flex flex-col items-center min-h-screen geist-mono py-16 px-12">
+    <div ref={topRef} className="flex flex-col items-center min-h-screen airbnb-medium py-16 px-12">
       <main className="flex flex-col gap-8 max-w-2xl w-full mx-auto items-center">
         <h1 className="text-2xl text-center">Cindy&apos;s 🪣 List</h1>
 
