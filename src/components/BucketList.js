@@ -124,11 +124,12 @@ export default function BucketList() {
   return (
     <div ref={topRef} className="flex flex-col items-center min-h-screen inter-medium py-16 px-12">
       <main className="flex flex-col gap-8 max-w-2xl w-full mx-auto items-center">
-        <h1 className="text-2xl text-center">Cindy&apos;s 🪣 List</h1>
+        <h1 className="text-2xl text-center motion-safe:animate-fade-up">Cindy&apos;s 🪣 List</h1>
 
         <div
           ref={comboRef}
-          className="relative w-full max-w-md mx-auto flex flex-col items-stretch gap-0"
+          className="relative z-20 w-full max-w-md mx-auto flex flex-col items-stretch gap-0 motion-safe:animate-fade-up"
+          style={{ animationDelay: '80ms' }}
         >
           <label htmlFor="bucket-search" className="sr-only">
             Search bucket list regions
@@ -147,14 +148,18 @@ export default function BucketList() {
             aria-autocomplete="list"
             autoComplete="off"
             inputMode="none"
-            className="w-full px-4 py-2.5 text-sm text-left border border-pink-300 rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-pink-200 focus:border-transparent placeholder:text-pink-400"
+            className="w-full px-4 py-2.5 text-sm text-left border border-pink-300 rounded-full bg-white transition-[box-shadow,border-color,transform] duration-200 ease-out focus:outline-none focus:ring-4 focus:ring-pink-200/70 focus:border-transparent motion-safe:focus:scale-[1.01] placeholder:text-pink-400"
           />
 
-          {dropdownOpen ? (
-            <div
+          <div
               id="bucket-list-dropdown"
               role="listbox"
-              className="absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-pink-200 bg-white py-1"
+              aria-hidden={!dropdownOpen}
+              className={`absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-pink-200 bg-white py-1 origin-top transition-[opacity,transform,visibility] duration-200 ease-out motion-reduce:transition-none ${
+                dropdownOpen
+                  ? 'visible opacity-100 translate-y-0'
+                  : 'invisible pointer-events-none opacity-0 -translate-y-1'
+              }`}
             >
               {filtered.length === 0 ? (
                 <div className="px-3 py-2.5 text-sm text-pink-500">No matches — try another search.</div>
@@ -192,14 +197,20 @@ export default function BucketList() {
                 </ul>
               )}
             </div>
-          ) : null}
         </div>
 
-        <p className="text-sm text-gray-600 text-justify max-w-md">
+        <p
+          className="text-sm text-gray-600 text-justify max-w-md motion-safe:animate-fade-up"
+          style={{ animationDelay: '160ms' }}
+        >
           compiling all my bucket list spots in google maps folders with the exact recommendations of what to do or get there! I haven&apos;t visited 99% of these places yet, but I do visit and it&apos;s good I note it down and if it&apos;s bad...I&apos;ll end up removing it...
         </p>
 
-        <div className="table-cell px-10" id="instagram">
+        <div
+          className="table-cell px-10 motion-safe:animate-fade-up"
+          style={{ animationDelay: '240ms' }}
+          id="instagram"
+        >
             <a href="https://www.instagram.com/cindyqiann/" target="_blank">
               <span className="[&>svg]:h-5 [&>svg]:w-5">
                 <svg
