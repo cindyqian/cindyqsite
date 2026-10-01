@@ -13,6 +13,13 @@ nav, img {
     max-height: 50px;
 } */
 
+/* Inter is loaded from Google Fonts in App.js */
+.inter-medium {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .geist-mono {
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;

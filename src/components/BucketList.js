@@ -52,10 +52,10 @@ const BUCKET_OPTIONS_RAW = [
   { label: 'georgia', href: 'https://maps.app.goo.gl/EnTaXcshad3aAUgQ6' },
   { label: 'norway', href: 'https://maps.app.goo.gl/eqV4mtF1bhkXHFpQ9' },
   { label: 'cambodia', href: 'https://maps.app.goo.gl/ghnhkAio1jgGXeov6' },
-  { label: 'montreal', href: 'https://maps.app.goo.gl/tm2d8HNRDfeJTrYg7' },
-  { label: 'pittsburg', href: 'https://maps.app.goo.gl/tm2d8HNRDfeJTrYg7' },
-  { label: 'dubai', href: 'https://maps.app.goo.gl/tm2d8HNRDfeJTrYg7' },
-  { label: 'north carolina', href: 'https://maps.app.goo.gl/tm2d8HNRDfeJTrYg7' },
+  { label: 'montreal', href: 'https://maps.app.goo.gl/JPbHJk1J21CwWYPa6' },
+  { label: 'pittsburgh', href: 'https://maps.app.goo.gl/MMXqBivZ3NtjEKi56' },
+  { label: 'dubai', href: 'https://maps.app.goo.gl/BDfwMVUjdq3uHpw3A' },
+  { label: 'north carolina', href: 'https://maps.app.goo.gl/rQBVpSLQvBxwY5gEA' },
   { label: 'maryland', href: 'https://maps.app.goo.gl/Sb1og1So2CN86bGH6' },
   { label: 'switzerland', href: 'https://maps.app.goo.gl/Sb1og1So2CN86bGH6' },
   { label: 'dublin', href: 'https://maps.app.goo.gl/fxJGpAooTBeJbNCJ7' },
@@ -66,6 +66,17 @@ const BUCKET_OPTIONS_RAW = [
   { label: 'colorado', href: 'https://maps.app.goo.gl/5TMgbzSZWjtiRoUn9' },
   { label: 'montana', href: 'https://maps.app.goo.gl/RHreegexmktwEoPK6' },
   { label: 'maine', href: 'https://maps.app.goo.gl/rAtKCD2S4fi6FPdA8' },
+  { label: 'idaho', href: 'https://maps.app.goo.gl/bdLCitn4qnCV4ZUw9' },
+  { label: 'virginia', href: 'https://maps.app.goo.gl/9AyRvZwcuCQAkcb58' },
+  { label: 'wisconsin', href: 'https://maps.app.goo.gl/NRVLwuw3TSW2x3px9' },
+  { label: 'indiana', href: 'https://maps.app.goo.gl/gJ4ULmx8cJ467GLn6' },
+  { label: 'bolivia', href: 'https://maps.app.goo.gl/uaSKNdopcmRB16ME9' },
+  { label: 'washington dc', href: 'https://maps.app.goo.gl/isw3KL2gwhMdHYqG7' },
+  { label: 'indonesia', href: 'https://maps.app.goo.gl/KzY76vu8MYy9NMTM7' },
+  { label: 'minnesota', href: 'https://maps.app.goo.gl/hsL9bFzGKfbJfMTWA' },
+  { label: 'romania', href: 'https://maps.app.goo.gl/acsJZS8wC3hqTDKJ9' },
+  { label: 'nebraska', href: 'https://maps.app.goo.gl/fdQ2ktdBH4vZ5Ut98' },
+  { label: 'austria', href: 'https://maps.app.goo.gl/XepKp88g3aNzzGMt6' },
 ];
 
 function dedupePreserveOrder(items) {
@@ -122,13 +133,14 @@ export default function BucketList() {
   const topRef = useRef(null);
 
   return (
-    <div ref={topRef} className="flex flex-col items-center min-h-screen geist-mono py-16 px-12">
+    <div ref={topRef} className="flex flex-col items-center min-h-screen inter-medium py-16 px-12">
       <main className="flex flex-col gap-8 max-w-2xl w-full mx-auto items-center">
-        <h1 className="text-2xl text-center">Cindy&apos;s 🌎 Bucket List 🪣 </h1>
+        <h1 className="text-2xl text-center motion-safe:animate-fade-up">Cindy&apos;s 🪣 List</h1>
 
         <div
           ref={comboRef}
-          className="relative w-full max-w-md mx-auto flex flex-col items-stretch gap-0"
+          className="relative z-20 w-full max-w-md mx-auto flex flex-col items-stretch gap-0 motion-safe:animate-fade-up"
+          style={{ animationDelay: '80ms' }}
         >
           <label htmlFor="bucket-search" className="sr-only">
             Search bucket list regions
@@ -146,14 +158,19 @@ export default function BucketList() {
             aria-controls="bucket-list-dropdown"
             aria-autocomplete="list"
             autoComplete="off"
-            className="w-full px-4 py-2.5 text-sm text-left border border-pink-300 rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-pink-200 focus:border-transparent placeholder:text-pink-400"
+            inputMode="none"
+            className="w-full px-4 py-2.5 text-sm text-left border border-pink-300 rounded-full bg-white transition-[box-shadow,border-color,transform] duration-200 ease-out focus:outline-none focus:ring-4 focus:ring-pink-200/70 focus:border-transparent motion-safe:focus:scale-[1.01] placeholder:text-pink-400"
           />
 
-          {dropdownOpen ? (
-            <div
+          <div
               id="bucket-list-dropdown"
               role="listbox"
-              className="absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-pink-200 bg-white py-1"
+              aria-hidden={!dropdownOpen}
+              className={`absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-pink-200 bg-white py-1 origin-top transition-[opacity,transform,visibility] duration-200 ease-out motion-reduce:transition-none ${
+                dropdownOpen
+                  ? 'visible opacity-100 translate-y-0'
+                  : 'invisible pointer-events-none opacity-0 -translate-y-1'
+              }`}
             >
               {filtered.length === 0 ? (
                 <div className="px-3 py-2.5 text-sm text-pink-500">No matches — try another search.</div>
@@ -191,17 +208,20 @@ export default function BucketList() {
                 </ul>
               )}
             </div>
-          ) : null}
         </div>
 
-        <p className="text-sm text-gray-600 text-justify max-w-md">
-          compiling all my saved instagram and tiktok saved spots in google maps folders with the exact recommendations from those posts!
-          <br />
-          <br />
-          I haven&apos;t visited 99% of these places yet, so lmk if you ever go to any of these, I'm super curious whether these online recs are worth the hype :)
+        <p
+          className="text-sm text-gray-600 text-justify max-w-md motion-safe:animate-fade-up"
+          style={{ animationDelay: '160ms' }}
+        >
+          compiling all my bucket list spots in google maps folders with the exact recommendations of what to do or get there! I haven&apos;t visited 99% of these places yet, but I do visit and it&apos;s good I note it down and if it&apos;s bad...I&apos;ll end up removing it...
         </p>
 
-        <div className="table-cell px-10" id="instagram">
+        <div
+          className="table-cell px-10 motion-safe:animate-fade-up"
+          style={{ animationDelay: '240ms' }}
+          id="instagram"
+        >
             <a href="https://www.instagram.com/cindyqiann/" target="_blank">
               <span className="[&>svg]:h-5 [&>svg]:w-5">
                 <svg
