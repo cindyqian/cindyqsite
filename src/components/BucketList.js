@@ -158,14 +158,14 @@ export default function BucketList() {
             aria-autocomplete="list"
             autoComplete="off"
             inputMode="none"
-            className="w-full px-4 py-2.5 text-sm text-left border border-black rounded-full bg-white transition-[box-shadow,border-color,transform] duration-200 ease-out focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent motion-safe:focus:scale-[1.01] placeholder:text-gray-500"
+            className="w-full px-4 py-2.5 text-sm text-left border border-transparent rounded-full bg-gray-100 hover:bg-gray-200 transition-[box-shadow,border-color,background-color,transform] duration-200 ease-out focus:outline-none focus:bg-white focus:border-gray-300 focus:ring-2 focus:ring-gray-100 motion-safe:focus:scale-[1.01] placeholder:text-gray-500"
           />
 
           <div
               id="bucket-list-dropdown"
               role="listbox"
               aria-hidden={!dropdownOpen}
-              className={`absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-black bg-white py-1 origin-top transition-[opacity,transform,visibility] duration-200 ease-out motion-reduce:transition-none ${
+              className={`absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-gray-200 bg-white shadow-sm py-1 origin-top transition-[opacity,transform,visibility] duration-200 ease-out motion-reduce:transition-none ${
                 dropdownOpen
                   ? 'visible opacity-100 translate-y-0'
                   : 'invisible pointer-events-none opacity-0 -translate-y-1'
