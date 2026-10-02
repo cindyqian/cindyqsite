@@ -41,6 +41,12 @@ const BUCKET_GROUPS = [
     ],
   },
   {
+    label: '🌍 africa',
+    places: [
+      { label: 'namibia', href: 'https://maps.app.goo.gl/QJDXXQniwqf5FWne6' },
+    ],
+  },
+  {
     label: '🌎 north america',
     places: [
       { label: 'alabama', href: 'https://maps.app.goo.gl/gmDe2irJSti2neE89' },
