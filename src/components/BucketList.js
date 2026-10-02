@@ -116,6 +116,17 @@ const BUCKET_GROUPS = [
   },
 ];
 
+/** Sorts by label alphabetically, ignoring leading emoji so "🌍 europe" sorts under "e". */
+function byName(a, b) {
+  const name = (item) => item.label.replace(/^[^\p{L}\p{N}]+/u, '');
+  return name(a).localeCompare(name(b));
+}
+
+/** Groups and the places inside them, both alphabetized. */
+const SORTED_GROUPS = BUCKET_GROUPS
+  .map((group) => ({ ...group, places: [...group.places].sort(byName) }))
+  .sort(byName);
+
 /** Max stagger (ms) for the ripple-in animation, plus random jitter so it feels organic. */
 const RIPPLE_SPREAD = 480;
 const RIPPLE_JITTER = 80;
@@ -158,9 +169,9 @@ export default function BucketList() {
   const trimmed = query.trim().toLowerCase();
   const hits = useMemo(() => {
     if (!trimmed) return [];
-    return BUCKET_GROUPS.flatMap((g) => g.places)
+    return SORTED_GROUPS.flatMap((g) => g.places)
       .filter((p) => p.label.toLowerCase().includes(trimmed))
-      .sort((a, b) => a.label.localeCompare(b.label));
+      .sort(byName);
   }, [trimmed]);
 
   function openPills() {
@@ -241,7 +252,7 @@ export default function BucketList() {
 
   function renderGroups() {
     const out = [];
-    BUCKET_GROUPS.forEach((group, i) => {
+    SORTED_GROUPS.forEach((group, i) => {
       const expanded = activeGroup === i;
       out.push(
         <button
@@ -258,8 +269,8 @@ export default function BucketList() {
       );
       if (activeGroup !== null && i === insertAfter) {
         out.push(
-          <div key={`places-${BUCKET_GROUPS[activeGroup].label}`} ref={subRef} className="bucket-sub">
-            {BUCKET_GROUPS[activeGroup].places.map((place) => (
+          <div key={`places-${SORTED_GROUPS[activeGroup].label}`} ref={subRef} className="bucket-sub">
+            {SORTED_GROUPS[activeGroup].places.map((place) => (
               <PlacePill key={place.label} place={place} />
             ))}
           </div>
