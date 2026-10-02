@@ -158,21 +158,21 @@ export default function BucketList() {
             aria-autocomplete="list"
             autoComplete="off"
             inputMode="none"
-            className="w-full px-4 py-2.5 text-sm text-left border border-pink-300 rounded-full bg-white transition-[box-shadow,border-color,transform] duration-200 ease-out focus:outline-none focus:ring-4 focus:ring-pink-200/70 focus:border-transparent motion-safe:focus:scale-[1.01] placeholder:text-pink-400"
+            className="w-full px-4 py-2.5 text-sm text-left border border-black rounded-full bg-white transition-[box-shadow,border-color,transform] duration-200 ease-out focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent motion-safe:focus:scale-[1.01] placeholder:text-gray-500"
           />
 
           <div
               id="bucket-list-dropdown"
               role="listbox"
               aria-hidden={!dropdownOpen}
-              className={`absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-pink-200 bg-white py-1 origin-top transition-[opacity,transform,visibility] duration-200 ease-out motion-reduce:transition-none ${
+              className={`absolute left-0 right-0 top-full z-50 mt-1 max-h-[65vh] overflow-y-auto rounded-lg border border-black bg-white py-1 origin-top transition-[opacity,transform,visibility] duration-200 ease-out motion-reduce:transition-none ${
                 dropdownOpen
                   ? 'visible opacity-100 translate-y-0'
                   : 'invisible pointer-events-none opacity-0 -translate-y-1'
               }`}
             >
               {filtered.length === 0 ? (
-                <div className="px-3 py-2.5 text-sm text-pink-500">No matches — try another search.</div>
+                <div className="px-3 py-2.5 text-sm text-black">No matches — try another search.</div>
               ) : (
                 <ul className="m-0 list-none p-0">
                   {filtered.map((item) => {
@@ -189,7 +189,7 @@ export default function BucketList() {
                             {...(external
                               ? { target: '_blank', rel: 'noopener noreferrer' }
                               : {})}
-                            className={`${row} text-pink-900 hover:bg-pink-50`}
+                            className={`${row} text-black hover:bg-gray-100`}
                             onClick={() => setDropdownOpen(false)}
                           >
                             {label}
@@ -200,7 +200,7 @@ export default function BucketList() {
 
                     return (
                       <li key={label} role="option">
-                        <span className={`${row} cursor-default text-pink-800`}>{label}</span>
+                        <span className={`${row} cursor-default text-black`}>{label}</span>
                       </li>
                     );
                   })}
