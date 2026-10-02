@@ -57,6 +57,7 @@ const BUCKET_GROUPS = [
       { label: 'chicago', href: 'https://maps.app.goo.gl/Y8vaR8JqEN3vsmY89' },
       { label: 'colorado', href: 'https://maps.app.goo.gl/5TMgbzSZWjtiRoUn9' },
       { label: 'connecticut', href: 'https://maps.app.goo.gl/fPFTkpQQ38jy9kwn6' },
+      { label: 'costa rica', href: 'https://maps.app.goo.gl/qRyZt5AdYoWGpGmj7' },
       { label: 'florida', href: 'https://maps.app.goo.gl/KZ5uuyLcEhMPzLBd9' },
       { label: 'georgia', href: 'https://maps.app.goo.gl/EnTaXcshad3aAUgQ6' },
       { label: 'hawaii', href: 'https://maps.app.goo.gl/zMCrLSRew7642TK79' },
@@ -89,12 +90,6 @@ const BUCKET_GROUPS = [
       { label: 'virginia', href: 'https://maps.app.goo.gl/9AyRvZwcuCQAkcb58' },
       { label: 'washington dc', href: 'https://maps.app.goo.gl/isw3KL2gwhMdHYqG7' },
       { label: 'wisconsin', href: 'https://maps.app.goo.gl/NRVLwuw3TSW2x3px9' },
-    ],
-  },
-  {
-    label: '🌎 central america',
-    places: [
-      { label: 'costa rica', href: 'https://maps.app.goo.gl/qRyZt5AdYoWGpGmj7' },
     ],
   },
   {
