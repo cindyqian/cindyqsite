@@ -1,17 +1,19 @@
 /* Bucket list search: continent pills that ripple open into place pills. */
 
+/* Collapsed, the wrapper takes up no space so the description sits right under the search bar. */
 .bucket-pills-wrap {
   display: grid;
   grid-template-rows: 0fr;
-  margin-top: 10px;
+  margin-top: 0;
   visibility: hidden;
-  transition: grid-template-rows 400ms ease, visibility 0s 400ms;
+  transition: grid-template-rows 400ms ease, margin-top 400ms ease, visibility 0s 400ms;
 }
 
 .bucket-pills-wrap.is-open {
   grid-template-rows: 1fr;
+  margin-top: 10px;
   visibility: visible;
-  transition: grid-template-rows 400ms ease, visibility 0s;
+  transition: grid-template-rows 400ms ease, margin-top 400ms ease, visibility 0s;
 }
 
 .bucket-pills {
@@ -20,6 +22,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 6px;
+}
+
+.bucket-pills-wrap.is-open .bucket-pills {
   padding: 2px;
 }
 
