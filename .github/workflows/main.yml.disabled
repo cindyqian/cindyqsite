@@ -1,0 +1,26 @@
+# DISABLED: OpenAI integration turned off to prevent use/accidental billing.
+# Renamed from main.yml so GitHub Actions no longer picks it up.
+# To re-enable: uncomment below and rename back to main.yml.
+
+# name: OpenAI Integration
+# 
+# on: [push]
+# 
+# jobs:
+# 
+#   run-openai:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Run OpenAI request
+#         run: |
+#           # Install necessary tools (if needed)
+#           # ... 
+#           # Use your OpenAI API key from the secret
+#           openai_response=$(curl https://api.openai.com/v1/models \
+#             -H "Authorization: Bearer $OPENAI_API_KEY" \
+#             -H "OpenAI-Organization: org-hQljbOzfQqHjE8HZUXwKheSX" \
+#             -H "OpenAI-Project: proj_LKiV0Urkqefy2A2zxFPkaE6P"
+#             
+#             "https://api.openai.com/v1/completions")
+#           echo "OpenAI response: $openai_response"
