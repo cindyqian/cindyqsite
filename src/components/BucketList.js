@@ -110,7 +110,7 @@ const BUCKET_GROUPS = [
     label: '🌏 oceania',
     places: [
       { label: 'australia', href: 'https://maps.app.goo.gl/Ak5pMzKhpcLB4Bx66' },
-      { label: 'new zealand', href: 'https://maps.app.goo.gl/BgX3mUyXbmfLeL9L8' },
+      { label: 'new zealand', href: 'https://maps.app.goo.gl/h441n7eYX9EygyGc8' },
     ],
   },
   {
