@@ -213,7 +213,7 @@ export default function BucketList() {
           className="text-sm text-gray-600 text-justify max-w-md motion-safe:animate-fade-up"
           style={{ animationDelay: '160ms' }}
         >
-          compiling all my bucket list spots in google maps folders with the exact recommendations of what to do or get there! I haven&apos;t visited 99% of these places yet, but I do visit and it&apos;s good I note it down and if it&apos;s bad...I&apos;ll end up removing it...
+          compiling all my bucket list spots in google maps folders with the exact recommendations of what to do or get there! I haven&apos;t visited 99% of these places yet, but if I do visit and it&apos;s good, I note it down and if it&apos;s bad...I&apos;ll end up removing it...
         </p>
 
         <div
