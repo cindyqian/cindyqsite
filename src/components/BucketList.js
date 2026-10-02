@@ -30,10 +30,12 @@ const BUCKET_GROUPS = [
       { label: 'austria', href: 'https://maps.app.goo.gl/XepKp88g3aNzzGMt6' },
       { label: 'denmark', href: 'https://maps.app.goo.gl/i82fBw4pfSH9yULT9' },
       { label: 'dublin', href: 'https://maps.app.goo.gl/fxJGpAooTBeJbNCJ7' },
+      { label: 'georgia', href: 'https://maps.app.goo.gl/fA4tYEJKwR3WrLKa9' },
       { label: 'iceland', href: 'https://maps.app.goo.gl/CGFkc1KFhcDKwgpV9' },
       { label: 'italy', href: 'https://maps.app.goo.gl/MtonyvpQXcw7VGjz5' },
       { label: 'norway', href: 'https://maps.app.goo.gl/eqV4mtF1bhkXHFpQ9' },
       { label: 'paris', href: 'https://maps.app.goo.gl/SAi65bjZL6Cyish88' },
+      { label: 'portugal', href: 'https://maps.app.goo.gl/SxY3QCDiH7HfyXyi9' },
       { label: 'romania', href: 'https://maps.app.goo.gl/acsJZS8wC3hqTDKJ9' },
       { label: 'spain', href: 'https://maps.app.goo.gl/8FjxARfUieoBwLLE8' },
       { label: 'switzerland', href: 'https://maps.app.goo.gl/ypKzsT8xrT5xbiH38' },
@@ -60,6 +62,7 @@ const BUCKET_GROUPS = [
       { label: 'costa rica', href: 'https://maps.app.goo.gl/qRyZt5AdYoWGpGmj7' },
       { label: 'florida', href: 'https://maps.app.goo.gl/KZ5uuyLcEhMPzLBd9' },
       { label: 'georgia', href: 'https://maps.app.goo.gl/EnTaXcshad3aAUgQ6' },
+      { label: 'guatemala', href: 'https://maps.app.goo.gl/tDmoyuM4oFRE32SQ7' },
       { label: 'hawaii', href: 'https://maps.app.goo.gl/zMCrLSRew7642TK79' },
       { label: 'idaho', href: 'https://maps.app.goo.gl/bdLCitn4qnCV4ZUw9' },
       { label: 'indiana', href: 'https://maps.app.goo.gl/gJ4ULmx8cJ467GLn6' },
@@ -68,11 +71,13 @@ const BUCKET_GROUPS = [
       { label: 'maine', href: 'https://maps.app.goo.gl/rAtKCD2S4fi6FPdA8' },
       { label: 'maryland', href: 'https://maps.app.goo.gl/Javrz9pNJUxK6Dy47' },
       { label: 'mexico', href: 'https://maps.app.goo.gl/drWJdSjQuvSUCEp47' },
+      { label: 'michigan', href: 'https://maps.app.goo.gl/YtTPUgZJ14pydJpU6' },
       { label: 'minnesota', href: 'https://maps.app.goo.gl/hsL9bFzGKfbJfMTWA' },
       { label: 'montana', href: 'https://maps.app.goo.gl/RHreegexmktwEoPK6' },
       { label: 'montreal', href: 'https://maps.app.goo.gl/JPbHJk1J21CwWYPa6' },
       { label: 'nebraska', href: 'https://maps.app.goo.gl/fdQ2ktdBH4vZ5Ut98' },
       { label: 'new jersey', href: 'https://maps.app.goo.gl/rbJFv3pF7uowB4N38' },
+      { label: 'new orleans', href: 'https://maps.app.goo.gl/fQpPHvom3hMCzZ4D9' },
       { label: 'new york city', href: 'https://maps.app.goo.gl/zmjYHAEQcjFQCexYA' },
       { label: 'north carolina', href: 'https://maps.app.goo.gl/rQBVpSLQvBxwY5gEA' },
       { label: 'ohio', href: 'https://maps.app.goo.gl/7J5xS7y9BTVyRarq8' },
@@ -82,7 +87,9 @@ const BUCKET_GROUPS = [
       { label: 'quebec', href: 'https://maps.app.goo.gl/4uRNUx8CuANjan4z8' },
       { label: 'rhode island', href: 'https://maps.app.goo.gl/c5rSqGMRmTegyYmD9' },
       { label: 'seattle', href: 'https://maps.app.goo.gl/esgRE17Ty53PXevK9' },
+      { label: 'tahoe', href: 'https://maps.app.goo.gl/odzDogWJa1CgcL3k8' },
       { label: 'texas', href: 'https://maps.app.goo.gl/QcWCghZAgdSRmtyd8' },
+      { label: 'the dakotas', href: 'https://maps.app.goo.gl/EBAsjkC9UkYhp6qK8' },
       { label: 'toronto', href: 'https://maps.app.goo.gl/NcnZW6J8ChjqdeQQ8' },
       { label: 'utah', href: 'https://maps.app.goo.gl/aDpBhXvqSCY2fFJZ6' },
       { label: 'vancouver + richmond', href: 'https://maps.app.goo.gl/rvd9VHMr8wp9j8daA' },
@@ -96,6 +103,7 @@ const BUCKET_GROUPS = [
     label: '🌎 south america',
     places: [
       { label: 'bolivia', href: 'https://maps.app.goo.gl/uaSKNdopcmRB16ME9' },
+      { label: 'peru', href: 'https://maps.app.goo.gl/z35jUpJCeC1nYPrF8' },
     ],
   },
   {
@@ -271,7 +279,7 @@ export default function BucketList() {
         out.push(
           <div key={`places-${SORTED_GROUPS[activeGroup].label}`} ref={subRef} className="bucket-sub">
             {SORTED_GROUPS[activeGroup].places.map((place) => (
-              <PlacePill key={place.label} place={place} />
+              <PlacePill key={place.href} place={place} />
             ))}
           </div>
         );
@@ -316,7 +324,7 @@ export default function BucketList() {
                 hits.length === 0 ? (
                   <div className="bucket-empty">No matches — try another search.</div>
                 ) : (
-                  hits.map((place) => <PlacePill key={place.label} place={place} />)
+                  hits.map((place) => <PlacePill key={place.href} place={place} />)
                 )
               ) : (
                 renderGroups()
