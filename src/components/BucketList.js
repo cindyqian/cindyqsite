@@ -30,7 +30,9 @@ const BUCKET_GROUPS = [
       { label: 'austria', href: 'https://maps.app.goo.gl/XepKp88g3aNzzGMt6' },
       { label: 'denmark', href: 'https://maps.app.goo.gl/i82fBw4pfSH9yULT9' },
       { label: 'dublin', href: 'https://maps.app.goo.gl/fxJGpAooTBeJbNCJ7' },
+      { label: 'faroe islands', href: 'https://maps.app.goo.gl/3JdwqavNbPsrN8nd6' },
       { label: 'georgia', href: 'https://maps.app.goo.gl/fA4tYEJKwR3WrLKa9' },
+      { label: 'germany', href: 'https://maps.app.goo.gl/2K3NPQJMs295rQUo9' },
       { label: 'iceland', href: 'https://maps.app.goo.gl/CGFkc1KFhcDKwgpV9' },
       { label: 'italy', href: 'https://maps.app.goo.gl/MtonyvpQXcw7VGjz5' },
       { label: 'norway', href: 'https://maps.app.goo.gl/eqV4mtF1bhkXHFpQ9' },
@@ -38,6 +40,7 @@ const BUCKET_GROUPS = [
       { label: 'portugal', href: 'https://maps.app.goo.gl/SxY3QCDiH7HfyXyi9' },
       { label: 'romania', href: 'https://maps.app.goo.gl/acsJZS8wC3hqTDKJ9' },
       { label: 'spain', href: 'https://maps.app.goo.gl/8FjxARfUieoBwLLE8' },
+      { label: 'sweden', href: 'https://maps.app.goo.gl/T8PLvBGY9rPFBY8Q9' },
       { label: 'switzerland', href: 'https://maps.app.goo.gl/ypKzsT8xrT5xbiH38' },
       { label: 'united kingdom', href: 'https://maps.app.goo.gl/ZubpGZbKXgFPcEVU8' },
     ],
@@ -53,8 +56,9 @@ const BUCKET_GROUPS = [
     places: [
       { label: 'alabama', href: 'https://maps.app.goo.gl/gmDe2irJSti2neE89' },
       { label: 'alaska', href: 'https://maps.app.goo.gl/58PBvcy19mURaMUp8' },
+      { label: 'alberta', href: 'https://maps.app.goo.gl/qfkBfyXs8DuzXwKS9' },
       { label: 'arizona', href: 'https://maps.app.goo.gl/NQXCvXAVALbAy59K8' },
-      { label: 'bay area, ca', href: 'https://maps.app.goo.gl/Gw6hM1E8FzAjPax9A' },
+      { label: 'bay area, ca', href: 'https://maps.app.goo.gl/Gw6hM1E8FzAjPax9A', starred: true },
       { label: 'boston', href: 'https://maps.app.goo.gl/WUWX4uDPZKe6PcxT6' },
       { label: 'chicago', href: 'https://maps.app.goo.gl/Y8vaR8JqEN3vsmY89' },
       { label: 'colorado', href: 'https://maps.app.goo.gl/5TMgbzSZWjtiRoUn9' },
@@ -78,7 +82,7 @@ const BUCKET_GROUPS = [
       { label: 'nebraska', href: 'https://maps.app.goo.gl/fdQ2ktdBH4vZ5Ut98' },
       { label: 'new jersey', href: 'https://maps.app.goo.gl/rbJFv3pF7uowB4N38' },
       { label: 'new orleans', href: 'https://maps.app.goo.gl/fQpPHvom3hMCzZ4D9' },
-      { label: 'new york city', href: 'https://maps.app.goo.gl/zmjYHAEQcjFQCexYA' },
+      { label: 'new york city', href: 'https://maps.app.goo.gl/zmjYHAEQcjFQCexYA', starred: true },
       { label: 'north carolina', href: 'https://maps.app.goo.gl/rQBVpSLQvBxwY5gEA' },
       { label: 'ohio', href: 'https://maps.app.goo.gl/7J5xS7y9BTVyRarq8' },
       { label: 'oregon', href: 'https://maps.app.goo.gl/D5V65EVx7F1QP1pF9' },
@@ -86,13 +90,13 @@ const BUCKET_GROUPS = [
       { label: 'pittsburgh', href: 'https://maps.app.goo.gl/MMXqBivZ3NtjEKi56' },
       { label: 'quebec', href: 'https://maps.app.goo.gl/4uRNUx8CuANjan4z8' },
       { label: 'rhode island', href: 'https://maps.app.goo.gl/c5rSqGMRmTegyYmD9' },
-      { label: 'seattle', href: 'https://maps.app.goo.gl/esgRE17Ty53PXevK9' },
+      { label: 'seattle', href: 'https://maps.app.goo.gl/esgRE17Ty53PXevK9', starred: true },
       { label: 'tahoe', href: 'https://maps.app.goo.gl/odzDogWJa1CgcL3k8' },
       { label: 'texas', href: 'https://maps.app.goo.gl/QcWCghZAgdSRmtyd8' },
       { label: 'the dakotas', href: 'https://maps.app.goo.gl/EBAsjkC9UkYhp6qK8' },
       { label: 'toronto', href: 'https://maps.app.goo.gl/NcnZW6J8ChjqdeQQ8' },
       { label: 'utah', href: 'https://maps.app.goo.gl/aDpBhXvqSCY2fFJZ6' },
-      { label: 'vancouver + richmond', href: 'https://maps.app.goo.gl/rvd9VHMr8wp9j8daA' },
+      { label: 'vancouver + richmond', href: 'https://maps.app.goo.gl/rvd9VHMr8wp9j8daA', starred: true },
       { label: 'vermont', href: 'https://maps.app.goo.gl/VN8uzy7iZHgc6dhZ6' },
       { label: 'virginia', href: 'https://maps.app.goo.gl/9AyRvZwcuCQAkcb58' },
       { label: 'washington dc', href: 'https://maps.app.goo.gl/isw3KL2gwhMdHYqG7' },
@@ -130,10 +134,15 @@ function byName(a, b) {
   return name(a).localeCompare(name(b));
 }
 
-/** Groups and the places inside them, both alphabetized. */
+/** Starred places first, then A–Z. */
+function byStarThenName(a, b) {
+  return Number(!!b.starred) - Number(!!a.starred) || byName(a, b);
+}
+
+/** Places: starred first then A–Z; groups ordered by place count (highest first). */
 const SORTED_GROUPS = BUCKET_GROUPS
-  .map((group) => ({ ...group, places: [...group.places].sort(byName) }))
-  .sort(byName);
+  .map((group) => ({ ...group, places: [...group.places].sort(byStarThenName) }))
+  .sort((a, b) => b.places.length - a.places.length || byName(a, b));
 
 /** Max stagger (ms) for the ripple-in animation, plus random jitter so it feels organic. */
 const RIPPLE_SPREAD = 480;
@@ -154,7 +163,24 @@ function ripple(pills, origin) {
 
 function PlacePill({ place }) {
   return (
-    <a className="bucket-pill bucket-pill--place" href={place.href} target="_blank" rel="noopener noreferrer">
+    <a
+      className={`bucket-pill bucket-pill--place${place.starred ? ' bucket-pill--starred' : ''}`}
+      href={place.href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {place.starred ? (
+        <svg className="bucket-pill__star" viewBox="0 0 24 24" width="12" height="12" aria-hidden="true">
+          <path
+            d="M12 3.2l2.35 6.1 6.55.35-5.1 4.15 1.7 6.35L12 16.7l-5.5 3.45 1.7-6.35-5.1-4.15 6.55-.35L12 3.2z"
+            fill="currentColor"
+            stroke="currentColor"
+            strokeWidth="2.4"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+          />
+        </svg>
+      ) : null}
       {place.label}
     </a>
   );
@@ -179,7 +205,7 @@ export default function BucketList() {
     if (!trimmed) return [];
     return SORTED_GROUPS.flatMap((g) => g.places)
       .filter((p) => p.label.toLowerCase().includes(trimmed))
-      .sort(byName);
+      .sort(byStarThenName);
   }, [trimmed]);
 
   function openPills() {

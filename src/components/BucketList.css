@@ -67,6 +67,17 @@
   background: #f9fafb;
 }
 
+.bucket-pill--starred {
+  border-color: #e8b4c0;
+  background: #fceef2;
+}
+
+.bucket-pill__star {
+  flex: 0 0 auto;
+  display: block;
+  color: #d48496;
+}
+
 .bucket-pill__count {
   font-size: 11px;
   color: #9ca3af;
